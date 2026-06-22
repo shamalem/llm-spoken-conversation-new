@@ -31,7 +31,15 @@ record everything in `VM_REPORT.md`.
   one-line test completion. Report VRAM used and tokens/sec.
 - **Stop there.** Do not run any experimental generation.
 
-## TASK 5 — Report and wait
-- Commit + push. Confirm in `VM_REPORT.md` that TASKS 1–4 are done.
-- The local side will then add the **Phase-1 validation notebook** (ALIGN on 30 SB
-  conversations) and the **C1-P0 pilot generation script**.
+## TASK 5 — C1 pilot (after TASKS 1–4, run in tmux)
+- The C1 pilot generator is ready: `generation/generate_c1.py`.
+- Run: `python generation/generate_c1.py --prompt P0 --n 10`
+- It writes `data/generated/C1-P0/<id>.json` (resumable; skips done ids).
+- Report in `VM_REPORT.md`: did it run? mean words/turn of the 10 outputs (rough sanity
+  vs the paper's Vicuna cell)? any format issues — did Vicuna emit clean
+  `ParticipantA:` / `ParticipantB:` lines, or does the output parser need tuning?
+
+## TASK 6 — Report and hold before scaling
+- Do NOT scale to 50/condition and do NOT run C2–C4 yet.
+- The local side still owes the **ALIGN validation** (the other half of the gate) and the
+  C2/C3/C4 generators. Confirm TASKS 1–5 in `VM_REPORT.md` and hold.
