@@ -1,0 +1,20 @@
+# Generation + metrics stack for the conversation-simulation project.
+#
+# IMPORTANT: install torch FIRST, matching the VM's CUDA version (see README).
+#   e.g.  pip install torch --index-url https://download.pytorch.org/whl/cu118
+# Then install the rest:
+
+transformers>=4.40
+accelerate>=0.30
+bitsandbytes>=0.43
+sentencepiece
+
+pandas
+numpy
+scipy
+matplotlib
+
+# ALIGN (Duran et al., 2019) for conceptual/syntactic/lexical alignment is installed
+# SEPARATELY — it is finicky about dependency versions. Follow the install path used in
+# the authors' OSF Colab notebooks (osf.io/zxwtr) and pin it in its own environment if
+# it conflicts with the generation stack. See README "Phase 1".

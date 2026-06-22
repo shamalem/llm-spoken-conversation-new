@@ -1,0 +1,27 @@
+# --- Python ---
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+
+# --- Model weights & caches — NEVER commit (huge) ---
+*.bin
+*.safetensors
+*.gguf
+*.pt
+models/
+hf_cache/
+.cache/
+
+# --- Switchboard source data — LDC-licensed, do NOT redistribute. Keep local only. ---
+data/switchboard/
+
+# --- OS cruft ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# NOTE: data/generated/ (our own conversations) and results/ ARE committed on purpose —
+# they are small text/JSON and we want to share them across machines via git.
