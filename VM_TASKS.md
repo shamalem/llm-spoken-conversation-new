@@ -1,78 +1,48 @@
-# VM Tasks - Phase 2 prep
+# VM Tasks — Phase 2 re-smoke (after genre + turn-leak fixes)
 
-Owner of this file: **local side** (do not edit on the VM).
-VM-side agent: read `CLAUDE.md`, `.planning/PROJECT.md`, `.planning/ROADMAP.md`, and this
-file first. Do the tasks below and append every result/blocker to `VM_REPORT.md`.
+Owner: **local side** (do not edit on the VM). Read `CLAUDE.md` and `.planning/PROJECT.md`
+first. Append every result to `VM_REPORT.md`. Run everything in the `convsim` env, in a
+shell where `nvidia-smi` works and `torch.cuda.is_available()` is `True`.
 
-Phase 1 gates are cleared:
-- ALIGN validation matches the Switchboard baseline.
-- C2 pilot produced `multi_turn_emissions = 0` across 10/10 conversations.
-- Vicuna remains viable for C2/C3.
+The first Phase-2 smoke (`1635b73`) found three problems; the local side fixed two in code
+(`d753780`) and the third is a VM cleanup below:
+1. C3/C4 agent turns leaked whole fake dialogues scaffolded with `USER:`/`ASSISTANT:` (and
+   4-bit variants). `clean_single_turn` now truncates at those, so turns are clean and
+   `multi_turn_emissions` is honest.
+2. Vicuna stayed in assistant/help-desk mode. The genre guard + task wording now frame both
+   speakers as ordinary peers.
+3. Disk was full (Vicuna cache ~49 GB with redundant `.bin`). Free it in TASK 1.
 
-Important local changes in this handoff:
-- C1/C2 now feed the verbatim Switchboard `prompt` (`sb_prompt`) instead of only the topic
-  title, to avoid the customer-service genre drift.
-- Sampling is passed explicitly per generation call to avoid the transformers temperature
-  warning.
-- New generators exist: `generation/generate_c3.py` and `generation/generate_c4.py`.
+## TASK 1 — Free disk (delete redundant Vicuna `.bin`; we load safetensors)
+```bash
+df -h ~ | tail -1
+CACHE=~/.cache/huggingface/hub/models--lmsys--vicuna-13b-v1.5-16k
+for f in $(find "$CACHE" -name "*.bin"); do readlink -f "$f"; done | sort -u | xargs -r rm -f
+find "$CACHE" -name "*.bin" -delete
+df -h ~ | tail -1
+```
+Report free space before/after (need ~15+ GB free for Mistral).
 
-Do **not** start the full Phase 2 scale run yet. First run smoke tests and report. The
-project docs still say "6 conditions" while also saying `C1-C4 x P0/P1` (8 cells), so the
-local side will confirm the exact final condition matrix after these smoke results.
-
-## TASK 1 - Pull and verify code
-
+## TASK 2 — Pull fixes + clear old smoke outputs
 ```bash
 git pull --ff-only
-python -m py_compile generation/*.py prompts/*.py analysis/*.py
+rm -rf data/generated/C1-P0 data/generated/C2-P0 data/generated/C3-P0 data/generated/C4-P0
 ```
 
-Report:
-- current commit hash
-- whether syntax checks pass
-- whether the VM still imports `transformers`, `bitsandbytes`, and `torch`
-
-## TASK 2 - Retire old P0 pilot outputs
-
-The committed `data/generated/C1-P0/` and `data/generated/C2-P0/` files were generated
-before the `sb_prompt` fix and show customer-service framing. Before new smoke tests:
-
-```bash
-rm -rf data/generated/C1-P0 data/generated/C2-P0
-```
-
-This lets the corrected C1/C2 scripts regenerate those first ids instead of skipping them.
-
-## TASK 3 - Smoke-test corrected Phase 2 generators
-
-Run in `tmux` or another persistent session:
-
+## TASK 3 — Re-smoke all four (GPU)
 ```bash
 python generation/generate_c1.py --prompt P0 --n 2 --max-new-tokens 1024
 python generation/generate_c2.py --prompt P0 --n 2 --max-turns 12
 python generation/generate_c3.py --prompt P0 --n 2 --max-turns 12
 python generation/generate_c4.py --prompt P0 --n 2 --max-turns 12
 ```
+For EACH architecture, record in `VM_REPORT.md`:
+- `n_turns`, `multi_turn_emissions` (C3/C4 may now be > 0 — that is the honest count)
+- whether the assistant/help-desk framing is gone (quote 2–3 lines)
+- the FULL `turns` list of ONE conversation per architecture (paste it — the local lead
+  reads the raw text to judge quality)
+- C4: did Vicuna + Mistral both fit in VRAM? peak VRAM? any OOM?
 
-Report for each architecture:
-- did the output use the Switchboard instruction as a caller discussion task?
-- did the customer-service/help-desk framing disappear?
-- `n_turns`
-- `multi_turn_emissions`
-- any model-load or VRAM issues, especially for C4 loading Vicuna + Mistral together
-
-## TASK 4 - Hold before scaling
-
-Do **not** run 50 conversations/condition yet.
-
-Append the smoke-test summary to `VM_REPORT.md`, commit, and push:
-
-```bash
-git status
-git add -A
-git commit -m "feat(vm): smoke-test Phase 2 generators"
-git push
-```
-
-Then hold. The local side will review the raw smoke conversations and send the final
-Phase 2 scale instructions.
+## TASK 4 — Hold
+Commit + push, then hold. The local lead reviews the raw turns and decides whether to scale
+to 50/condition or change the turn-by-turn approach.
