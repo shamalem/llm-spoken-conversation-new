@@ -48,6 +48,8 @@ def main() -> None:
     ap.add_argument("--prompt", default="P0", choices=["P0", "P1"])
     ap.add_argument("--n", type=int, default=10)
     ap.add_argument("--max-new-tokens", type=int, default=2048)
+    ap.add_argument("--temperature", type=float, default=0.8)
+    ap.add_argument("--top-p", type=float, default=0.95)
     args = ap.parse_args()
 
     cond = f"C1-{args.prompt}"
@@ -64,8 +66,13 @@ def main() -> None:
     model, tok = load_model(VICUNA)
     for cno in todo:
         a, b, topic, sb_prompt = make_personas(meta[cno])
-        messages = build_c1(args.prompt, a, b, topic)
-        text = chat(model, tok, messages, max_new_tokens=args.max_new_tokens)
+        messages = build_c1(args.prompt, a, b, topic, sb_prompt)
+        text = chat(
+            model, tok, messages,
+            max_new_tokens=args.max_new_tokens,
+            temperature=args.temperature,
+            top_p=args.top_p,
+        )
         rec = {
             "condition": cond,
             "architecture": "C1",

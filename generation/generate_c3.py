@@ -1,17 +1,12 @@
 """
-C2 (turn-by-turn, single model) pilot generation with Vicuna-13B.
+C3 generation: two independent first-person agents using the same model.
 
-One model sees the whole transcript and writes the next single turn for the named speaker.
+Both participants use Vicuna, but each generation call is built from that speaker's own
+point of view: own prior turns are assistant messages, partner turns are user messages.
+Writes each conversation immediately to data/generated/C3-<prompt>/<id>.json.
 
-IMPORTANT TEST: the paper found Vicuna could NOT follow turn-by-turn prompting (it emitted
-multiple turns at once). This pilot probes exactly that — each generation is truncated to
-the first turn, and we record `multi_turn_emissions` (how often the model ran past one
-turn). A high count means Vicuna is a poor fit for the turn-by-turn family (C2/C3/C4) and
-we should switch those conditions to a stronger instruction-follower (Mistral / Llama-3)
-or rely on truncation.
-
-Resumable; writes data/generated/C2-<prompt>/<id>.json. Run in tmux:
-    python generation/generate_c2.py --prompt P0 --n 10 --max-turns 30
+Run in tmux on the VM:
+    python generation/generate_c3.py --prompt P0 --n 50 --max-turns 50
 """
 
 from __future__ import annotations
@@ -23,8 +18,8 @@ import sys
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent.parent))
 
-from prompts.templates import build_c2                                   # noqa: E402
-from analysis.swda import (                                              # noqa: E402
+from prompts.templates import build_agent                                  # noqa: E402
+from analysis.swda import (                                                # noqa: E402
     load_metadata, make_personas, iter_conversation_files, conversation_no_of,
 )
 from generation.model_utils import load_model, chat, clean_single_turn, VICUNA  # noqa: E402
@@ -47,14 +42,14 @@ def target_conversations(n: int, meta: dict) -> list[int]:
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--prompt", default="P0", choices=["P0", "P1"])
-    ap.add_argument("--n", type=int, default=10)
-    ap.add_argument("--max-turns", type=int, default=30)
+    ap.add_argument("--n", type=int, default=50)
+    ap.add_argument("--max-turns", type=int, default=50)
     ap.add_argument("--max-new-tokens", type=int, default=200)
     ap.add_argument("--temperature", type=float, default=0.8)
     ap.add_argument("--top-p", type=float, default=0.95)
     args = ap.parse_args()
 
-    cond = f"C2-{args.prompt}"
+    cond = f"C3-{args.prompt}"
     out_dir = OUT_ROOT / cond
     out_dir.mkdir(parents=True, exist_ok=True)
 
@@ -68,11 +63,14 @@ def main() -> None:
     model, tok = load_model(VICUNA)
     for cno in todo:
         a, b, topic, sb_prompt = make_personas(meta[cno])
+        personas = {a.label: a, b.label: b}
         history: list[tuple[str, str]] = []
         multi = 0
         for i in range(args.max_turns):
             spk = LABELS[i % 2]
-            messages = build_c2(args.prompt, a, b, topic, sb_prompt, history, spk)
+            me = personas[spk]
+            partner = personas[LABELS[(i + 1) % 2]]
+            messages = build_agent(args.prompt, me, partner, topic, sb_prompt, history)
             raw = chat(
                 model, tok, messages,
                 max_new_tokens=args.max_new_tokens,
@@ -84,13 +82,20 @@ def main() -> None:
             if not turn:
                 break
             history.append((spk, turn))
+
         rec = {
-            "condition": cond, "architecture": "C2", "prompt_level": args.prompt,
-            "model": VICUNA, "conversation_no": cno, "topic": topic,
+            "condition": cond,
+            "architecture": "C3",
+            "prompt_level": args.prompt,
+            "models": {a.label: VICUNA, b.label: VICUNA},
+            "conversation_no": cno,
+            "topic": topic,
             "sb_prompt": sb_prompt,
-            "persona_a": vars(a), "persona_b": vars(b),
-            "turns": history, "n_turns": len(history),
-            "multi_turn_emissions": multi,  # paper's Vicuna failure mode, measured
+            "persona_a": vars(a),
+            "persona_b": vars(b),
+            "turns": history,
+            "n_turns": len(history),
+            "multi_turn_emissions": multi,
         }
         (out_dir / f"{cno}.json").write_text(json.dumps(rec, indent=2), encoding="utf-8")
         print(f"  saved {cno}  turns={len(history)}  multi_turn_emissions={multi}")

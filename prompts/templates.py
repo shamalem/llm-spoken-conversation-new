@@ -57,6 +57,24 @@ def _style(prompt_level: str) -> str:
     raise ValueError(f"unknown prompt level: {prompt_level!r}")
 
 
+def _task(topic: str, sb_prompt: str | None = None) -> str:
+    """Render the Switchboard task without turning the topic into a service call."""
+    if sb_prompt:
+        return (
+            f"Topic title: {topic}\n"
+            f"Verbatim instruction given to the callers: {sb_prompt}"
+        )
+    return f"Topic title: {topic}"
+
+
+def _genre_guard() -> str:
+    return (
+        "Treat this as an ordinary conversation between two assigned telephone callers. "
+        "Do not turn the topic into a business, help desk, interview, survey, or customer "
+        "service call unless the instruction explicitly says so."
+    )
+
+
 def render_transcript(history: list[tuple[str, str]]) -> str:
     """history: list of (speaker_label, text) -> 'ParticipantA: ...\\nParticipantB: ...'."""
     return "\n".join(f"{spk}: {txt}" for spk, txt in history)
@@ -64,13 +82,15 @@ def render_transcript(history: list[tuple[str, str]]) -> str:
 
 # --- C1: all at once -----------------------------------------------------------------
 
-def build_c1(prompt_level: str, a: Persona, b: Persona, topic: str) -> list[dict]:
+def build_c1(prompt_level: str, a: Persona, b: Persona, topic: str,
+             sb_prompt: str | None = None) -> list[dict]:
     system = (
         "You write realistic transcripts of telephone conversations between two people "
-        f"who do not know each other. {_style(prompt_level)}"
+        f"who do not know each other. {_style(prompt_level)} {_genre_guard()}"
     )
     user = (
-        f"Write a complete telephone conversation about: {topic}.\n"
+        f"Write a complete telephone conversation for this Switchboard calling task:\n"
+        f"{_task(topic, sb_prompt)}\n"
         f"{a.label} is {a.describe()}. {b.label} is {b.describe()}.\n"
         f"Format every turn on its own line as '{a.label}: ...' or '{b.label}: ...'."
     )
@@ -81,11 +101,13 @@ def build_c1(prompt_level: str, a: Persona, b: Persona, topic: str) -> list[dict
 # --- C2: turn-by-turn, single model sees the whole script ----------------------------
 
 def build_c2(prompt_level: str, a: Persona, b: Persona, topic: str,
+             sb_prompt: str | None,
              history: list[tuple[str, str]], next_speaker: str) -> list[dict]:
     system = (
         "You write realistic transcripts of telephone conversations between two people who "
-        f"do not know each other, about: {topic}. "
-        f"{a.label} is {a.describe()}. {b.label} is {b.describe()}. {_style(prompt_level)}"
+        f"do not know each other. {a.label} is {a.describe()}. {b.label} is {b.describe()}. "
+        f"{_style(prompt_level)} {_genre_guard()}\n"
+        f"Switchboard calling task:\n{_task(topic, sb_prompt)}"
     )
     transcript = render_transcript(history) if history else "(the conversation has not started yet)"
     user = (
@@ -100,6 +122,7 @@ def build_c2(prompt_level: str, a: Persona, b: Persona, topic: str,
 # --- C3 / C4: independent first-person agents ----------------------------------------
 
 def build_agent(prompt_level: str, me: Persona, partner: Persona, topic: str,
+                sb_prompt: str | None,
                 history: list[tuple[str, str]]) -> list[dict]:
     """Build the message list from `me`'s point of view (used for both C3 and C4).
 
@@ -109,7 +132,8 @@ def build_agent(prompt_level: str, me: Persona, partner: Persona, topic: str,
     """
     system = (
         f"You are {me.describe()}. You are on a telephone call with someone you have just "
-        f"met and do not know. You are talking about: {topic}. {_style(prompt_level)} "
+        f"met and do not know. {_style(prompt_level)} {_genre_guard()}\n"
+        f"Switchboard calling task:\n{_task(topic, sb_prompt)}\n"
         "Reply with only what you say next, as a single spoken turn — no speaker label."
     )
     messages = [{"role": "system", "content": system}]
@@ -117,6 +141,8 @@ def build_agent(prompt_level: str, me: Persona, partner: Persona, topic: str,
         # `me` is opening the call.
         messages.append({"role": "user", "content": "(The phone connects — your partner is on the line.)"})
         return messages
+    if history[0][0] == me.label:
+        messages.append({"role": "user", "content": "(The call is already underway.)"})
     for spk, txt in history:
         role = "assistant" if spk == me.label else "user"
         messages.append({"role": role, "content": txt})

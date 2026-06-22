@@ -9,7 +9,7 @@ against the Switchboard corpus.
 
 ## Phases
 
-- [ ] **Phase 1: Pipeline Validation & Generation Pilots** - Validate metrics vs the paper; prove C1/C2 generation works on the VM
+- [x] **Phase 1: Pipeline Validation & Generation Pilots** - Validate metrics vs the paper; prove C1/C2 generation works on the VM
 - [ ] **Phase 2: Main Experiment & Analysis** - Generate all 6 conditions; compute metrics; test the Independence Gradient
 - [ ] **Phase 3: Extension & Presentation** - LLM-judge or qualitative coding; poster
 
@@ -29,8 +29,8 @@ against the Switchboard corpus.
 Plans:
 - [x] 01-01: Switchboard parser + words/turn validation (local)
 - [x] 01-02: Marker/sycophancy metrics + Table 5 validation (local)
-- [ ] 01-03: VM environment + ALIGN install + ALIGN validation
-- [ ] 01-04: Run C1 and C2 pilots; decide turn-by-turn model viability
+- [x] 01-03: VM environment + ALIGN install + ALIGN validation
+- [x] 01-04: Run C1 and C2 pilots; decide turn-by-turn model viability
 
 ### Phase 2: Main Experiment & Analysis
 **Goal**: All 6 conditions generated (50 each) and fully analyzed, with the Independence Gradient tested.
@@ -66,6 +66,6 @@ Plans:
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Pipeline Validation & Pilots | 2/4 | In progress | - |
-| 2. Main Experiment & Analysis | 0/4 | Not started | - |
+| 1. Pipeline Validation & Pilots | 4/4 | Complete | 2026-06-22 |
+| 2. Main Experiment & Analysis | 0/4 | In progress | - |
 | 3. Extension & Presentation | 0/2 | Not started | - |

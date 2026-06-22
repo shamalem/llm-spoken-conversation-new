@@ -8,11 +8,11 @@
 ### Pipeline & Validation
 - [x] **PIPE-01**: Switchboard parser reproduces the paper's words/turn baseline (~14)
 - [x] **PIPE-02**: oh/okay/uh-huh detectors reproduce the paper's Table 5 ranking
-- [ ] **PIPE-03**: ALIGN reproduces SB conceptual alignment (~0.57 Earlier) on the VM
+- [x] **PIPE-03**: ALIGN reproduces SB conceptual alignment (~0.57 Earlier) on the VM
 
 ### Generation
-- [ ] **GEN-01**: C1 all-at-once generator, conversations matched to SB topic + demographics
-- [ ] **GEN-02**: C2 turn-by-turn single-model generator with single-turn enforcement
+- [x] **GEN-01**: C1 all-at-once generator, conversations matched to SB topic + demographics
+- [x] **GEN-02**: C2 turn-by-turn single-model generator with single-turn enforcement
 - [ ] **GEN-03**: C3 two independent same-model agents (first-person contexts)
 - [ ] **GEN-04**: C4 two independent different-model agents (Vicuna ↔ Mistral)
 - [ ] **GEN-05**: 6 conditions × 50 conversations generated and stored
@@ -53,11 +53,11 @@ Deferred — tracked, not in the current roadmap.
 |-------------|-------|--------|
 | PIPE-01 | Phase 1 | Complete |
 | PIPE-02 | Phase 1 | Complete |
-| PIPE-03 | Phase 1 | Pending |
-| GEN-01 | Phase 1 | In Progress |
-| GEN-02 | Phase 1 | In Progress |
-| GEN-03 | Phase 2 | Pending |
-| GEN-04 | Phase 2 | Pending |
+| PIPE-03 | Phase 1 | Complete |
+| GEN-01 | Phase 1 | Complete |
+| GEN-02 | Phase 1 | Complete |
+| GEN-03 | Phase 2 | In Progress |
+| GEN-04 | Phase 2 | In Progress |
 | GEN-05 | Phase 2 | Pending |
 | ANLY-01 | Phase 2 | Pending |
 | ANLY-02 | Phase 2 | Pending |
