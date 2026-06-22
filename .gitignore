@@ -18,6 +18,9 @@ hf_cache/
 # --- Switchboard source data — LDC-licensed, do NOT redistribute. Keep local only. ---
 data/switchboard/
 
+# --- Raw corpus archives — keep local ---
+*.zip
+
 # --- OS cruft ---
 .DS_Store
 Thumbs.db

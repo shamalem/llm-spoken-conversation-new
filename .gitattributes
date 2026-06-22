@@ -1,0 +1,10 @@
+# Normalize line endings to LF in the repo (shared between Windows local and Linux VM).
+* text=auto eol=lf
+
+# Treat these as binary (never normalize / never diff as text).
+*.zip binary
+*.png binary
+*.jpg binary
+*.pdf binary
+*.safetensors binary
+*.bin binary
