@@ -84,8 +84,43 @@ def words_per_turn(turns: list[tuple[str, str]]) -> list[int]:
     return [len(txt.split()) for _, txt in turns]
 
 
+def make_personas(meta: dict):
+    """SwDA metadata row -> (PersonaA, PersonaB, topic, sb_prompt).
+
+    age is derived from talk_day (YYMMDD year) minus birth_year; education via EDU codes.
+    The verbatim SB `prompt` is returned for fidelity / future use.
+    """
+    from prompts.templates import Persona  # lazy import keeps this module standalone
+
+    year = 1900 + int(str(meta["talk_day"])[:2])
+
+    def _age(birth_year: str) -> int:
+        try:
+            return year - int(birth_year)
+        except (ValueError, TypeError):
+            return 40
+
+    def _sex(s: str) -> str:
+        return "woman" if s.strip().upper().startswith("F") else "man"
+
+    def _edu(code: str) -> str:
+        return EDU.get(code.strip(), "an unspecified education")
+
+    a = Persona("ParticipantA", _sex(meta["from_caller_sex"]),
+                _age(meta["from_caller_birth_year"]), _edu(meta["from_caller_education"]))
+    b = Persona("ParticipantB", _sex(meta["to_caller_sex"]),
+                _age(meta["to_caller_birth_year"]), _edu(meta["to_caller_education"]))
+    topic = meta["topic_description"].strip().title()
+    return a, b, topic, meta["prompt"].strip()
+
+
 def iter_conversation_files(root: Path = DATA_ROOT):
     yield from sorted(root.rglob("sw_*.utt.csv"))
+
+
+def conversation_no_of(csv_path: Path) -> int:
+    """sw_0001_4325.utt.csv -> 4325 (the SwDA conversation_no, the metadata join key)."""
+    return int(csv_path.stem.split("_")[2].split(".")[0])
 
 
 def _validate(n: int) -> None:
