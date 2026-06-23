@@ -68,7 +68,9 @@ def main() -> None:
     model, tok = load_model(VICUNA)
     for cno in todo:
         a, b, topic, sb_prompt = make_personas(meta[cno])
-        history: list[tuple[str, str]] = []
+        # Peer-greeting seed (matches the paper's GPT4-1 setup): start the log with a mutual
+        # "Hello!" so the conversation opens as two equals, not "is this the ... service?".
+        history: list[tuple[str, str]] = [("ParticipantA", "Hello!"), ("ParticipantB", "Hello!")]
         multi = 0
         for i in range(args.max_turns):
             spk = LABELS[i % 2]
