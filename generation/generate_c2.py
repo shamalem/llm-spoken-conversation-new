@@ -46,7 +46,7 @@ def target_conversations(n: int, meta: dict) -> list[int]:
 
 def main() -> None:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--prompt", default="P0", choices=["P0", "P1"])
+    ap.add_argument("--prompt", default="P0", choices=["P0", "P1", "P2"])
     ap.add_argument("--n", type=int, default=10)
     ap.add_argument("--max-turns", type=int, default=30)
     ap.add_argument("--max-new-tokens", type=int, default=200)

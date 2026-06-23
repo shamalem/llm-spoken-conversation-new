@@ -123,6 +123,20 @@ def conversation_no_of(csv_path: Path) -> int:
     return int(csv_path.stem.split("_")[2].split(".")[0])
 
 
+def fewshot_example(turns: int = 10, skip: int = 80) -> str:
+    """A cleaned Switchboard excerpt for the P2 few-shot style example.
+
+    Taken from beyond the first `skip` conversations so it never overlaps the generation
+    target set (the first ~50), and truncated to `turns` turns. Different topic by design.
+    """
+    for fp in list(iter_conversation_files())[skip:]:
+        convo = parse_conversation(fp)
+        if len(convo) >= turns + 2:
+            label = {"A": "ParticipantA", "B": "ParticipantB"}
+            return "\n".join(f"{label.get(spk, spk)}: {txt}" for spk, txt in convo[:turns])
+    return ""
+
+
 def _validate(n: int) -> None:
     files = list(iter_conversation_files())[:n]
     if not files:
