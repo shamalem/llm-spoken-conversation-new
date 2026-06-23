@@ -44,12 +44,21 @@ def chat(model, tok, messages, max_new_tokens=512, temperature=0.8, top_p=0.95,
          do_sample=True) -> str:
     """messages: list of {role, content}. Returns the assistant's text completion."""
     try:
-        input_ids = tok.apply_chat_template(
-            messages, add_generation_prompt=True, return_tensors="pt"
-        ).to(model.device)
+        encoded = tok.apply_chat_template(
+            messages, add_generation_prompt=True, return_tensors="pt", return_dict=True
+        )
     except Exception:
         # Vicuna v1.5 may not ship a chat template — use its USER/ASSISTANT format.
-        input_ids = tok(_vicuna_format(messages), return_tensors="pt").input_ids.to(model.device)
+        encoded = tok(_vicuna_format(messages), return_tensors="pt")
+
+    if isinstance(encoded, torch.Tensor):
+        model_inputs = {"input_ids": encoded.to(model.device)}
+    else:
+        model_inputs = {
+            k: v.to(model.device) if hasattr(v, "to") else v
+            for k, v in encoded.items()
+        }
+    input_len = model_inputs["input_ids"].shape[-1]
 
     gen_kwargs = {
         "max_new_tokens": max_new_tokens,
@@ -62,8 +71,8 @@ def chat(model, tok, messages, max_new_tokens=512, temperature=0.8, top_p=0.95,
         if top_p is not None:
             gen_kwargs["top_p"] = top_p
 
-    out = model.generate(input_ids, **gen_kwargs)
-    new_tokens = out[0][input_ids.shape[-1]:]
+    out = model.generate(**model_inputs, **gen_kwargs)
+    new_tokens = out[0][input_len:]
     return tok.decode(new_tokens, skip_special_tokens=True).strip()
 
 

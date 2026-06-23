@@ -21,51 +21,51 @@
   "turns": [
     [
       "ParticipantA",
-      "Hi, is this the child care service?"
+      "Hi, I'm looking for someone to talk to about child care options."
     ],
     [
       "ParticipantB",
-      "Yes, hello! How can I help you today?"
+      "Hi, sure! I've used some child care services before, so I can share my experience."
     ],
     [
       "ParticipantA",
-      "I'm looking for child care services for my preschooler. Do you provide that?"
+      "What kind of child care services did you use in the past?"
     ],
     [
       "ParticipantB",
-      "Yes, we do! We offer child care services for preschoolers."
+      "I used a local daycare center when my little sister was a toddler."
     ],
     [
       "ParticipantA",
-      "What are your criteria for accepting children into your care?"
+      "That sounds great. Can you tell me more about your experience with the daycare center?"
     ],
     [
       "ParticipantB",
-      "We prioritize safety and security for our children, so we conduct thorough background checks on all of our staff members. We also ensure that our facilities are clean and well-maintained. Additionally, we provide age-appropriate activities and educational programs to help children learn and grow."
+      "It was a good experience overall, but the staff could be a bit inconsistent sometimes."
     ],
     [
       "ParticipantA",
-      "That sounds great. What about the difficulty of finding child care services? Is it easy or difficult to find a spot for my child?"
+      "What do you mean by \"inconsistent\"?"
     ],
     [
       "ParticipantB",
-      "Our services are in high demand, so it can be challenging to secure a spot for your child. However, we do our best to accommodate as many families as possible."
+      "Sometimes the staff were really attentive and caring towards the kids, but other times they seemed a bit distracted or stressed."
     ],
     [
       "ParticipantA",
-      "Okay, I'm interested in enrolling my child. What's the next step in the process?"
+      "I'm glad you had a good experience overall. What did you like most about the daycare center?"
     ],
     [
       "ParticipantB",
-      "The next step is to schedule a tour of our facility and fill out an enrollment application."
+      "The thing I liked most was the variety of activities they offered. They had a great outdoor play area and a cozy indoor space for quiet times."
     ],
     [
       "ParticipantA",
-      "That sounds good. What's the best way to schedule a tour?"
+      "What do you think would be the most important criteria for me to consider when choosing child care for my preschooler?"
     ],
     [
       "ParticipantB",
-      "You can schedule a tour by calling our office during business hours and speaking with one of our staff members."
+      "I think the most important criteria would be the quality of care and attention the staff can provide to your child."
     ]
   ],
   "n_turns": 12,

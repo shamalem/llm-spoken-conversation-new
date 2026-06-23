@@ -21,51 +21,51 @@
   "turns": [
     [
       "ParticipantA",
-      "Hello, is this the number for Switchboard?"
+      "Hey, how's it going?"
     ],
     [
       "ParticipantB",
-      "Yes, this is the Switchboard. How can I help you today?"
+      "Hey, thanks for asking. I'm doing pretty good. How about you?"
     ],
     [
       "ParticipantA",
-      "Hi, I'm calling to ask about drug testing policies for employees."
+      "Yeah, I'm doing okay. So, I was thinking about drug testing in the workplace. What do you think about that?"
     ],
     [
       "ParticipantB",
-      "Sure, I can help you with that. What specifically would you like to know?"
+      "Well, I think it's important for companies to maintain a drug-free workplace, but I also believe that employees should have some privacy when it comes to their personal lives. What about you?"
     ],
     [
       "ParticipantA",
-      "I'd like to know if it's legal for companies to randomly drug test employees without any suspicion of drug use."
+      "Yeah, I completely agree. It's important for companies to have a drug-free workplace, but employees should also have some privacy when it comes to their personal lives."
     ],
     [
       "ParticipantB",
-      "It depends on the state and the company's policies, but in most cases, it is legal for companies to conduct random drug tests."
+      "I think random spot testing can be justified in certain situations, like if it's a safety-sensitive job or if there's a reasonable suspicion of drug use, but I also think there should be clear guidelines and limits on when and how it's conducted."
     ],
     [
       "ParticipantA",
-      "Okay, thank you for letting me know."
+      "I agree that random spot testing can be justified in certain situations, but I also think there should be clear guidelines and limits on when and how it's conducted."
     ],
     [
       "ParticipantB",
-      "And what are your thoughts on the practice of drug testing in general?"
+      "I think companies should also provide resources for employees who test positive for drugs, like counseling or rehabilitation programs."
     ],
     [
       "ParticipantA",
-      "I think it's a necessary measure for some jobs, but it feels like an invasion of privacy."
+      "Yeah, I think that's a good idea. It's important to support employees who are struggling with addiction, rather than just punishing them."
     ],
     [
       "ParticipantB",
-      "I understand your concern about privacy, but it's important to ensure a safe and drug-free workplace."
+      "I also think that the punishment for testing positive should be consistent and fair across the board, not just for some employees but not for others."
     ],
     [
       "ParticipantA",
-      "Yeah, I get that. But I also think it's important to have some limits on how often and under what circumstances drug testing can be done."
+      "I agree, consistency in punishment is important. But I also think that the focus should be on prevention and education rather than just punishment."
     ],
     [
       "ParticipantB",
-      "I agree, there should be limits on how often drug testing is conducted and under what circumstances, to ensure that privacy rights are protected."
+      "Yeah, prevention and education are key. Companies should provide resources and support for employees to make informed decisions about drug use and to promote a healthy work environment."
     ]
   ],
   "n_turns": 12,
