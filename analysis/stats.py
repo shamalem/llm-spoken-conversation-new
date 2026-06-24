@@ -394,8 +394,8 @@ def main() -> None:
         ok = make_figures(convs)
         print(f"\n[figures] {'written to ' + str(FIG_DIR.relative_to(ROOT)) if ok else 'matplotlib not installed - skipped'}")
 
-    print("\nNote: spot-check data (n=2/cond) gives unstable estimates; numbers stabilize at "
-          "the full 50/condition. P2 shown for non-lexical metrics only.")
+    print("\nNote: each condition uses whatever convs are present (C4-P0 and the P1/P2 sets "
+          "are not yet fully generated). Markers for P2 are omitted as circular.")
 
 
 if __name__ == "__main__":
