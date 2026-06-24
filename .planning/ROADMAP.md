@@ -10,7 +10,7 @@ against the Switchboard corpus.
 ## Phases
 
 - [x] **Phase 1: Pipeline Validation & Generation Pilots** - Validate metrics vs the paper; prove C1/C2 generation works on the VM
-- [ ] **Phase 2: Main Experiment & Analysis** - Generate all 6 conditions; compute metrics; test the Independence Gradient
+- [ ] **Phase 2: Main Experiment & Analysis** - Generate all 12 conditions (C1-C4 × P0/P1/P2); compute metrics; test the Independence Gradient
 - [ ] **Phase 3: Extension & Presentation** - LLM-judge or qualitative coding; poster
 
 ## Phase Details
@@ -33,11 +33,17 @@ Plans:
 - [x] 01-04: Run C1 and C2 pilots; decide turn-by-turn model viability
 
 ### Phase 2: Main Experiment & Analysis
-**Goal**: All 6 conditions generated (50 each) and fully analyzed, with the Independence Gradient tested.
+**Goal**: All 12 conditions (C1-C4 × P0/P1/P2) generated (50 each) and fully analyzed, with the Independence Gradient tested.
 **Depends on**: Phase 1
 **Requirements**: GEN-03, GEN-04, GEN-05, ANLY-01, ANLY-02, ANLY-03, ANLY-04, ANLY-05
+**Condition matrix**: 4 architectures (C1 all-at-once, C2 turn-by-turn single-model,
+  C3 two same-model agents, C4 two different-model agents) × 3 prompt levels (P0 paper-basic,
+  P1 our intervention, P2 few-shot) = 12 conditions. The gradient is tested *within* a fixed
+  prompt level. **P2 is a robustness condition, not headline**: it contains a verbatim
+  Switchboard few-shot excerpt, so it is analyzed on **non-lexical metrics only**
+  (words/turn, alignment) — never on the oh/okay/uh-huh marker rates, which would be circular.
 **Success Criteria** (what must be TRUE):
-  1. 6 conditions × 50 conversations generated and stored
+  1. 12 conditions × 50 conversations generated and stored
   2. words/turn, alignment, and marker rates computed per condition vs SB
   3. Mixed-effects models run per condition × metric
   4. The Independence Gradient ordering is evaluated (supported or not)

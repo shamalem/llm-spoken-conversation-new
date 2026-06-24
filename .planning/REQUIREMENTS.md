@@ -15,7 +15,7 @@
 - [x] **GEN-02**: C2 turn-by-turn single-model generator with single-turn enforcement
 - [ ] **GEN-03**: C3 two independent same-model agents (first-person contexts)
 - [ ] **GEN-04**: C4 two independent different-model agents (Vicuna ↔ Mistral)
-- [ ] **GEN-05**: 6 conditions × 50 conversations generated and stored
+- [ ] **GEN-05**: 12 conditions (C1-C4 × P0/P1/P2) × 50 conversations generated and stored
 
 ### Analysis
 - [ ] **ANLY-01**: words/turn per condition vs SB (opening / main body / closing)
@@ -44,7 +44,7 @@ Deferred — tracked, not in the current roadmap.
 |---------|--------|
 | Human evaluation (Study 2 replication) | No ethics approval, budget, or time |
 | Fine-tuning a model | Too risky for the semester timeline; changes the project |
-| Full 4×3 × 200-conv design (2,400) | Too large; reduced to 6 × 50 |
+| Full 4×3 × 200-conv design (2,400) | Too large; kept all 12 conditions but reduced to 50 convs each (12 × 50 = 600) |
 | Additional models (Gemini, Llama-70B) | Multiplies conditions without payoff; V100 limits |
 
 ## Traceability

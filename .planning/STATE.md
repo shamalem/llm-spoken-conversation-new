@@ -29,11 +29,27 @@ Last activity: 2026-06-24 — crash diagnosed; resume plan written to VM_TASKS.m
 
 ## NEXT STEPS (resume)
 
-1. **Reboot the VM** (fixes the NVML driver mismatch). Verify `nvidia-smi` + `torch.cuda.is_available()`.
-2. **Re-run the generation loop** (resumable; do NOT delete data/generated). Then run the 4 **P2** conditions.
-3. **Push** the data, then run `python analysis/analyze.py` for the per-condition table, and add ALIGN + stats.
+1. **VM: push the 150 already-committed conversations** (b0ab7a0) so the local side gets them.
+2. **VM: reboot** (fixes the NVML driver mismatch). Verify `nvidia-smi` + `torch.cuda.is_available()`.
+3. **VM: re-run the generation loop** (resumable; do NOT delete data/generated). Then the 4 **P2** conditions. Push.
+4. **Local: analyze.** `python analysis/analyze.py` (per-condition table) and `python analysis/stats.py`
+   (mixed-effects + Independence Gradient + markers). Produce the ALIGN CSV on the VM (schema below).
 
-See VM_TASKS.md for the exact commands.
+See VM_TASKS.md for the exact VM commands.
+
+## Local-session work done (2026-06-24, later)
+
+- **Docs reconciled to the real 12-condition design** (C1-C4 × P0/P1/P2). ROADMAP/REQUIREMENTS/PROJECT
+  previously said "6 conditions" (an unfinalized reduction). The actual reduction was convs/condition
+  200→50; all 12 conditions are kept. P2 = robustness condition, **non-lexical metrics only** (its
+  few-shot Switchboard excerpt makes marker measurement circular).
+- **Added `analysis/stats.py`** — Phase 2 statistics (ANLY-01..05): words/turn mixed model
+  `DV ~ Corpus*Section + (1|ConvID)`, marker rates vs SB (P2 auto-excluded), Independence Gradient
+  trend test, optional figures. Runs on numpy+scipy locally today; `statsmodels`+`matplotlib` are
+  optional upgrades (mixed model + PNGs); reads ALIGN output from `data/align/alignment_turns.csv`
+  when present. Verified end-to-end on the spot-check data.
+- **ALIGN export the VM should produce** (so stats.py picks it up): CSV `data/align/alignment_turns.csv`
+  with columns `condition, conv_id, turn_index, n_turns, cosine_semanticL` (`condition`="SB" for the baseline).
 
 ## Findings so far (smoke + partial)
 

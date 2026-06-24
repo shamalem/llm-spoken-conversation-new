@@ -24,7 +24,7 @@ confound the original paper could not separate - measured against the Switchboar
 
 ### Active
 
-- [ ] Confirm final Phase 2 condition matrix ("6 conditions" vs C1-C4 x P0/P1)
+- [x] Final Phase 2 condition matrix confirmed: 12 conditions = C1-C4 × P0/P1/P2, 50 convs each (P2 = non-lexical metrics only)
 - [ ] Generate conversations across the final architecture/prompt matrix, 50 per condition
 - [ ] Compute turn length, ALIGN alignment, and marker rates per condition vs Switchboard
 - [ ] Test the Independence Gradient hypothesis statistically (C1 >= C2 >= C3 >= C4 -> SB)
@@ -35,7 +35,7 @@ confound the original paper could not separate - measured against the Switchboar
 
 - Human evaluation study (Study 2 replication) - no ethics approval, budget, or time
 - Fine-tuning a model - too risky for the semester timeline; changes the project
-- Full 4x3 x 200-conversation design (2,400 convs) - too large; reduced condition matrix
+- Full 4x3 x 200-conversation design (2,400 convs) - too large; kept all 12 conditions, reduced to 50 convs each (600 total)
 - P2 few-shot as a headline condition - circular-evaluation risk (prompting for what we measure)
 
 ## Context
@@ -59,7 +59,7 @@ confound the original paper could not separate - measured against the Switchboar
 
 | Decision | Rationale | Outcome |
 |----------|-----------|---------|
-| Reduce 12 conditions to a smaller matrix | Manageable scope, sufficient power at 50/condition | Needs final matrix confirmation |
+| Keep all 12 conditions (C1-C4 × P0/P1/P2), cut convs/condition 200→50 | Preserves the full 4×3 design while staying within V100 compute; 50/condition is enough power | Confirmed — 12 × 50 = 600 convs; P2 analyzed on non-lexical metrics only |
 | C3 = two first-person contexts, same model | Cleanly isolates the single-author effect vs C2 | Implemented; VM smoke pending |
 | C4 = two first-person contexts, different models | Adds model-identity separation after the C3 comparison | Implemented; VM smoke pending |
 | Headline = Independence Gradient hypothesis | Explains the paper's unexplained Vicuna result; one falsifiable prediction | Pending |
