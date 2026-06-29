@@ -1,0 +1,156 @@
+{
+  "condition": "C4-P0",
+  "architecture": "C4",
+  "prompt_level": "P0",
+  "models": {
+    "ParticipantA": "lmsys/vicuna-13b-v1.5-16k",
+    "ParticipantB": "mistralai/Mistral-7B-Instruct-v0.2"
+  },
+  "conversation_no": 3389,
+  "topic": "Football",
+  "sb_prompt": "PLEASE DISCUSS PROFESSIONAL FOOTBALL.  FIND OUT THE OTHER CALLER'S FAVORITE PRO FOOTBALL TEAM AND WHERE IT'S HEADED THIS YEAR.       DO YOU AGREE WITH THE CALLER'S PREDICTION?",
+  "persona_a": {
+    "label": "ParticipantA",
+    "gender": "man",
+    "age": 20,
+    "education": "some college"
+  },
+  "persona_b": {
+    "label": "ParticipantB",
+    "gender": "man",
+    "age": 26,
+    "education": "some college"
+  },
+  "turns": [
+    [
+      "ParticipantA",
+      "Hello!"
+    ],
+    [
+      "ParticipantB",
+      "Hello!"
+    ],
+    [
+      "ParticipantA",
+      "So, what's your favorite professional football team?"
+    ],
+    [
+      "ParticipantB",
+      "I'm a big fan of the New England Patriots."
+    ],
+    [
+      "ParticipantA",
+      "That's cool. How do you think they'll do this year?"
+    ],
+    [
+      "ParticipantB",
+      "I believe they have a strong chance at making it to the playoffs, and with Brady's experience and skill, they could potentially make it to the Super Bowl again."
+    ],
+    [
+      "ParticipantA",
+      "Yeah, it's hard to count out the Patriots with Brady at the helm."
+    ],
+    [
+      "ParticipantB",
+      "Absolutely. Do you think they have any major competition in their division or conference?"
+    ],
+    [
+      "ParticipantA",
+      "The AFC East is always tough with the Bills and Dolphins improving, but the Patriots still have a solid team."
+    ],
+    [
+      "ParticipantB",
+      "Agreed. I think it's going to be a tight race, but I have faith in the Patriots to come out on top."
+    ],
+    [
+      "ParticipantA",
+      "Me too. It's always exciting to see how it all plays out."
+    ],
+    [
+      "ParticipantB",
+      "Absolutely. I'm definitely looking forward to the season starting back up again."
+    ],
+    [
+      "ParticipantA",
+      "Same here. Can't wait to see how everything unfolds."
+    ],
+    [
+      "ParticipantB",
+      "Agreed. Well, I better get going."
+    ],
+    [
+      "ParticipantA",
+      "Alright, have a good day."
+    ],
+    [
+      "ParticipantB",
+      "You too, take care!"
+    ],
+    [
+      "ParticipantA",
+      "Goodbye!"
+    ],
+    [
+      "ParticipantB",
+      "Goodbye! Have a great day."
+    ],
+    [
+      "ParticipantA",
+      "Thank you, you too."
+    ],
+    [
+      "ParticipantB",
+      "You're welcome. Take care and have a great day!"
+    ],
+    [
+      "ParticipantA",
+      "Thank you. Goodbye!"
+    ],
+    [
+      "ParticipantB",
+      "Goodbye! Take care and have a great day!"
+    ],
+    [
+      "ParticipantA",
+      "Thank you, you too."
+    ],
+    [
+      "ParticipantB",
+      "You're welcome. Have a fantastic day!"
+    ],
+    [
+      "ParticipantA",
+      "Thank you, you too."
+    ],
+    [
+      "ParticipantB",
+      "You're welcome! Take care and have a great week!"
+    ],
+    [
+      "ParticipantA",
+      "Thank you, you too."
+    ],
+    [
+      "ParticipantB",
+      "You're welcome! Have a fantastic week!"
+    ],
+    [
+      "ParticipantA",
+      "Thank you, you too."
+    ],
+    [
+      "ParticipantB",
+      "You're welcome! Have a great day and a successful week!"
+    ],
+    [
+      "ParticipantA",
+      "Thank you, you too."
+    ],
+    [
+      "ParticipantB",
+      "You're welcome! Take care and have a fantastic week!"
+    ]
+  ],
+  "n_turns": 32,
+  "multi_turn_emissions": 3
+}

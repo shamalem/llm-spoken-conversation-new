@@ -1,0 +1,156 @@
+{
+  "condition": "C4-P0",
+  "architecture": "C4",
+  "prompt_level": "P0",
+  "models": {
+    "ParticipantA": "lmsys/vicuna-13b-v1.5-16k",
+    "ParticipantB": "mistralai/Mistral-7B-Instruct-v0.2"
+  },
+  "conversation_no": 4168,
+  "topic": "Music",
+  "sb_prompt": "PLEASE DISCUSS MUSIC.  CAN YOU FIND MUSICIANSOR TYPES OF MUSIC THAT BOTH YOU AND THE OTHER CALLER LIKE?",
+  "persona_a": {
+    "label": "ParticipantA",
+    "gender": "woman",
+    "age": 29,
+    "education": "some college"
+  },
+  "persona_b": {
+    "label": "ParticipantB",
+    "gender": "man",
+    "age": 29,
+    "education": "some college"
+  },
+  "turns": [
+    [
+      "ParticipantA",
+      "Hello!"
+    ],
+    [
+      "ParticipantB",
+      "Hello!"
+    ],
+    [
+      "ParticipantA",
+      "So, what type of music do you like?"
+    ],
+    [
+      "ParticipantB",
+      "I'm a big fan of classic rock."
+    ],
+    [
+      "ParticipantA",
+      "Oh, nice! I love classic rock too."
+    ],
+    [
+      "ParticipantB",
+      "Great! Have you listened to Led Zeppelin?"
+    ],
+    [
+      "ParticipantA",
+      "Yes, I have. They're one of my favorite bands."
+    ],
+    [
+      "ParticipantB",
+      "Awesome! Have you heard of Free?"
+    ],
+    [
+      "ParticipantA",
+      "Yes, I have. They're also a great band."
+    ],
+    [
+      "ParticipantB",
+      "I agree. \"All Right Now\" is one of their best-known songs."
+    ],
+    [
+      "ParticipantA",
+      "Yes, I love that song!"
+    ],
+    [
+      "ParticipantB",
+      "Glad to hear that! Have you listened to any of their other hits like \"My Dear Dear\" or \"Wish I Was\"?"
+    ],
+    [
+      "ParticipantA",
+      "Yes, I've heard those songs before."
+    ],
+    [
+      "ParticipantB",
+      "Excellent! I'd also recommend checking out the band Bad Company."
+    ],
+    [
+      "ParticipantA",
+      "Sure, I'll have to give them a listen."
+    ],
+    [
+      "ParticipantB",
+      "Definitely. Their hit \"Can't Get Enough\" is a classic."
+    ],
+    [
+      "ParticipantA",
+      "Sounds good! Thanks for the recommendation."
+    ],
+    [
+      "ParticipantB",
+      "You're welcome! And what about you?"
+    ],
+    [
+      "ParticipantA",
+      "I like a variety of music, but I'm particularly fond of indie and alternative rock."
+    ],
+    [
+      "ParticipantB",
+      "That's cool! Have you listened to any of the Arctic Monkeys?"
+    ],
+    [
+      "ParticipantA",
+      "Yes, I have. They're one of my favorite bands."
+    ],
+    [
+      "ParticipantB",
+      "Awesome! Have you heard of the Strokes?"
+    ],
+    [
+      "ParticipantA",
+      "Yes, I have. They're also a great band."
+    ],
+    [
+      "ParticipantB",
+      "I agree! Their hit \"Last Nite\" is a classic."
+    ],
+    [
+      "ParticipantA",
+      "Yes, I love that song!"
+    ],
+    [
+      "ParticipantB",
+      "Glad to hear that! I'd also recommend checking out the White Stripes."
+    ],
+    [
+      "ParticipantA",
+      "Sure, I'll have to give them a listen."
+    ],
+    [
+      "ParticipantB",
+      "Definitely! Their hit \"Seven Nation Army\" is a fan favorite."
+    ],
+    [
+      "ParticipantA",
+      "Sounds good! Thanks for the recommendation."
+    ],
+    [
+      "ParticipantB",
+      "You're welcome! And what about you, have you discovered any new artists or bands recently that you really enjoy?"
+    ],
+    [
+      "ParticipantA",
+      "Yes, I've been listening to a lot of Phoebe Bridgers lately."
+    ],
+    [
+      "ParticipantB",
+      "I've heard of her! She's quite popular these days."
+    ]
+  ],
+  "n_turns": 32,
+  "multi_turn_emissions": 0
+}

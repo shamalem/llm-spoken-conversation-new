@@ -1,0 +1,156 @@
+{
+  "condition": "C4-P0",
+  "architecture": "C4",
+  "prompt_level": "P0",
+  "models": {
+    "ParticipantA": "lmsys/vicuna-13b-v1.5-16k",
+    "ParticipantB": "mistralai/Mistral-7B-Instruct-v0.2"
+  },
+  "conversation_no": 4339,
+  "topic": "Buying A Car",
+  "sb_prompt": "WHAT KIND OF CAR DO YOU THINK YOU MIGHT BUY NEXT?  WHAT SORTS OF THINGS WILL ENTER INTO YOUR DECISION?  SEE IF YOUR REQUIREMENTS AND THE OTHER CALLER'S REQUIREMENTS ARE SIMILAR.",
+  "persona_a": {
+    "label": "ParticipantA",
+    "gender": "man",
+    "age": 54,
+    "education": "some college"
+  },
+  "persona_b": {
+    "label": "ParticipantB",
+    "gender": "man",
+    "age": 41,
+    "education": "some college"
+  },
+  "turns": [
+    [
+      "ParticipantA",
+      "Hello!"
+    ],
+    [
+      "ParticipantB",
+      "Hello!"
+    ],
+    [
+      "ParticipantA",
+      "So, what kind of car are you thinking of buying next?"
+    ],
+    [
+      "ParticipantB",
+      "Well, I've been considering a mid-size SUV with good fuel efficiency and safety features."
+    ],
+    [
+      "ParticipantA",
+      "That sounds like a practical choice. What safety features are you looking for?"
+    ],
+    [
+      "ParticipantB",
+      "I'd like to have a car with blind-spot monitoring, lane departure warning, and a backup camera."
+    ],
+    [
+      "ParticipantA",
+      "Those are great safety features to have."
+    ],
+    [
+      "ParticipantB",
+      "Yes, they really add peace of mind when driving."
+    ],
+    [
+      "ParticipantA",
+      "I agree."
+    ],
+    [
+      "ParticipantB",
+      "What about you? What kind of car are you considering?"
+    ],
+    [
+      "ParticipantA",
+      "I've been thinking about getting a sedan with good handling and a comfortable ride."
+    ],
+    [
+      "ParticipantB",
+      "I see. And what safety features are you looking for in a sedan?"
+    ],
+    [
+      "ParticipantA",
+      "Similar to you, I want a car with blind-spot monitoring, lane departure warning, and a backup camera."
+    ],
+    [
+      "ParticipantB",
+      "That's a good coincidence!"
+    ],
+    [
+      "ParticipantA",
+      "Yes, it seems like we both prioritize safety features in our cars."
+    ],
+    [
+      "ParticipantB",
+      "Absolutely. And what about the budget for your next car purchase?"
+    ],
+    [
+      "ParticipantA",
+      "I'm hoping to stay within the $25,000 range, but I'm willing to pay more for a car that meets all my requirements."
+    ],
+    [
+      "ParticipantB",
+      "I understand. I'm currently looking at cars in the $30,000 range, but I'm open to options that fit my safety requirements as well."
+    ],
+    [
+      "ParticipantA",
+      "It seems like we both have similar budget ranges for our next car purchase."
+    ],
+    [
+      "ParticipantB",
+      "Yes, it looks like that's the case."
+    ],
+    [
+      "ParticipantA",
+      "Well, it's great to hear that we have similar requirements and budget ranges."
+    ],
+    [
+      "ParticipantB",
+      "Definitely. It can make the car buying process a lot less stressful when we have some common ground."
+    ],
+    [
+      "ParticipantA",
+      "Absolutely, it's always good to have some common ground when making such an important decision."
+    ],
+    [
+      "ParticipantB",
+      "Yes, it really is. Do you have any specific makes or models in mind that you're considering right now?"
+    ],
+    [
+      "ParticipantA",
+      "I'm considering the Honda Accord and the Toyota Camry, but I'm also open to other options that fit my requirements."
+    ],
+    [
+      "ParticipantB",
+      "Those are both great options. I've heard good things about the Subaru Outback as well."
+    ],
+    [
+      "ParticipantA",
+      "Yes, the Subaru Outback is a great option for those who want a car with good safety features and all-wheel drive."
+    ],
+    [
+      "ParticipantB",
+      "Exactly. I've heard that it scores well in safety tests and has plenty of standard safety features."
+    ],
+    [
+      "ParticipantA",
+      "That's great to hear."
+    ],
+    [
+      "ParticipantB",
+      "Yes, and the all-wheel drive system is also a nice bonus for those who live in areas with harsh weather conditions."
+    ],
+    [
+      "ParticipantA",
+      "I agree, all-wheel drive can be a valuable feature for those who live in areas with harsh weather."
+    ],
+    [
+      "ParticipantB",
+      "Definitely. It can give you added confidence and peace of mind on the road."
+    ]
+  ],
+  "n_turns": 32,
+  "multi_turn_emissions": 1
+}

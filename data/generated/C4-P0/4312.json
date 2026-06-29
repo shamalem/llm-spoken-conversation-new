@@ -1,0 +1,156 @@
+{
+  "condition": "C4-P0",
+  "architecture": "C4",
+  "prompt_level": "P0",
+  "models": {
+    "ParticipantA": "lmsys/vicuna-13b-v1.5-16k",
+    "ParticipantB": "mistralai/Mistral-7B-Instruct-v0.2"
+  },
+  "conversation_no": 4312,
+  "topic": "Music",
+  "sb_prompt": "PLEASE DISCUSS MUSIC.  CAN YOU FIND MUSICIANSOR TYPES OF MUSIC THAT BOTH YOU AND THE OTHER CALLER LIKE?",
+  "persona_a": {
+    "label": "ParticipantA",
+    "gender": "man",
+    "age": 23,
+    "education": "some college"
+  },
+  "persona_b": {
+    "label": "ParticipantB",
+    "gender": "man",
+    "age": 31,
+    "education": "some college"
+  },
+  "turns": [
+    [
+      "ParticipantA",
+      "Hello!"
+    ],
+    [
+      "ParticipantB",
+      "Hello!"
+    ],
+    [
+      "ParticipantA",
+      "I'm really into rock music right now."
+    ],
+    [
+      "ParticipantB",
+      "Oh, cool! What kind of rock music do you prefer?"
+    ],
+    [
+      "ParticipantA",
+      "I'm really into alternative and grunge."
+    ],
+    [
+      "ParticipantB",
+      "Nice! Some of my favorite alternative and grunge bands are Nirvana, Pearl Jam, and Soundgarden."
+    ],
+    [
+      "ParticipantA",
+      "Oh, I love those bands too!"
+    ],
+    [
+      "ParticipantB",
+      "Awesome! Have you checked out any newer bands in the same genre?"
+    ],
+    [
+      "ParticipantA",
+      "Yeah, I've been listening to some newer bands like Wolf Alice and Foals."
+    ],
+    [
+      "ParticipantB",
+      "Great choices! I've heard good things about both of them."
+    ],
+    [
+      "ParticipantA",
+      "Thanks! What about you? What kind of music do you like?"
+    ],
+    [
+      "ParticipantB",
+      "I'm a big fan of hip-hop and R&B."
+    ],
+    [
+      "ParticipantA",
+      "That's cool! Who are some of your favorite artists in those genres?"
+    ],
+    [
+      "ParticipantB",
+      "Some of my favorites are Kendrick Lamar, J."
+    ],
+    [
+      "ParticipantA",
+      "Cool! I've heard he's an amazing artist."
+    ],
+    [
+      "ParticipantB",
+      "Yes, definitely. And another artist I really like is The Weeknd."
+    ],
+    [
+      "ParticipantA",
+      "Oh, I know him! He's got some really great songs."
+    ],
+    [
+      "ParticipantB",
+      "Absolutely. Have you listened to his latest album, \"After Hours\"?"
+    ],
+    [
+      "ParticipantA",
+      "I haven't yet, but I've been meaning to."
+    ],
+    [
+      "ParticipantB",
+      "You're in for a treat then!"
+    ],
+    [
+      "ParticipantA",
+      "Great! I'll definitely have to check it out soon."
+    ],
+    [
+      "ParticipantB",
+      "I'm sure you'll enjoy it."
+    ],
+    [
+      "ParticipantA",
+      "Thanks for the recommendation!"
+    ],
+    [
+      "ParticipantB",
+      "No problem! And I'd be interested in hearing about any new alternative or grunge bands you come across."
+    ],
+    [
+      "ParticipantA",
+      "Sure thing! I'll let you know if I find any good ones."
+    ],
+    [
+      "ParticipantB",
+      "That would be great! And I'll definitely keep you in mind if I come across any hip-hop or R&B artists you might like."
+    ],
+    [
+      "ParticipantA",
+      "Thanks! I appreciate it."
+    ],
+    [
+      "ParticipantB",
+      "You're welcome! It's always fun to discover new music together."
+    ],
+    [
+      "ParticipantA",
+      "Definitely! It's great to have someone to share your music interests with."
+    ],
+    [
+      "ParticipantB",
+      "Absolutely. I agree. And there's always so much great music out there to explore."
+    ],
+    [
+      "ParticipantA",
+      "Yeah, the world of music is so vast and diverse."
+    ],
+    [
+      "ParticipantB",
+      "It really is. I feel like there's always something new to discover."
+    ]
+  ],
+  "n_turns": 32,
+  "multi_turn_emissions": 2
+}

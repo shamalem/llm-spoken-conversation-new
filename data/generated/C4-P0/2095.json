@@ -1,0 +1,156 @@
+{
+  "condition": "C4-P0",
+  "architecture": "C4",
+  "prompt_level": "P0",
+  "models": {
+    "ParticipantA": "lmsys/vicuna-13b-v1.5-16k",
+    "ParticipantB": "mistralai/Mistral-7B-Instruct-v0.2"
+  },
+  "conversation_no": 2095,
+  "topic": "Weather Climate",
+  "sb_prompt": "DISCUSS THE WEATHER.   WHAT HAS IT BEEN LIKE IN YOUR AREA?   HAS IT BEEN TYPICAL FOR THIS TIME OF YEAR?  COMPARE IT WITH THE OTHER CALLER'S WEATHER.",
+  "persona_a": {
+    "label": "ParticipantA",
+    "gender": "man",
+    "age": 30,
+    "education": "some college"
+  },
+  "persona_b": {
+    "label": "ParticipantB",
+    "gender": "man",
+    "age": 49,
+    "education": "a college degree"
+  },
+  "turns": [
+    [
+      "ParticipantA",
+      "Hello!"
+    ],
+    [
+      "ParticipantB",
+      "Hello!"
+    ],
+    [
+      "ParticipantA",
+      "So, how has the weather been in your area lately?"
+    ],
+    [
+      "ParticipantB",
+      "Well, it's been a bit unpredictable here."
+    ],
+    [
+      "ParticipantA",
+      "Unpredictable? That's interesting."
+    ],
+    [
+      "ParticipantB",
+      "Yes, we've had some days with high temperatures and bright sunshine, but then other days with unexpected rain showers."
+    ],
+    [
+      "ParticipantA",
+      "That does sound unpredictable."
+    ],
+    [
+      "ParticipantB",
+      "Indeed. I've been keeping an eye on the weather reports, but they've been hard to rely on lately."
+    ],
+    [
+      "ParticipantA",
+      "I can understand that."
+    ],
+    [
+      "ParticipantB",
+      "Yes, it's quite unusual for this time of year."
+    ],
+    [
+      "ParticipantA",
+      "Unusual, huh? I've been noticing the same thing in my area too."
+    ],
+    [
+      "ParticipantB",
+      "Really? What part of the country are you in?"
+    ],
+    [
+      "ParticipantA",
+      "I'm in the Midwest."
+    ],
+    [
+      "ParticipantB",
+      "I see. I'm in the Southwest myself."
+    ],
+    [
+      "ParticipantA",
+      "Ah, yes. I've heard that the Southwest can have a different climate compared to other parts of the country."
+    ],
+    [
+      "ParticipantB",
+      "That's true. Our summers can be quite hot and dry, but this year we've had some unexpected rainstorms that have kept things interesting."
+    ],
+    [
+      "ParticipantA",
+      "Sounds like you're having a different weather experience than I am."
+    ],
+    [
+      "ParticipantB",
+      "Yes, it's quite a change from what I'm used to."
+    ],
+    [
+      "ParticipantA",
+      "Change can be interesting, though."
+    ],
+    [
+      "ParticipantB",
+      "Absolutely! I've been enjoying the unexpected rainstorms, even if they do make it hard to plan outdoor activities."
+    ],
+    [
+      "ParticipantA",
+      "That's a positive way to look at it!"
+    ],
+    [
+      "ParticipantB",
+      "Yes, I try to focus on the bright side."
+    ],
+    [
+      "ParticipantA",
+      "Definitely a good mindset to have."
+    ],
+    [
+      "ParticipantB",
+      "Agreed! So, what's the weather like where you are in the Midwest?"
+    ],
+    [
+      "ParticipantA",
+      "It's been a bit more stable than what you've been experiencing."
+    ],
+    [
+      "ParticipantB",
+      "I see. That's good to know."
+    ],
+    [
+      "ParticipantA",
+      "Yes, we've had some nice sunny days, but also a few cooler days with rain."
+    ],
+    [
+      "ParticipantB",
+      "I see. It sounds like we've both been experiencing some unexpected weather this season."
+    ],
+    [
+      "ParticipantA",
+      "Definitely! But it's good to know that we can both find the bright side in these changes."
+    ],
+    [
+      "ParticipantB",
+      "Absolutely! I appreciate your positive outlook."
+    ],
+    [
+      "ParticipantA",
+      "Thank you! It's always good to stay optimistic, especially when it comes to the weather."
+    ],
+    [
+      "ParticipantB",
+      "Agreed! Well, I enjoy our conversation about the weather."
+    ]
+  ],
+  "n_turns": 32,
+  "multi_turn_emissions": 1
+}

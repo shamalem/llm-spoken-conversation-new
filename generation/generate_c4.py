@@ -52,6 +52,8 @@ def main() -> None:
     ap.add_argument("--top-p", type=float, default=0.95)
     ap.add_argument("--model-a", default=VICUNA)
     ap.add_argument("--model-b", default=MISTRAL)
+    ap.add_argument("--stop-at-sentence", action="store_true")
+    ap.add_argument("--min-new-tokens", type=int, default=8)
     args = ap.parse_args()
 
     cond = f"C4-{args.prompt}"
@@ -96,6 +98,8 @@ def main() -> None:
                 max_new_tokens=args.max_new_tokens,
                 temperature=args.temperature,
                 top_p=args.top_p,
+                stop_at_sentence=args.stop_at_sentence,
+                min_new_tokens=args.min_new_tokens,
             )
             turn, ran_past = clean_single_turn(raw, LABELS)
             multi += int(ran_past)

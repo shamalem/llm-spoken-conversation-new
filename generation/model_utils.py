@@ -12,7 +12,10 @@ from __future__ import annotations
 import re
 
 import torch
-from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
+from transformers import (
+    AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig, StoppingCriteria,
+    StoppingCriteriaList,
+)
 
 VICUNA = "lmsys/vicuna-13b-v1.5-16k"
 MISTRAL = "mistralai/Mistral-7B-Instruct-v0.2"
@@ -39,9 +42,27 @@ def load_model(name: str):
     return model, tok
 
 
+class SentenceEndStoppingCriteria(StoppingCriteria):
+    """Stop once a short generated turn reaches a sentence boundary."""
+
+    def __init__(self, tok, prompt_len: int, min_new_tokens: int = 8):
+        self.tok = tok
+        self.prompt_len = prompt_len
+        self.min_new_tokens = min_new_tokens
+
+    def __call__(self, input_ids, scores, **kwargs) -> bool:
+        new_ids = input_ids[0][self.prompt_len:]
+        if new_ids.shape[-1] < self.min_new_tokens:
+            return False
+        text = self.tok.decode(new_ids, skip_special_tokens=True).strip()
+        if not text:
+            return False
+        return text.endswith((".", "?", "!"))
+
+
 @torch.inference_mode()
 def chat(model, tok, messages, max_new_tokens=512, temperature=0.8, top_p=0.95,
-         do_sample=True) -> str:
+         do_sample=True, stop_at_sentence=False, min_new_tokens=8) -> str:
     """messages: list of {role, content}. Returns the assistant's text completion."""
     try:
         encoded = tok.apply_chat_template(
@@ -70,6 +91,10 @@ def chat(model, tok, messages, max_new_tokens=512, temperature=0.8, top_p=0.95,
             gen_kwargs["temperature"] = temperature
         if top_p is not None:
             gen_kwargs["top_p"] = top_p
+    if stop_at_sentence:
+        gen_kwargs["stopping_criteria"] = StoppingCriteriaList([
+            SentenceEndStoppingCriteria(tok, input_len, min_new_tokens=min_new_tokens)
+        ])
 
     out = model.generate(**model_inputs, **gen_kwargs)
     new_tokens = out[0][input_len:]
