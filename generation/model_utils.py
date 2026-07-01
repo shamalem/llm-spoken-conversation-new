@@ -1,4 +1,4 @@
-"""
+﻿"""
 Model loading + chat-generation helpers for the VM (Vicuna / Mistral).
 
 4-bit quantized load to fit the V100 (16 GB). Uses each model's chat template so prompt
@@ -62,14 +62,15 @@ class SentenceEndStoppingCriteria(StoppingCriteria):
 
 @torch.inference_mode()
 def chat(model, tok, messages, max_new_tokens=512, temperature=0.8, top_p=0.95,
-         do_sample=True, stop_at_sentence=False, min_new_tokens=8,`n         repetition_penalty=1.2, no_repeat_ngram_size=3) -> str:
+         do_sample=True, stop_at_sentence=False, min_new_tokens=8,
+         repetition_penalty=1.2, no_repeat_ngram_size=3) -> str:
     """messages: list of {role, content}. Returns the assistant's text completion."""
     try:
         encoded = tok.apply_chat_template(
             messages, add_generation_prompt=True, return_tensors="pt", return_dict=True
         )
     except Exception:
-        # Vicuna v1.5 may not ship a chat template — use its USER/ASSISTANT format.
+        # Vicuna v1.5 may not ship a chat template -- use its USER/ASSISTANT format.
         encoded = tok(_vicuna_format(messages), return_tensors="pt")
 
     if isinstance(encoded, torch.Tensor):
@@ -84,7 +85,9 @@ def chat(model, tok, messages, max_new_tokens=512, temperature=0.8, top_p=0.95,
     gen_kwargs = {
         "max_new_tokens": max_new_tokens,
         "do_sample": do_sample,
-        "pad_token_id": tok.eos_token_id,`n        "repetition_penalty": repetition_penalty,`n        "no_repeat_ngram_size": no_repeat_ngram_size,
+        "pad_token_id": tok.eos_token_id,
+        "repetition_penalty": repetition_penalty,
+        "no_repeat_ngram_size": no_repeat_ngram_size,
     }
     if do_sample:
         if temperature is not None:
@@ -108,7 +111,7 @@ def clean_single_turn(text: str, labels=("ParticipantA", "ParticipantB")) -> tup
     catches chat-role residue the agent path leaks when Vicuna rambles into a whole fake
     dialogue (line-initial USER:, ASSISTANT:, and degraded 4-bit variants ASSISTATIVE: /
     ASSISTY:, plus HUMAN:/AI:/SYSTEM:/BOT:). A True flag here means the model did NOT keep
-    to one turn — which we count as a multi-turn emission.
+    to one turn -- which we count as a multi-turn emission.
     """
     label_alt = "|".join(re.escape(label) for label in labels)
     marker_re = re.compile(
@@ -137,4 +140,3 @@ def _vicuna_format(messages) -> str:
             parts.append(f"ASSISTANT: {m['content']}")
     parts.append("ASSISTANT:")
     return "\n".join(parts)
-
