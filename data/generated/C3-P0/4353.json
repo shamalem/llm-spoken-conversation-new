@@ -32,125 +32,73 @@
     ],
     [
       "ParticipantA",
-      "So, how's it going?"
+      "So, I was just wondering if you keep track of your family's finances on a monthly basis?"
     ],
     [
       "ParticipantB",
-      "It's going well, thanks for asking! How about you?"
+      "Yes, we do keep a month"
     ],
     [
       "ParticipantA",
-      "I'm doing great, thanks for asking! So, let's talk about budgeting. Do you and your family keep a monthly budget?"
+      "ly budget. It helps us stay organized and make sure we're not overspending. How about"
     ],
     [
       "ParticipantB",
-      "Yes, we do! It helps us stay on track with our finances and ensure that we're saving and spending wisely."
+      "you? Do"
     ],
     [
       "ParticipantA",
-      "That's great to hear! What's your general approach to creating and sticking to a budget?"
+      "you also maintain a"
     ],
     [
       "ParticipantB",
-      "We start by listing all of our income sources and expenses, then categorize them into essential and non-essential spending. We also set savings goals and allocate a certain amount for each category based on our priorities.\n\nThen, we review our progress at the end of each month and adjust our budget as needed for the next month. It's all about being mindful of our spending and making sure we're staying within our means."
+      "monthly budget"
     ],
     [
       "ParticipantA",
-      "That sounds like a really effective approach. Have you found any specific tools or resources helpful in creating and sticking to your budget?"
+      "? Yeah, definitely. We sit down at the beginning"
     ],
     [
       "ParticipantB",
-      "Yes, we use a budgeting app that helps us track our spending and set reminders for bills and other important financial obligations. It also allows us to categorize our expenses and see where we're overspending or under-saving.\n\nWe've also found that regularly reviewing our progress and making adjustments as needed has been key to sticking to our budget. It's important to be flexible and adaptable, and not be too rigid with our spending habits."
+      "of each"
     ],
     [
       "ParticipantA",
-      "I completely agree. Being flexible and adaptable is crucial to maintaining a successful budget. Have you ever encountered any challenges or obstacles while sticking to your budget?"
+      "month to go over our expenses from"
     ],
     [
       "ParticipantB",
-      "Yes, there have been times when unexpected expenses come up, such as car repairs or medical bills, and that can throw off our budget. In those situations, we try to adjust other areas of our spending to make up for the unexpected expense and stay on track with our savings goals.\n\nAnother challenge can be sticking to the budget during holidays or other times when there's a lot of pressure to spend money. We try to be mindful of our priorities and not let social pressures or cultural expectations dictate our spending habits."
+      "the previous"
     ],
     [
       "ParticipantA",
-      "That's a good point. Staying mindful of our priorities and not letting social pressures dictate our spending habits is important. Have you found any particular strategies helpful in staying motivated to stick to your budget?"
+      "months, categorize them into different spending categories like housing, food, entertainment, etc., and then allocate a certain amount for each category based"
     ],
     [
       "ParticipantB",
-      "Yes, we find that setting specific, achievable savings goals and tracking our progress towards them can be really motivating. Seeing the progress we've made towards our goals can help us stay motivated and committed to sticking to our budget.\n\nWe also try to make our budgeting process as simple and straightforward as possible. By avoiding complexity and focusing on our priorities, we're able to stick to our budget more easily and make progress towards our financial goals."
+      "on what we can afford and our financial goals"
     ],
     [
       "ParticipantA",
-      "That's really helpful to hear. Simplicity and focus on priorities are definitely key to sticking to a budget. Do you have any tips for someone who's struggling to create and stick to a budget?"
+      ". That way, we know how much money we have left"
     ],
     [
       "ParticipantB",
-      "Yes, I would suggest starting with a simple budget that focuses on the essentials, such as housing, transportation, and food. Once you've mastered that, you can gradually add more categories and complexity to your budget.\n\nIt's also important to be realistic about your income and expenses, and not set yourself up for failure by creating a budget that's too restrictive or unrealistic.\n\nFinally, I would suggest finding a buddy or accountability partner to help keep you on track with your budget. Having someone to check in with and share your progress with can help keep you motivated and accountable."
+      "to spend\nUSER"
     ],
     [
       "ParticipantA",
-      "Those are all great tips! Finding a buddy or accountability partner can definitely help keep you motivated and on track with your budget. Thank you for sharing your insights and experiences with budgeting!"
+      "each week or pay period."
     ],
     [
       "ParticipantB",
-      "You're welcome! It was great to chat with you about budgeting. Remember, the key to success with a budget is to be mindful of your priorities, stay flexible and adaptable, and find tools and strategies that work for you. Good luck with your budgeting journey!"
+      "And we try"
     ],
     [
       "ParticipantA",
-      "Thank you, and I will definitely keep those tips in mind. Have a great day!"
-    ],
-    [
-      "ParticipantB",
-      "You too! Take care!"
-    ],
-    [
-      "ParticipantA",
-      "Thank you, bye!"
-    ],
-    [
-      "ParticipantB",
-      "Goodbye!"
-    ],
-    [
-      "ParticipantA",
-      "Bye!"
-    ],
-    [
-      "ParticipantB",
-      "I'm glad to hear that you found the conversation helpful. If you have any other questions or topics you'd like to discuss in the future, don't hesitate to reach out. Have a great day!"
-    ],
-    [
-      "ParticipantA",
-      "Thank you, I appreciate that. I'm always here to help with any questions or topics you may have. Take care and have a great day!"
-    ],
-    [
-      "ParticipantB",
-      "Thank you for your kind offer. I'm sure we'll have many more interesting conversations in the future. Have a great day!"
-    ],
-    [
-      "ParticipantA",
-      "Thank you, I look forward to it! Take care and have a great day!"
-    ],
-    [
-      "ParticipantB",
-      "Goodbye for now!"
-    ],
-    [
-      "ParticipantA",
-      "Goodbye!"
-    ],
-    [
-      "ParticipantB",
-      "I'm glad we had a chance to chat. If you have any other questions or topics you'd like to discuss in the future, don't hesitate to reach out. Have a great day!\n\nI'm always here to help with any questions or topics you may have. Take care and have a great day!"
-    ],
-    [
-      "ParticipantA",
-      "Thank you, I appreciate that. I'm always here to help with any questions or topics you may have. Take care and have a great day!"
-    ],
-    [
-      "ParticipantB",
-      "Goodbye for now!\n\nI hope you have a great day and that we'll have many more interesting conversations in the future. Take care!"
+      "to stick to that budget throughout"
     ]
   ],
-  "n_turns": 32,
-  "multi_turn_emissions": 9
+  "n_turns": 19,
+  "multi_turn_emissions": 0
 }

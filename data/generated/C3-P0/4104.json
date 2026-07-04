@@ -32,125 +32,125 @@
     ],
     [
       "ParticipantA",
-      "So, what did you want to talk about?"
+      "So how's everything going?"
     ],
     [
       "ParticipantB",
-      "I wanted to talk about budgeting. Do you have a monthly budget for your family?"
+      "Everything's going well, thanks for asking."
     ],
     [
       "ParticipantA",
-      "Yeah, we do. It's pretty simple, really. We just sit down at the beginning of each month and figure out how much money we have coming in and going out.\n\nASS"
+      "That's great to hear! Do you keep track of your finances by following a monthly budget?"
     ],
     [
       "ParticipantB",
-      "That sounds like a great approach. Do you have any specific tools or methods you use to track your expenses?"
+      "Yes, I definitely think having a month"
     ],
     [
       "ParticipantA",
-      "We use a spreadsheet to keep track of everything. It's pretty easy to use and we can update it as we go along during the month.\n\nASS"
+      "ly budget helps me stay on top of my expenses and ensure that I don't overspend. How about you?"
     ],
     [
       "ParticipantB",
-      "That's a great idea! Do you find that sticking to a budget has helped you manage your finances better?"
+      "Absolutely, keeping a month"
     ],
     [
       "ParticipantA",
-      "Definitely. We've been able to save more and avoid debt by sticking to our budget. It's really helped us stay on track and make sure we're using our money wisely.\n\nASS"
+      "l"
     ],
     [
       "ParticipantB",
-      "That's great to hear! Have you found any particular areas where you tend to overspend, and have you found ways to cut back on those expenses?"
+      "y budg"
     ],
     [
       "ParticipantA",
-      "We've found that dining out and entertainment are the areas where we tend to overspend. To cut back on those expenses, we've started cooking more at home and finding free or cheap ways to have fun, like going for a hike or having a movie night at home.\n\nASS"
+      "et"
     ],
     [
       "ParticipantB",
-      "Those are great ideas! Have you ever considered using a budgeting app or software to help you keep track of your expenses?"
+      "s h"
     ],
     [
       "ParticipantA",
-      "We have considered using a budgeting app, but we've found that a spreadsheet works just as well for us and it's easier for us to understand and use.\n\nASS"
+      "elp"
     ],
     [
       "ParticipantB",
-      "That makes sense. Well, it sounds like you have a good handle on your finances. Thank you for sharing your budgeting procedures with me!"
+      "me p"
     ],
     [
       "ParticipantA",
-      "You're welcome! It was great to chat with you about budgeting."
+      "revent f"
     ],
     [
       "ParticipantB",
-      "Thank you for the conversation! Have a great day!"
+      "inancial u"
     ],
     [
       "ParticipantA",
-      "You too!"
+      "ncerta\nUSER"
     ],
     [
       "ParticipantB",
-      "Goodbye!"
+      "ntrol\nASS"
     ],
     [
       "ParticipantA",
-      "Goodbye!"
+      "ent"
     ],
     [
       "ParticipantB",
-      "Thank you for the conversation! Have a great day!"
+      "e ha"
     ],
     [
       "ParticipantA",
-      "You're welcome! It was great to chat with you about budgeting.\n\nASS"
+      "ve yo"
     ],
     [
       "ParticipantB",
-      "That's great to hear! Well, it sounds like you have a good system in place for managing your family's finances. Thank you for sharing your procedures with me!"
+      "ur fam"
     ],
     [
       "ParticipantA",
-      "You're welcome! It was great to chat with you about budgeting."
+      "ily kee"
     ],
     [
       "ParticipantB",
-      "Thank you for the conversation! Have a great day!"
+      "ps a m"
     ],
     [
       "ParticipantA",
-      "You too!"
+      "onthl"
     ],
     [
       "ParticipantB",
-      "Goodbye!"
+      "hy b\nUSER"
     ],
     [
       "ParticipantA",
-      "Goodbye!"
+      "udget"
     ],
     [
       "ParticipantB",
-      "Thank you for the conversation! Have a great day!"
+      "i"
     ],
     [
       "ParticipantA",
-      "You're welcome! It was great to chat with you about budgeting.\n\nASS"
+      "t r"
     ],
     [
       "ParticipantB",
-      "That's great to hear! Well, it sounds like you have a good system in place for managing your family's finances. Thank you for sharing your procedures with me!"
+      "each"
     ],
     [
       "ParticipantA",
-      "You're welcome! It was great to chat with you about budgeting."
+      "ou out"
     ],
     [
       "ParticipantB",
-      "Thank you for the conversation! Have a great day!"
+      "wher"
     ]
   ],
   "n_turns": 32,
-  "multi_turn_emissions": 14
+  "multi_turn_emissions": 0
 }

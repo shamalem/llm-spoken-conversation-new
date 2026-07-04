@@ -32,125 +32,125 @@
     ],
     [
       "ParticipantA",
-      "So, what do you think about sending elderly family members to nursing homes?"
+      "So what's on your mind today?"
     ],
     [
       "ParticipantB",
-      "I think it's a difficult decision to make, and it really depends on the individual situation."
+      "Well, I've been thinking a lot lately about how we take care of our elderly family members and whether or not sending them to nursing homes is the best option for everyone involved.\nASSIGNMENT: Continue the conversation by asking follow-up questions related to the topic of caring for elderly relatives, including information that should be considered when making decisions about nurs"
     ],
     [
       "ParticipantA",
-      "Yeah, for sure. Do you think it's important to visit the nursing home and check it out before making the decision?"
+      "Yeah, that's definitely something worth considering. What kind of things should we think about when making this decision?"
     ],
     [
       "ParticipantB",
-      "Absolutely, I think it's crucial to visit the nursing home and see the environment for yourself. That way, you can get a good sense of whether it's a good fit for your loved one."
+      "There are several factors to consider when deciding if placing an elderly relative in a nurs"
     ],
     [
       "ParticipantA",
-      "That makes sense. Are there any specific things you would look for when visiting a nursing home?"
+      "Yes, there are many different things to consider. For example, we need to make sure they receive proper medical care"
     ],
     [
       "ParticipantB",
-      "Yes, there are a few things I would look for. One is the level of care provided by the staff. You want to make sure that your loved one will receive the attention and care they need. Another thing is the overall cleanliness and safety of the facility. And finally, it's important to look for signs of resident happiness and engagement, like smiling faces and activities going on."
+      "Absolutely. It's important to research and choose a reputable facility that has experienced staff who can provide adequate medical attention and assistance with daily activities such as bathing, grooming"
     ],
     [
       "ParticipantA",
-      "Those are all good points. What if the nursing home doesn't have the level of care or the cleanliness that you're looking for?"
+      "And what else would we want to look into before making a decision?"
     ],
     [
       "ParticipantB",
-      "If you feel like the nursing home isn't meeting your standards, it's important to keep looking until you find one that does. You can also consider other options, like in-home care or assisted living."
+      "We should also evaluate the overall quality of life at the nurs"
     ],
     [
       "ParticipantA",
-      "That's a good idea. Is there anything else you would recommend to someone who is considering sending an elderly family member to a nursing home?"
+      "That's really important. How might we go about assessing the quality of"
     ],
     [
       "ParticipantB",
-      "I would recommend doing your research and asking a lot of questions. Talk to other families who have experience with the nursing home, and don't be afraid to ask for clarification on anything that's unclear. And finally, trust your gut. If something doesn't feel right, it's probably best to keep looking."
+      "One way to assess the"
     ],
     [
       "ParticipantA",
-      "Those are great suggestions. Thank you for sharing your thoughts with me!"
+      "Quality of life is to visit the"
     ],
     [
       "ParticipantB",
-      "You're welcome! It was a pleasure discussing this with you."
+      "Yes"
     ],
     [
       "ParticipantA",
-      "Thank you, it was nice talking to you too!"
+      "Another factor to consider could be"
     ],
     [
       "ParticipantB",
-      "Goodbye!"
+      "Cost"
     ],
     [
       "ParticipantA",
-      "Goodbye!"
+      "Definitely. Are there any other things we should keep in mind"
     ],
     [
       "ParticipantB",
-      "I'm done."
+      "Legal agreements"
     ],
     [
       "ParticipantA",
-      "Okay, have a good day!"
+      "between the facilities and families\nASSIG"
     ],
     [
       "ParticipantB",
-      "Thank you, you too!"
+      "Agreement"
     ],
     [
       "ParticipantA",
-      "You're welcome!"
+      "yment.\nAlso, the level of social interaction and stimulation offered at the facili"
     ],
     [
       "ParticipantB",
-      "I'm done."
+      "ty is an important consideration."
     ],
     [
       "ParticipantA",
-      "Okay, have a good day!"
+      "Very true. It"
     ],
     [
       "ParticipantB",
-      "Thank you, you too!\n\nDONE."
+      "Is"
     ],
     [
       "ParticipantA",
-      "Thank you for using this service. Have a great day!"
+      "important to ensure that the eld"
     ],
     [
       "ParticipantB",
-      "You're welcome! Thank you for using this service. Have a great day!"
+      "er\nis kept engaged and active to maintain their physical, cognitive"
     ],
     [
       "ParticipantA",
-      "You're welcome!"
+      "and emotional well-being. Have you had personal experience with"
     ],
     [
       "ParticipantB",
-      "I'm done."
+      "No"
     ],
     [
       "ParticipantA",
-      "Okay, have a good day!"
+      "placing a loved one in a"
     ],
     [
       "ParticipantB",
-      "Thank you, you too!\nDONE."
+      "nurs"
     ],
     [
       "ParticipantA",
-      "Thank you for using this service. Have a great day!"
+      "ing home?"
     ],
     [
       "ParticipantB",
-      "You're welcome! Thank you for using this service. Have a great day!"
+      "ng"
     ]
   ],
   "n_turns": 32,
-  "multi_turn_emissions": 11
+  "multi_turn_emissions": 0
 }

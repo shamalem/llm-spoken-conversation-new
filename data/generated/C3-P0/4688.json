@@ -32,125 +32,89 @@
     ],
     [
       "ParticipantA",
-      "So, do you keep a monthly budget?"
+      "So what's this all about?"
     ],
     [
       "ParticipantB",
-      "Yes, I do. I find it helpful to track my expenses and income so that I can better manage my finances."
+      "Well, I was wondering if you could help me out with something."
     ],
     [
       "ParticipantA",
-      "That's great to hear! Can you give me a general description of your budgeting procedures?"
+      "Sure thing! What can I help you with?"
     ],
     [
       "ParticipantB",
-      "Sure! I start by listing all of my sources of income, such as my salary and any additional income I may have. Then, I make a list of all my monthly expenses, including bills, groceries, and any other regular expenses. I also set aside money for savings and any other financial goals I have. Finally, I make adjustments as needed to ensure that my income exceeds my expenses."
+      "It's just that my family and I are trying to be more responsible with our finances, so we decided to start keeping a monthly budget. But I'm having trouble figuring out how to go about it. Do you have any experience with that kind of thing?"
     ],
     [
       "ParticipantA",
-      "That sounds like a solid process. Do you use any tools or apps to help you with your budgeting?"
+      "Oh yeah, definitely. We always try to keep track of our expenses so we don't overspend or anything like that.\n\nWhat specifically are you struggling with when it comes to creating a budget for yourself and your family?"
     ],
     [
       "ParticipantB",
-      "Yes, I do use some budgeting tools. I use a spreadsheet to track my expenses and income, and I also use a budgeting app to help me stay on track. The app allows me to set up reminders for upcoming bills, track my spending in real-time, and set savings goals."
+      "Honestly, it's mainly just figuring"
     ],
     [
       "ParticipantA",
-      "That's great! Using tools and apps can make budgeting a lot easier and more convenient. Do you have any tips for someone who is new to budgeting?"
+      "Figuring out where to even begin. Yeah, that can"
     ],
     [
       "ParticipantB",
-      "Yes, definitely! My biggest tip would be to start small and be consistent. Start by tracking only your essential expenses and income, and gradually add more categories as you become more comfortable with the process. It's also important to be realistic about your income and expenses, and to make adjustments as needed. Finally, it's important to stick to your budget and to review it regularly to ensure that you're on track."
+      "get overwhelming at first."
     ],
     [
       "ParticipantA",
-      "Those are great tips! Consistency and realism are key to successful budgeting. Thank you for sharing your insights with me!"
+      "For sure. One thing that might help is just making"
     ],
     [
       "ParticipantB",
-      "You're welcome! I'm glad I could help. If you have any other questions, feel free to ask!"
+      "a list"
     ],
     [
       "ParticipantA",
-      "I will definitely keep that in mind. Thank you for your time and for sharing your budgeting experience with me!"
+      "of everything you spend money on each month, from bills to groceries to entertainment. That way"
     ],
     [
       "ParticipantB",
-      "You're welcome! It was my pleasure. Have a great day!"
+      "you can see exactly where"
     ],
     [
       "ParticipantA",
-      "You too!"
+      "your hard-earned cash is going and make some decisions about where you want to cut back"
     ],
     [
       "ParticipantB",
-      "Goodbye!"
+      "or save more."
     ],
     [
       "ParticipantA",
-      "Goodbye!"
+      "And once you have that list, you can categorize things into different areas such as fixed expenses like rent/mortgage and utilities, variable expenses"
     ],
     [
       "ParticipantB",
-      "Bye!"
+      "like"
     ],
     [
       "ParticipantA",
-      "Bye!"
+      "food and clothing, and then also savings or fun money. This can give you a better idea"
     ],
     [
       "ParticipantB",
-      "Goodbye!"
+      "of where your"
     ],
     [
       "ParticipantA",
-      "Goodbye!"
+      "priorities lie and allow you to allocate funds accordingly."
     ],
     [
       "ParticipantB",
-      "Goodbye!"
+      "Thank you for the advice"
     ],
     [
       "ParticipantA",
-      "Goodbye!"
-    ],
-    [
-      "ParticipantB",
-      "Goodbye!"
-    ],
-    [
-      "ParticipantA",
-      "Goodbye!"
-    ],
-    [
-      "ParticipantB",
-      "Goodbye!"
-    ],
-    [
-      "ParticipantA",
-      "Goodbye!"
-    ],
-    [
-      "ParticipantB",
-      "Goodbye!"
-    ],
-    [
-      "ParticipantA",
-      "Goodbye!"
-    ],
-    [
-      "ParticipantB",
-      "Goodbye!"
-    ],
-    [
-      "ParticipantA",
-      "Goodbye!"
-    ],
-    [
-      "ParticipantB",
-      "Goodbye!"
+      "You're welcome! Just remember, it takes time and effort to create and stick to a budget, but the payoff in terms"
     ]
   ],
-  "n_turns": 32,
-  "multi_turn_emissions": 10
+  "n_turns": 23,
+  "multi_turn_emissions": 0
 }

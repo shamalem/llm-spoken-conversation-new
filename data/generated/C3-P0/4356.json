@@ -32,125 +32,125 @@
     ],
     [
       "ParticipantA",
-      "So, what kind of car are you thinking of buying next?"
+      "So what kind of car are you thinking of buying next?"
     ],
     [
       "ParticipantB",
-      "I'm considering getting a compact crossover SUV."
+      "I was considering getting an SUV or a crossover."
     ],
     [
       "ParticipantA",
-      "That sounds like a practical choice. What are your top priorities when it comes to choosing a car?"
+      "That sounds great! What specific features and qualities are you looking for in"
     ],
     [
       "ParticipantB",
-      "My top priorities are fuel efficiency, safety features, and a reasonable price."
+      "Well, fuel efficiency, safety ratings, and good overall performance would be important factors"
     ],
     [
       "ParticipantA",
-      "Those are important factors to consider. What about you? What are your top priorities when it comes to choosing a car?"
+      "Definitely agree on those points. And how about you? What type of vehicle are you leaning towards?"
     ],
     [
       "ParticipantB",
-      "For me, it's mostly about the car's performance, safety ratings, and technology features."
+      "As for me, I am planning to buy either a sedan or a compact hatchback, something that has good gas mileage and is easy to park in the city."
     ],
     [
       "ParticipantA",
-      "It seems like we both value safety and technology. What are your thoughts on hybrid or electric cars?"
+      "Both sound like excellent choices! How much weight does affordability play into your decision making process?"
     ],
     [
       "ParticipantB",
-      "I think they're a great option for those looking to reduce their carbon footprint, but they might not be the best fit for everyone due to the higher cost and limited range."
+      "Affordability is definitely a factor as I want to get a reliable vehicle without breaking the bank. However, I'm willing to invest more if it means getting a better quality car that will last longer."
     ],
     [
       "ParticipantA",
-      "I agree. I'm also considering a hybrid or electric car for my next purchase, especially since many cities are implementing stricter emission regulations. Have you considered test driving any cars recently?"
+      "Understood. It seems we both value reliability and longevity over low price. Any particular brand or model in mind yet?"
     ],
     [
       "ParticipantB",
-      "I have test driven a few cars recently, but I haven't found one that checks all my boxes yet. Have you test driven any cars lately?"
+      "Not quite sure yet, still doing research on different brands and models to see which ones stand out in terms of safety, reliability, and customer satisfaction."
     ],
     [
       "ParticipantA",
-      "Yes, I've test driven a few cars recently as well, and I've been impressed with the technology and safety features in some of the newer models. Have you found any cars that you think might meet your requirements?"
+      "Excellent approach! Have you considered any electric or hybrid vehicles? They tend to offer better fuel economy and lower emissions."
     ],
     [
       "ParticipantB",
-      "I've been looking at a few compact crossover SUVs, and one model in particular seems to have a good balance of the features I'm looking for, but I'm not completely sold yet. Have you narrowed down your options?"
+      "Yes, I have looked into electric and hybrid options as well. While they can be expensive upfront, the long-term cost savings could be worth it, especially since my daily commute isn't very long."
     ],
     [
       "ParticipantA",
-      "I've been considering a few models as well, but I haven't quite narrowed it down to one yet. It's tough to decide when there are so many great options out there. Have you thought about any specific brands or models?"
+      "Absolutely. Electric cars also often come with tax credits and other benefits depending on where you live. Safety features such as advanced driver assistance systems should also be taken into account when making a choice."
     ],
     [
       "ParticipantB",
-      "I'm mainly focusing on Honda and Toyota models, but I'm also keeping an open mind to other brands that might suit my needs better. What about you? Are you considering any specific brands or models?"
+      "Agreed. Saf"
     ],
     [
       "ParticipantA",
-      "I'm also looking at Honda and Toyota, as well as some other brands that have a reputation for safety and technology features. It's tough to decide, but I'm hoping to find the perfect car that meets all my requirements. What about you? Are you planning to buy your next car soon?"
+      "eness and technology are crucial in today"
     ],
     [
       "ParticipantB",
-      "I'm hoping to buy my next car within the next few months, but I'm still doing research and test driving different models to make the best decision for my needs. How about you? Are you planning to buy your next car soon?"
+      "'s driving environment."
     ],
     [
       "ParticipantA",
-      "Yes, I'm also planning to buy my next car within the next few months. It's important to take the time to research and test drive different models to make the best decision for our needs. Thanks for chatting with me about this!"
+      "Lastly"
     ],
     [
       "ParticipantB",
-      "You're welcome! It was nice talking with you, and I hope we both find the perfect car that meets our requirements."
+      ","
     ],
     [
       "ParticipantA",
-      "Same here, and good luck with your search! I'm sure we'll both find the right car that fits our needs."
+      "don't forget to test drive"
     ],
     [
       "ParticipantB",
-      "Thank you! I appreciate the sentiment, and I'm sure we will both find the right car for our needs. Take care!"
+      "a few"
     ],
     [
       "ParticipantA",
-      "You too, have a great day!"
+      "options before finalizing"
     ],
     [
       "ParticipantB",
-      "Thank you, you too!"
+      "your purchase."
     ],
     [
       "ParticipantA",
-      "Goodbye!"
+      "You got it. Test drives give"
     ],
     [
       "ParticipantB",
-      "Goodbye!"
+      "you an opportunity to experience"
     ],
     [
       "ParticipantA",
-      "The conversation has ended."
+      "the ride comfort"
     ],
     [
       "ParticipantB",
-      "Thank you for the conversation! If you have any more questions or need assistance, feel free to ask."
+      "and handling firsthand."
     ],
     [
       "ParticipantA",
-      "You're welcome! If you have any more questions or need assistance in the future, don't hesitate to reach out. Have a great day!"
+      "Thanks for chatting with me! Good luck with your search, hope you find the perfect car soon."
     ],
     [
       "ParticipantB",
-      "Thank you, and have a great day too! I'll be here if you need any help."
+      "Thank you, happy hunting to you as well!"
     ],
     [
       "ParticipantA",
-      "I appreciate that, and I'll keep that in mind. Thank you for your help, and have a great day!\n\n--- END OF CONVERSATION ---"
+      "Appreciate"
     ],
     [
       "ParticipantB",
-      "Thank you for the conversation! If you have any more questions or need assistance in the future, don't hesitate to reach out. Have a great day!"
+      "it. Bye"
     ]
   ],
   "n_turns": 32,
-  "multi_turn_emissions": 13
+  "multi_turn_emissions": 1
 }

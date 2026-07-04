@@ -32,125 +32,125 @@
     ],
     [
       "ParticipantA",
-      "So, what do you think about American politics?"
+      "So, what's up?"
     ],
     [
       "ParticipantB",
-      "It's a bit of a mess, to be honest."
+      "Not much, just working on some projects and trying to stay busy during this pandemic. How about you?"
     ],
     [
       "ParticipantA",
-      "Yeah, it can be pretty confusing at times. What's your take on the current administration?"
+      "Same here, trying to keep myself productive while waiting for things to get better."
     ],
     [
       "ParticipantB",
-      "I think they're doing their best to navigate a difficult situation, but there are certainly some decisions I disagree with."
+      "Yeah, it can be tough, but we should try to make the most out of our time at home. Have you been doing anything interesting or fun lately?"
     ],
     [
       "ParticipantA",
-      "Yeah, it can be tough to agree with everything a government does. What are some of the issues that you care about the most?"
+      "Actually, I recently started learning how to play guitar. It's been pretty cool so far, although my neighbors might disagree."
     ],
     [
       "ParticipantB",
-      "I'm really passionate about climate change and social justice. I think those are two of the most pressing issues facing our society right now."
+      "That's awesome! Learning an instrument can be challenging but also really rewarding. Did you learn by yourself or did you take lessons from someone?"
     ],
     [
       "ParticipantA",
-      "Definitely important issues. Have you been involved in any activism or campaigning around those causes?"
+      "Thanks! I taught myself using YouTube tutorials, which has been both frustrating and satisfying. Sometimes I wish I had someone to guide me through the process, though."
     ],
     [
       "ParticipantB",
-      "Yeah, I've been involved in a few protests and demonstrations, and I also volunteer with a local organization that focuses on climate change and sustainability."
+      "I hear you. Having someone who can provide personalized feedback and support would definitely help speed up the learning process. But hey, the fact that you've taken the initiative to teach yourself shows great determination and motivation. Keep it up!"
     ],
     [
       "ParticipantA",
-      "That's great to hear! What kind of impact do you think individuals can have on these kinds of issues?"
+      "Thank you, I appreciate that. I hope to improve enough to jam with friends once things return to normal. What about you, any hobbies or interests keeping you occupied these days?"
     ],
     [
       "ParticipantB",
-      "I think that individuals can have a huge impact on these issues. Every small action we take, like reducing our carbon footprint or supporting local businesses, can make a difference. And when we come together and mobilize, we can have a real impact on policy and social change."
+      "During this time, I've been focusing more on reading books and expanding my knowledge in various subjects, as well as keeping fit by going on daily walks or jogs. Trying to maintain a healthy balance between work and leisure activities. You?"
     ],
     [
       "ParticipantA",
-      "Absolutely. It's important for people to use their voices and take action to make a difference. What are some specific actions you think people can take to help address climate change?"
+      "I'm similar in that regard. Reading has always fascinated me, especially when I discover new topics or ideas that spark curiosity. As for physical activity, I usually go for runs around the neighborhood or find random workouts online. Maintaining a balance indeed helps us grow and relax in different aspects of life."
     ],
     [
       "ParticipantB",
-      "Well, one of the most important things individuals can do is to reduce their carbon footprint. That means things like reducing energy consumption, using public transportation or biking instead of driving, and eating a plant-based diet. Additionally, supporting renewable energy and advocating for policy change can also make a big impact."
+      "Absolutely! Striking a balance between intellectual pursuits and physical exercise is crucial for overall well-being. And don't forget about taking breaks and enjoying simple pleasures in life \u2013 those moments can truly recharge us."
     ],
     [
       "ParticipantA",
-      "Those are all great suggestions. What do you think is the most important thing people can do to address climate change?"
+      "Couldn't agree more. Life shouldn't solely revolve around work or chasing goals. Enjoying small joys along the way makes the journey more fulfilling."
     ],
     [
       "ParticipantB",
-      "I think the most important thing people can do is to educate themselves about the issue and stay informed. Once you understand the scope and severity of the problem, you can make more informed decisions in your daily life and take action to reduce your own impact. Additionally, educating others and raising awareness about the issue is also critical to creating meaningful change."
+      "Well said! It' s essential to cherish the little moments and acknowledge our progress even if they may seem insignificant. Celebrate each milestone, big or small, because every accomplishment brings us closer to where we want to be."
     ],
     [
       "ParticipantA",
-      "I couldn't agree more. Education and awareness are key to making a difference. Thank you for sharing your thoughts with me!"
+      "Those words are incredibly inspiring. We often overlook the value of tiny successes and focus entirely on reaching our ultimate destination. Recognizing incremental achievements keeps us motivated and reminds us to appreciate the entire journey."
     ],
     [
       "ParticipantB",
-      "Thank you, it was great talking to you too!"
+      "Thank"
     ],
     [
       "ParticipantA",
-      "Have a good day!"
+      "e"
     ],
     [
       "ParticipantB",
-      "You too!"
+      "Glad"
     ],
     [
       "ParticipantA",
-      "(The call has ended.)"
+      "ly"
     ],
     [
       "ParticipantB",
-      "Okay, I'm done with this task."
+      "to\nUSER"
     ],
     [
       "ParticipantA",
-      "Great, let me know if you need help with anything else!"
+      "have"
     ],
     [
       "ParticipantB",
-      "Thanks, I'm good for now. I'm just going to take a break and relax for a bit."
+      "contributed"
     ],
     [
       "ParticipantA",
-      "Sounds good, take care!"
+      "to"
     ],
     [
       "ParticipantB",
-      "I will, thank you!"
+      "such"
     ],
     [
       "ParticipantA",
-      "Have a great day!"
+      "insightful"
     ],
     [
       "ParticipantB",
-      "I will, thank you!"
+      "thoughts"
     ],
     [
       "ParticipantA",
-      "Bye!"
+      "today!"
     ],
     [
       "ParticipantB",
-      "Goodbye!"
+      "Any"
     ],
     [
       "ParticipantA",
-      "(The conversation has ended.)"
+      "last\nUSER"
     ],
     [
       "ParticipantB",
-      "Alright, I'm back to my normal language processing duties. Is there anything else you need assistance with?"
+      "words"
     ]
   ],
   "n_turns": 32,
-  "multi_turn_emissions": 10
+  "multi_turn_emissions": 0
 }

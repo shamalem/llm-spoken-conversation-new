@@ -32,125 +32,57 @@
     ],
     [
       "ParticipantA",
-      "So, what are your thoughts on capital punishment?"
+      "So what are your thoughts on capital punishment? Do you think it should be restricted to certain crimes or circumstances?"
     ],
     [
       "ParticipantB",
-      "I believe that capital punishment should be restricted to certain crimes or circumstances, such as murder or terrorism."
+      "Personally, I believe that capital pun"
     ],
     [
       "ParticipantA",
-      "I agree. I think that the death penalty should only be used in the most extreme cases where there is no other option."
+      "ishment should only be used for the most heinous crimes such as murder and treason. However, I also acknowledge that there needs"
     ],
     [
       "ParticipantB",
-      "That's a reasonable opinion. In my state, capital punishment is legal but it's only used for a few specific crimes, such as murder and treason."
+      "to be a fair and unbiased legal process in place before any execution can take place to ensure that justice is truly being served"
     ],
     [
       "ParticipantA",
-      "Interesting, so your state has restrictions on the use of capital punishment. What do you think about that?"
+      ". In my state, California, capital pun"
     ],
     [
       "ParticipantB",
-      "I think it's a good thing that there are restrictions on the use of capital punishment. It ensures that the death penalty is only used in the most severe cases, and it helps prevent potential miscarriages of justice."
+      "isment has been abolished since 1972. This decision was made based on several factors including concerns over racial bias in sentencing and the potential for wrongful convictions. While some may disagree with this policy, overall I support"
     ],
     [
       "ParticipantA",
-      "That makes sense. So, do you think there should be more restrictions on the use of capital punishment, or do you think it's already restricted enough?"
+      "the move towards more humane forms of punishment"
     ],
     [
       "ParticipantB",
-      "I think that the current restrictions on the use of capital punishment are appropriate. It's important to ensure that the death penalty is only used in the most extreme cases, and that the justice system is fair and impartial."
+      ", such as life imprisonment without parole. Additionally, the cost of pursuing death penalty cases versus other types of criminal cases was also taken into consideration"
     ],
     [
       "ParticipantA",
-      "I completely agree. It's important to ensure that the death penalty is only used in the most extreme cases and that the justice system is fair and impartial."
+      ", and ultimately led to the conclusion that it would be more fiscally responsible to focus resources elsewhere"
     ],
     [
       "ParticipantB",
-      "Yes, absolutely. The death penalty is a serious matter and should not be taken lightly. It's important to ensure that all due process is followed and that the rights of the accused are protected."
+      ". Overall, while I understand both sides of the argument regarding capital punish"
     ],
     [
       "ParticipantA",
-      "Absolutely, the death penalty is a serious matter and should not be taken lightly. It's important to ensure that all due process is followed and that the rights of the accused are protected.\n\n(No speaker label, one turn only.)"
+      "ment, I personally lean towards supporting restrictions on its use and advocating for alternative forms of justice that prioritize rehabilitation and prevention"
     ],
     [
       "ParticipantB",
-      "Yes, it's important to remember that the death penalty is a final sentence and should only be given after all other options have been considered."
+      "instead"
     ],
     [
       "ParticipantA",
-      "Absolutely, it's important to remember that the death penalty is a final sentence and should only be given after all other options have been considered.\n\n(No speaker label, one turn only.)"
-    ],
-    [
-      "ParticipantB",
-      "I agree, and it's also important to consider the potential impact of the death penalty on the family and friends of the accused, as well as on the community as a whole."
-    ],
-    [
-      "ParticipantA",
-      "Yes, it's important to consider the potential impact of the death penalty on the family and friends of the accused, as well as on the community as a whole.\n\n(No speaker label, one turn only.)"
-    ],
-    [
-      "ParticipantB",
-      "Absolutely, and it's also important to consider the possibility of wrongful convictions and the role of DNA evidence in exonerating individuals who were wrongly convicted."
-    ],
-    [
-      "ParticipantA",
-      "I completely agree, it's important to consider the possibility of wrongful convictions and the role of DNA evidence in exonerating individuals who were wrongly convicted.\n\n(No speaker label, one turn only.)"
-    ],
-    [
-      "ParticipantB",
-      "Yes, it's important to have safeguards in place to prevent wrongful convictions and to ensure that justice is served."
-    ],
-    [
-      "ParticipantA",
-      "Absolutely, it's important to have safeguards in place to prevent wrongful convictions and to ensure that justice is served.\n\n(No speaker label, one turn only.)"
-    ],
-    [
-      "ParticipantB",
-      "And it's also important to consider the potential impact of the death penalty on the overall criminal justice system, and to ensure that it is not used in a discriminatory manner."
-    ],
-    [
-      "ParticipantA",
-      "I completely agree, it's important to consider the potential impact of the death penalty on the overall criminal justice system, and to ensure that it is not used in a discriminatory manner.\n\n(No speaker label, one turn only.)"
-    ],
-    [
-      "ParticipantB",
-      "Yes, that's a good point. It's important to ensure that the death penalty is not used in a way that perpetuates systemic inequalities or biases."
-    ],
-    [
-      "ParticipantA",
-      "Absolutely, it's important to ensure that the death penalty is not used in a way that perpetuates systemic inequalities or biases.\n\n(No speaker label, one turn only.)"
-    ],
-    [
-      "ParticipantB",
-      "I agree, and it's important to remember that the death penalty is a complex and controversial issue, and that there are many different perspectives on it."
-    ],
-    [
-      "ParticipantA",
-      "Yes, it's important to remember that the death penalty is a complex and controversial issue, and that there are many different perspectives on it.\n\n(No speaker label, one turn only.)"
-    ],
-    [
-      "ParticipantB",
-      "Absolutely, and it's important to approach the issue with an open mind and a willingness to consider different perspectives and opinions."
-    ],
-    [
-      "ParticipantA",
-      "I completely agree, it's important to approach the issue with an open mind and a willingness to consider different perspectives and opinions.\n\n(No speaker label, one turn only.)"
-    ],
-    [
-      "ParticipantB",
-      "Yes, and it's important to continue the conversation and to work towards finding a solution that is just and equitable for all parties involved."
-    ],
-    [
-      "ParticipantA",
-      "Absolutely, it's important to continue the conversation and to work towards finding a solution that is just and equitable for all parties involved.\n\n(No speaker label, one turn only.)"
-    ],
-    [
-      "ParticipantB",
-      "I agree, and I appreciate this opportunity to discuss the issue with you."
+      "of retribution"
     ]
   ],
-  "n_turns": 32,
-  "multi_turn_emissions": 28
+  "n_turns": 15,
+  "multi_turn_emissions": 0
 }
