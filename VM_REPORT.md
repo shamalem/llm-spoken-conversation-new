@@ -622,3 +622,11 @@ Help-desk/service notes:
   ["ParticipantB", "Thank you for your advice! I'll definitely consider visiting some of the child care services that I'm interested in and maybe even prioritize finding a safe and nurturing environment for my child. I appreciate your help and advice, and I'll keep looking for the right fit for my child."]
 ]
 ```
+
+## 2026-07-04T07:35:41+03:00 C2/C3 regeneration report
+C2-P0 JSON files: 50
+C3-P0 JSON files: 50
+C3 files inspected: 50
+C3 "(End of conversation)" padding: NO (0/50 files)
+C3 hit 32-turn cap: YES (32/50 files)
+C3 turn count range: min=10, max=32
