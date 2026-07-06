@@ -17,6 +17,9 @@ LOG="run_c3_fix_test.log"
 echo "=== c3 fix test START $(date -Is) ===" | tee -a "$LOG"
 "$PY" -c "import torch; print('cuda', torch.cuda.is_available())" 2>&1 | tee -a "$LOG"
 
+# Force a fresh regeneration (generators skip existing ids).
+rm -f "$OUT/C3-P0"/*.json
+
 # The new defaults (min-new-tokens 16, stop-at-sentence on, rep-penalty 1.15, ngram 4)
 # are baked into generate_c3.py, so no extra flags needed here.
 "$PY" generation/generate_c3.py --prompt P0 --ids "$IDS" --max-turns 30 --out-root "$OUT" 2>&1 | tee -a "$LOG"

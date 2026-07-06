@@ -22,7 +22,9 @@ from prompts.templates import build_agent                                  # noq
 from analysis.swda import (                                                # noqa: E402
     load_metadata, make_personas, iter_conversation_files, conversation_no_of,
 )
-from generation.model_utils import load_model, chat, clean_single_turn, VICUNA  # noqa: E402
+from generation.model_utils import (                                          # noqa: E402
+    load_model, chat, clean_single_turn, strip_meta_artifacts, looks_like_closing, VICUNA,
+)
 
 OUT_ROOT = pathlib.Path(__file__).resolve().parent.parent / "data" / "generated"
 LABELS = ("ParticipantA", "ParticipantB")
@@ -87,6 +89,7 @@ def main() -> None:
         # so the conversation opens as two equals, not "is this the ... service?".
         history: list[tuple[str, str]] = [("ParticipantA", "Hello!"), ("ParticipantB", "Hello!")]
         multi = 0
+        closing_seen = False
         for i in range(args.max_turns):
             spk = LABELS[i % 2]
             me = personas[spk]
@@ -104,9 +107,19 @@ def main() -> None:
             )
             turn, ran_past = clean_single_turn(raw, LABELS)
             multi += int(ran_past)
-            if not turn:
+            turn = strip_meta_artifacts(turn)   # drop chatbot/template residue before it enters the log
+            if not turn:                        # empty after cleaning = model dropped out of the conversation
                 break
+            prev_turn = history[-1][1]
             history.append((spk, turn))
+            # Natural termination: stop at a mutual goodbye, or one reciprocal turn after a
+            # farewell, so a conversation ends when it is actually over (max_turns is only a cap).
+            if looks_like_closing(turn) and looks_like_closing(prev_turn):
+                break
+            if closing_seen:
+                break
+            if looks_like_closing(turn):
+                closing_seen = True
 
         rec = {
             "condition": cond,

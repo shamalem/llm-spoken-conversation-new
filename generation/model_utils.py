@@ -139,6 +139,51 @@ def clean_single_turn(text: str, labels=("ParticipantA", "ParticipantB")) -> tup
     return t.strip().strip('"'), ran_past
 
 
+# Farewell / sign-off cues used to end a conversation naturally (see generate_c3.py loop).
+_CLOSING_RE = re.compile(
+    r"\b(?:good-?bye|bye-?bye|bye|take care|farewell|see you(?: around| soon| later| next time)?|"
+    r"talk (?:to you )?(?:soon|later)|catch you later|until next time|happy chatting|"
+    r"(?:nice|great|lovely|a pleasure) (?:talking|chatting|speaking)(?: (?:to|with) you)?|"
+    r"enjoy (?:the rest of )?your day|"
+    r"have a (?:great|good|nice|wonderful|lovely|fantastic) (?:day|one|time|evening|weekend))\b",
+    re.I,
+)
+
+# Assistant / template / end-of-session residue the model emits once it drops out of the
+# conversation (observed in C3 tails: "[End of Response]", "*Session closed.*", code fences,
+# "Here's a summary", stray role tokens, and garbage like "** | **" / "-> |" / "V V V").
+_META_RE = re.compile(
+    r"(?:"
+    r"\[(?:end of|turn|tur|t\b|this|do you|assist|closed|/)"
+    r"|\*{1,}\s*(?:conversation|chat|session|closed|ended|assistance|connection|end of)"
+    r"|here'?s (?:the |a )?(?:quick )?(?:summary|recap)"
+    r"|this (?:concludes|conversation (?:covered|concludes|ends))"
+    r"|```"
+    r"|(?:^|\n)\s*(?:USER|ASSISTANT|ASSISTMENT|SYSTEM|BOT)\b"
+    r"|\*\*\s*\||\|\s*->|->\s*\||\bV\s+V\s+V\b"
+    r"|(?:^|\n)\s*---\s*(?:$|\n)"
+    r")",
+    re.I | re.M,
+)
+
+
+def strip_meta_artifacts(text: str) -> str:
+    """Cut a turn at the first assistant/template/end-of-conversation artifact.
+
+    Keeps the clean leading part so chatbot residue never enters the transcript; if the whole
+    turn was such residue this returns "" (the caller then ends the conversation).
+    """
+    m = _META_RE.search(text)
+    if m:
+        text = text[: m.start()]
+    return text.strip().strip('"').strip()
+
+
+def looks_like_closing(text: str) -> bool:
+    """True if a turn contains a farewell / sign-off (used to stop the conversation)."""
+    return bool(_CLOSING_RE.search(text))
+
+
 def _vicuna_format(messages) -> str:
     system = next((m["content"] for m in messages if m["role"] == "system"), "")
     parts = [system] if system else []
