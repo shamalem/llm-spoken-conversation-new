@@ -54,10 +54,12 @@ def main() -> None:
     ap.add_argument("--model-b", default=MISTRAL)
     ap.add_argument("--stop-at-sentence", action="store_true")
     ap.add_argument("--min-new-tokens", type=int, default=8)
+    ap.add_argument("--out-root", default=str(OUT_ROOT),
+                    help="output root; point at a separate dir to avoid overwriting existing data")
     args = ap.parse_args()
 
     cond = f"C4-{args.prompt}"
-    out_dir = OUT_ROOT / cond
+    out_dir = pathlib.Path(args.out_root) / cond
     out_dir.mkdir(parents=True, exist_ok=True)
 
     meta = load_metadata()

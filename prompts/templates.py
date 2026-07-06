@@ -47,7 +47,7 @@ def render_transcript(history: list[tuple[str, str]]) -> str:
 # --- shared prompt pieces ------------------------------------------------------------
 
 def _length_clause() -> str:
-    return "The conversation will have about 50 turns of talk; do not end it too early."
+    return "The conversation will have about 30 turns of talk; do not end it too early."
 
 
 def _p1_style() -> str:

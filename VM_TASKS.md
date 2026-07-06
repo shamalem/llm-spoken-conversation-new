@@ -1,63 +1,54 @@
-# VM Tasks — Regenerate C2-P0 once more (clean role labels) (2026-07-04)
+# VM Tasks — Regenerate the full P0 set into generated_v2 (2026-07-06)
 
-Owner: local side. Read `CLAUDE.md` and `.planning/STATE.md` first.
+Owner: local side. Read `CLAUDE.md` first. **This job is fire-and-forget — launch it detached,
+confirm it started, then stop. Do NOT stay attached, do NOT poll, do NOT run it in the
+foreground.** The script commits and pushes by itself.
 
-## Context
-The C2/C3 regeneration with the repetition fix worked: **C3-P0 is fixed** (14.7 w/turn, no
-loops, no "(End of conversation)" padding, natural termination) and **C2-P0 dropped 66→18
-w/turn**. But review found **C2-P0 still leaks corrupted role labels on ~79 turns** — the
-model writes degraded variants like `ParticipantsA:` (stray 's') and `Participant A:` (space)
-that the old cleaner missed. C3 was essentially clean (1 turn); this is a C2-specific issue
-because C2 is the single model writing *both* speakers.
+## What & why
+Regenerate all four P0 conditions (C1, C2, C3, C4 — 50 conversations each, 30-turn cap) with
+**unified decoding**. `repetition_penalty` is now a default inside `chat()`, so every
+architecture uses the same decoding — this removes the earlier confound where only C2/C3 had
+the repetition fix. Output goes to a **separate directory `data/generated_v2/`** so the current
+pilot in `data/generated/` is left untouched (a teammate is inspecting it in parallel).
 
-Local **widened `clean_single_turn` in `generation/model_utils.py`** to catch those variants
-(unit-tested) and pushed it. This task regenerates **only C2-P0** with the fixed cleaner.
-Leave C1-P0, C3-P0, C4-P0 alone.
+The runner `generation/run_p0_v2.sh` does everything: it writes each conversation immediately,
+resumes on rerun (existing ids are skipped), and **auto-commits + pushes after each condition**.
 
-## TASK 1 — Pull and verify
+## TASK 1 — Pull and verify GPU
 ```bash
-cd ~/llm-spoken-conversation
+cd ~/llm-spoken-conversation          # (or wherever this repo lives on the VM)
 git pull --ff-only origin main
 conda activate convsim
-python -m py_compile generation/model_utils.py && echo "SYNTAX OK"
-python -c "from generation.model_utils import clean_single_turn as c; print(c('ParticipantsA: Hi there!')[0])"
-# expect: Hi there!
-nvidia-smi && python -c "import torch; print('cuda', torch.cuda.is_available())"
+/anaconda/envs/convsim/bin/python -m py_compile generation/*.py prompts/*.py && echo "SYNTAX OK"
+nvidia-smi && /anaconda/envs/convsim/bin/python -c "import torch; print('cuda', torch.cuda.is_available())"
 ```
-If `nvidia-smi` shows an NVML driver/library mismatch, `sudo reboot`, then retry.
+If `nvidia-smi` shows an **NVML driver/library mismatch**, run `sudo reboot`, wait, reconnect,
+`conda activate convsim`, and re-check before launching. (This is the crash that killed the last
+C4 run — C4 loads two models. Reboot fixes it. Never reboot mid-run.)
 
-## TASK 2 — Delete C2-P0 only (generators skip existing ids) and regenerate
+## TASK 2 — Launch detached, then leave
 ```bash
-rm -f data/generated/C2-P0/*.json
-tmux new -s gen
-conda activate convsim
-python generation/generate_c2.py --prompt P0 --n 50 --max-turns 30
-# detach: Ctrl-b then d
+tmux new-session -d -s genp0 'cd ~/llm-spoken-conversation && bash generation/run_p0_v2.sh'
 ```
-Do NOT touch C1-P0, C3-P0, or C4-P0.
 
-## TASK 3 — Sanity-check the leak is gone, then push
+## TASK 3 — Confirm it started, then STOP
 ```bash
-python - <<'PY'
-import json, glob
-n=0
-for f in glob.glob('data/generated/C2-P0/*.json'):
-    for s,t in json.load(open(f))['turns']:
-        if 'articipant' in t: n+=1
-print('C2-P0 turns with leaked participant label:', n)   # expect 0 (or very few)
-PY
-git add data/generated/C2-P0
-git commit -m "data: regenerate C2-P0 with fixed role-label cleaner"
-git push
+sleep 20
+tmux ls                         # expect a "genp0" session
+tail -n 15 run_p0_v2.log        # expect "run_p0_v2 START", cuda_available True, C1-P0 START
 ```
-If push is rejected: `git pull --rebase origin main` then push again. Record the leak count
-in `VM_REPORT.md`. Then tell local to re-run `analysis/evaluate_generated.py` and
-`analysis/social_metrics.py`.
+If the session exists and the log shows generation starting, **you are done — disconnect.**
+The script runs for a few hours, pushes after each condition, and writes a final
+`run_p0_v2.status` when all four are done. Do not wait for it.
 
-## Optional (if time) — sentence-transformers CAS/CED
-`pip install sentence-transformers` in `convsim`, then:
+## Do NOT
+- Do **not** touch, delete, or regenerate `data/generated/` (the current pilot — keep it).
+- Do **not** run the generators in the foreground or babysit the tmux session.
+- Do **not** start P1/P2 yet — that is a separate task after local reviews P0-v2.
+
+## How the user checks progress later (no Codex needed)
 ```bash
-python analysis/social_metrics.py --n-sb 50 --embedding-backend sentence-transformers
+tmux attach -t genp0            # watch live (Ctrl-b then d to detach)
+cat run_p0_v2.status           # final per-condition counts once finished
+git -C ~/llm-spoken-conversation log --oneline -5   # the auto-pushed data commits
 ```
-This makes CAS measure semantic anchoring instead of lexical echo (see SOCIAL_METRICS.md).
-Push the refreshed `results/social_metrics/*.csv` (NOT turn_labels.csv — it's gitignored).

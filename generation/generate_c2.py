@@ -52,10 +52,12 @@ def main() -> None:
     ap.add_argument("--max-new-tokens", type=int, default=200)
     ap.add_argument("--temperature", type=float, default=0.8)
     ap.add_argument("--top-p", type=float, default=0.95)
+    ap.add_argument("--out-root", default=str(OUT_ROOT),
+                    help="output root; point at a separate dir to avoid overwriting existing data")
     args = ap.parse_args()
 
     cond = f"C2-{args.prompt}"
-    out_dir = OUT_ROOT / cond
+    out_dir = pathlib.Path(args.out_root) / cond
     out_dir.mkdir(parents=True, exist_ok=True)
 
     meta = load_metadata()
