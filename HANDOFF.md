@@ -52,6 +52,17 @@ after each condition. This runs for hours — leave it. When done, `run_full_reg
 count per condition (expect 50 each, 600 total). If it dies, just relaunch the same command (it
 resumes).
 
+### A2b. Quality-check the new data (run anytime, no GPU) — this is the automated version of the manual review
+```bash
+/anaconda/envs/convsim/bin/python analysis/quality_report.py data/generated_v2
+```
+Prints a per-condition table. **What GOOD looks like:** the real-bug columns
+`frag / loop / drift / leak / noEnd` should all be ~0 for every condition (that's the whole point
+of the fixes — on the OLD `data/generated` these are huge). The `tells` column (help-desk / advice
+phrasing) is EXPECTED to be high in **P0** and should **drop in P1/P2** — that is the experiment
+working, not a bug; do not try to "fix" it. Paste the table into your report to Diyar. If any
+condition still shows real bugs (frag/loop/drift/leak/noEnd well above 0), note which and stop.
+
 ### A3. ALIGN export  ← NEEDS Diyar + Claude to build the script; do NOT improvise
 The stats need `data/align/alignment_turns.csv` with columns
 `condition, conv_id, turn_index, n_turns, cosine_semanticL` (condition="SB" for the Switchboard
