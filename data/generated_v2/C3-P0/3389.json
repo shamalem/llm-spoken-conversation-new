@@ -1,0 +1,96 @@
+{
+  "condition": "C3-P0",
+  "architecture": "C3",
+  "prompt_level": "P0",
+  "models": {
+    "ParticipantA": "lmsys/vicuna-13b-v1.5-16k",
+    "ParticipantB": "lmsys/vicuna-13b-v1.5-16k"
+  },
+  "conversation_no": 3389,
+  "topic": "Football",
+  "sb_prompt": "PLEASE DISCUSS PROFESSIONAL FOOTBALL.  FIND OUT THE OTHER CALLER'S FAVORITE PRO FOOTBALL TEAM AND WHERE IT'S HEADED THIS YEAR.       DO YOU AGREE WITH THE CALLER'S PREDICTION?",
+  "persona_a": {
+    "label": "ParticipantA",
+    "gender": "man",
+    "age": 20,
+    "education": "some college"
+  },
+  "persona_b": {
+    "label": "ParticipantB",
+    "gender": "man",
+    "age": 26,
+    "education": "some college"
+  },
+  "turns": [
+    [
+      "ParticipantA",
+      "Hello!"
+    ],
+    [
+      "ParticipantB",
+      "Hello!"
+    ],
+    [
+      "ParticipantA",
+      "So, what team are you rooting for this year in professional football?"
+    ],
+    [
+      "ParticipantB",
+      "I'm a big fan of the New England Patriots. How about you?"
+    ],
+    [
+      "ParticipantA",
+      "I've been following the Dallas Cowboys for quite some time now."
+    ],
+    [
+      "ParticipantB",
+      "Nice! I think they have a good chance at making it to the playoffs this year."
+    ],
+    [
+      "ParticipantA",
+      "Yeah, I agree. With their strong defense and solid offensive lineup, they seem to be a force to reckon with."
+    ],
+    [
+      "ParticipantB",
+      "Definitely! Their recent acquisition of Amari Cooper has really added another dimension to their passing game."
+    ],
+    [
+      "ParticipantA",
+      "Absolutely! That was a great move by the Cowboys. It's always exciting to see how players fit into new teams and elevate their performance."
+    ],
+    [
+      "ParticipantB",
+      "Agreed! And with Elliott running the ball and Prescott throwing, they have a pretty well-rounded attack."
+    ],
+    [
+      "ParticipantA",
+      "Yes, that's definitely true. It'll be interesting to see how the Cowboys fare against some tough opponents this season."
+    ],
+    [
+      "ParticipantB",
+      "Oh, for sure! But I believe they've got what it takes to make it to the Super Bowl."
+    ],
+    [
+      "ParticipantA",
+      "Well, we can hope for the best! Who knows, maybe we'll get to witness an epic showdown between our favorite teams."
+    ],
+    [
+      "ParticipantB",
+      "Fingers crossed for that! Let's just enjoy the games and hope for the best."
+    ],
+    [
+      "ParticipantA",
+      "You said it right. Football is all about enjoying the journey and being part of something bigger than ourselves."
+    ],
+    [
+      "ParticipantB",
+      "Exactly! Thanks for chatting with me about football! Have a great day!"
+    ],
+    [
+      "ParticipantA",
+      "No problem! Enjoy the games and talk to you soon! Goodbye!"
+    ]
+  ],
+  "n_turns": 17,
+  "multi_turn_emissions": 0
+}

@@ -1,0 +1,156 @@
+{
+  "condition": "C3-P0",
+  "architecture": "C3",
+  "prompt_level": "P0",
+  "models": {
+    "ParticipantA": "lmsys/vicuna-13b-v1.5-16k",
+    "ParticipantB": "lmsys/vicuna-13b-v1.5-16k"
+  },
+  "conversation_no": 4312,
+  "topic": "Music",
+  "sb_prompt": "PLEASE DISCUSS MUSIC.  CAN YOU FIND MUSICIANSOR TYPES OF MUSIC THAT BOTH YOU AND THE OTHER CALLER LIKE?",
+  "persona_a": {
+    "label": "ParticipantA",
+    "gender": "man",
+    "age": 23,
+    "education": "some college"
+  },
+  "persona_b": {
+    "label": "ParticipantB",
+    "gender": "man",
+    "age": 31,
+    "education": "some college"
+  },
+  "turns": [
+    [
+      "ParticipantA",
+      "Hello!"
+    ],
+    [
+      "ParticipantB",
+      "Hello!"
+    ],
+    [
+      "ParticipantA",
+      "So what kind of music are you into?\n\n\ubc88\uc5ed\uacb0\uacfc  \n\uc548\ub155\ud558\uc138\uc694!"
+    ],
+    [
+      "ParticipantB",
+      "Sure, I'm really into indie rock and alternative right now. How about you?"
+    ],
+    [
+      "ParticipantA",
+      "Oh cool, same here! Have you listened to any new releases lately?"
+    ],
+    [
+      "ParticipantB",
+      "Yeah, I've been listening to the new album by Arctic Monkeys and I love it."
+    ],
+    [
+      "ParticipantA",
+      "Nice! I haven't checked that out yet, but I'll definitely give it a listen."
+    ],
+    [
+      "ParticipantB",
+      "Definitely recommend it! And I heard they're touring soon, so maybe we can catch them live."
+    ],
+    [
+      "ParticipantA",
+      "That would be amazing! What other artists or types of music do you enjoy?"
+    ],
+    [
+      "ParticipantB",
+      "Well, I also love classic rock and folk music. Some of my favorite bands include Led Zeppelin, Bob Dylan, and Neil Young."
+    ],
+    [
+      "ParticipantA",
+      "Those are all great choices! I'm more of a pop/hip hop guy myself, but there's something special about those genres that I really appreciate."
+    ],
+    [
+      "ParticipantB",
+      "Absolutely, there's such a rich history behind those genres and their impact on culture cannot be denied."
+    ],
+    [
+      "ParticipantA",
+      "Exactly! It's amazing how music can transcend time and bring people together."
+    ],
+    [
+      "ParticipantB",
+      "Yes, music has the power to unite us all despite our differences."
+    ],
+    [
+      "ParticipantA",
+      "It truly does. Do you have a favorite concert experience?"
+    ],
+    [
+      "ParticipantB",
+      "One of my favorites was seeing Radiohead at Coachella a few years ago."
+    ],
+    [
+      "ParticipantA",
+      "Wow, that sounds incredible! I've always wanted to attend Coachella, but never had the chance."
+    ],
+    [
+      "ParticipantB",
+      "You should definitely try to go if you ever get the opportunity. It's an unforgettable experience."
+    ],
+    [
+      "ParticipantA",
+      "Thanks for the suggestion, I'll keep that in mind!\n\ubc88\uc5ed\uc81c\uc548  \n\uc815\ub9d0\uc774\uc8e0."
+    ],
+    [
+      "ParticipantB",
+      "Of course, happy to help. Anything else you want to discuss about music?"
+    ],
+    [
+      "ParticipantA",
+      "Actually, I was wondering if you knew anything about the current state of the music industry?"
+    ],
+    [
+      "ParticipantB",
+      "Hmm, well the industry has changed quite a bit since the rise of streaming platforms."
+    ],
+    [
+      "ParticipantA",
+      "Right, I've heard that these changes have both helped and hurt artists in different ways."
+    ],
+    [
+      "ParticipantB",
+      "Indeed, while streaming has made it easier than ever for fans to access and discover new music, it's also led to declining revenues for musicians due to lower royalty rates."
+    ],
+    [
+      "ParticipantA",
+      "I see. It's difficult when artistry and commerce collide like that."
+    ],
+    [
+      "ParticipantB",
+      "Agree completely, it's important to strike a balance between supporting creators and ensuring fair compensation for everyone involved in the process."
+    ],
+    [
+      "ParticipantA",
+      "Very true. On a lighter note, is there a song or artist that has had a significant impact on you personally?"
+    ],
+    [
+      "ParticipantB",
+      "As a matter of fact, \"Killing Me Softly\" by Roberta Flack had a big impact on me growing up."
+    ],
+    [
+      "ParticipantA",
+      "Interesting choice! What draws you to that particular song?"
+    ],
+    [
+      "ParticipantB",
+      "Just the way it tells a story through the lyrics and captures emotions so beautifully through the voice and melody."
+    ],
+    [
+      "ParticipantA",
+      "Gotcha. Music has the ability to evoke deep feelings and connect us emotionally to others who share similar experiences."
+    ],
+    [
+      "ParticipantB",
+      "Precisely, which is why it remains such a powerful force in our lives."
+    ]
+  ],
+  "n_turns": 32,
+  "multi_turn_emissions": 2
+}
