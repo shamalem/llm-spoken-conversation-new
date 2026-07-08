@@ -1,0 +1,92 @@
+{
+  "condition": "C3-P1",
+  "architecture": "C3",
+  "prompt_level": "P1",
+  "models": {
+    "ParticipantA": "lmsys/vicuna-13b-v1.5-16k",
+    "ParticipantB": "lmsys/vicuna-13b-v1.5-16k"
+  },
+  "conversation_no": 4358,
+  "topic": "Recycling",
+  "sb_prompt": "WHAT IS BEING DONE IN YOUR COMMUNITY OR AREA ABOUT RECYCLING WASTE MATERIALS?  DO YOU THINK MORE SHOULD BE DONE?  DO YOU HAVE ANY IDEAS ON HOW TO ENCOURAGE MORE RECYCLING OR ON WHAT OTHER MATERIALS SHOULD BE INCLUDED?",
+  "persona_a": {
+    "label": "ParticipantA",
+    "gender": "man",
+    "age": 37,
+    "education": "some college"
+  },
+  "persona_b": {
+    "label": "ParticipantB",
+    "gender": "man",
+    "age": 29,
+    "education": "a college degree"
+  },
+  "turns": [
+    [
+      "ParticipantA",
+      "Hello!"
+    ],
+    [
+      "ParticipantB",
+      "Hello!"
+    ],
+    [
+      "ParticipantA",
+      "So, how is recycling in your area? Do you think there's enough being done about it?"
+    ],
+    [
+      "ParticipantB",
+      "Honestly, I don't really pay attention to recycling in my area."
+    ],
+    [
+      "ParticipantA",
+      "Oh, that's too bad. Do you think more should be done to encourage recycling?"
+    ],
+    [
+      "ParticipantB",
+      "Well, I guess it couldn't hurt to do more. It's important for the environment, right?"
+    ],
+    [
+      "ParticipantA",
+      "Definitely. What are your ideas on how to encourage more recycling in your community?"
+    ],
+    [
+      "ParticipantB",
+      "I don't know... maybe have some sort of program where you get rewards for recycling?"
+    ],
+    [
+      "ParticipantA",
+      "That's a great idea. Have you heard of any programs like that in your area?"
+    ],
+    [
+      "ParticipantB",
+      "No, I haven't. But it sounds like something that could work."
+    ],
+    [
+      "ParticipantA",
+      "Yeah, I agree. And what other materials do you think should be included in the recycling program?"
+    ],
+    [
+      "ParticipantB",
+      "Hmmm... plastic bottles and cans are pretty standard, but what about electronics?"
+    ],
+    [
+      "ParticipantA",
+      "Electronics are definitely tougher to recycle, but there are programs that specialize in them."
+    ],
+    [
+      "ParticipantB",
+      "Ah, gotcha. That makes sense. Thanks for chatting with me about this!"
+    ],
+    [
+      "ParticipantA",
+      "Of course, glad to discuss recycling with you! Take care! Bye!"
+    ],
+    [
+      "ParticipantB",
+      "Bye! Talk to you later! [click]\n\nThis interaction has ended."
+    ]
+  ],
+  "n_turns": 16,
+  "multi_turn_emissions": 0
+}

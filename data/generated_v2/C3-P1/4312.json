@@ -1,0 +1,132 @@
+{
+  "condition": "C3-P1",
+  "architecture": "C3",
+  "prompt_level": "P1",
+  "models": {
+    "ParticipantA": "lmsys/vicuna-13b-v1.5-16k",
+    "ParticipantB": "lmsys/vicuna-13b-v1.5-16k"
+  },
+  "conversation_no": 4312,
+  "topic": "Music",
+  "sb_prompt": "PLEASE DISCUSS MUSIC.  CAN YOU FIND MUSICIANSOR TYPES OF MUSIC THAT BOTH YOU AND THE OTHER CALLER LIKE?",
+  "persona_a": {
+    "label": "ParticipantA",
+    "gender": "man",
+    "age": 23,
+    "education": "some college"
+  },
+  "persona_b": {
+    "label": "ParticipantB",
+    "gender": "man",
+    "age": 31,
+    "education": "some college"
+  },
+  "turns": [
+    [
+      "ParticipantA",
+      "Hello!"
+    ],
+    [
+      "ParticipantB",
+      "Hello!"
+    ],
+    [
+      "ParticipantA",
+      "So, have you been listening to anything interesting lately?"
+    ],
+    [
+      "ParticipantB",
+      "Yeah, I've been really into this indie rock band called \"The National\" recently."
+    ],
+    [
+      "ParticipantA",
+      "Oh, cool! I used to listen to them a lot back in high school."
+    ],
+    [
+      "ParticipantB",
+      "Really? What's your favorite song by them?"
+    ],
+    [
+      "ParticipantA",
+      "Hmm, probably \"Fake Empire.\" It's such an emotional song and always gives me goosebumps."
+    ],
+    [
+      "ParticipantB",
+      "That's a great choice! I love that song too. Have you listened to any new artists or genres lately that you've enjoyed?"
+    ],
+    [
+      "ParticipantA",
+      "Actually, yes! Recently, I discovered this electronic music artist named Tycho and his music has been playing on repeat for me."
+    ],
+    [
+      "ParticipantB",
+      "Nice! I haven't heard of him before but I'll definitely give his music a try."
+    ],
+    [
+      "ParticipantA",
+      "Definitely check him out, I think you might like it. Do you have any favorite artists or songs that you want to share?"
+    ],
+    [
+      "ParticipantB",
+      "Sure, I really enjoy the rapper J. Cole and his album \"KOD\" was amazing."
+    ],
+    [
+      "ParticipantA",
+      "I've heard good things about J. Cole, I should check him out sometime."
+    ],
+    [
+      "ParticipantB",
+      "For sure, let me know what you think if you do end up checking him out."
+    ],
+    [
+      "ParticipantA",
+      "Will do, thanks for sharing your recommendation!"
+    ],
+    [
+      "ParticipantB",
+      "No problem, happy to share my favorites. Any other genres or artists you like?"
+    ],
+    [
+      "ParticipantA",
+      "Besides indie rock and electronic music, I also really enjoy hip hop and R&B, especially from artists like Kendrick Lamar, Frank Ocean, and SZA."
+    ],
+    [
+      "ParticipantB",
+      "Those are all awesome choices! Kendrick Lamar's album \"good kid, m."
+    ],
+    [
+      "ParticipantA",
+      "Yeah, \"good kid, m .a.d city\" is one of my all-time favorite albums."
+    ],
+    [
+      "ParticipantB",
+      "Agreed, it's so well done. What's your favorite track off that album?"
+    ],
+    [
+      "ParticipantA",
+      "Hm, tough decision, but I'd say either \"Backseat Freestyle\" or \"Poetic Justice\"."
+    ],
+    [
+      "ParticipantB",
+      "Both great picks! I personally love \"Swimming Pools (Drank)\" from that same album."
+    ],
+    [
+      "ParticipantA",
+      "Ah, yeah, that's a great song too. We seem to have similar taste in music!"
+    ],
+    [
+      "ParticipantB",
+      "Awesome, I'm glad we found some common ground in music. Thanks for chatting with me!"
+    ],
+    [
+      "ParticipantA",
+      "Of course, thank you for chatting with me too! It was nice talking with you."
+    ],
+    [
+      "ParticipantB",
+      "Same here, take care! Bye! *click*\n\n\ubc88\uc5ed\uacb0\uacfc  \n\uc5b4\uc774\ub2e4\uc801\uc785\ub2c8\ub2e4."
+    ]
+  ],
+  "n_turns": 26,
+  "multi_turn_emissions": 3
+}

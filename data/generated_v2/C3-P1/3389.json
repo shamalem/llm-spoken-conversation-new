@@ -1,0 +1,112 @@
+{
+  "condition": "C3-P1",
+  "architecture": "C3",
+  "prompt_level": "P1",
+  "models": {
+    "ParticipantA": "lmsys/vicuna-13b-v1.5-16k",
+    "ParticipantB": "lmsys/vicuna-13b-v1.5-16k"
+  },
+  "conversation_no": 3389,
+  "topic": "Football",
+  "sb_prompt": "PLEASE DISCUSS PROFESSIONAL FOOTBALL.  FIND OUT THE OTHER CALLER'S FAVORITE PRO FOOTBALL TEAM AND WHERE IT'S HEADED THIS YEAR.       DO YOU AGREE WITH THE CALLER'S PREDICTION?",
+  "persona_a": {
+    "label": "ParticipantA",
+    "gender": "man",
+    "age": 20,
+    "education": "some college"
+  },
+  "persona_b": {
+    "label": "ParticipantB",
+    "gender": "man",
+    "age": 26,
+    "education": "some college"
+  },
+  "turns": [
+    [
+      "ParticipantA",
+      "Hello!"
+    ],
+    [
+      "ParticipantB",
+      "Hello!"
+    ],
+    [
+      "ParticipantA",
+      "So, what team do you root for in professional football?\n\n\ubc88\uc5ed\uacb0\uacfc  \n\uc548\ub155\ud558\uc138\uc694!"
+    ],
+    [
+      "ParticipantB",
+      "\uc548\ub155\ud558\uc2dc\ub2e4\ub2c8!\n\n\ubc88\uc7a1\uacb0\uacfc"
+    ],
+    [
+      "ParticipantA",
+      "\uadf8\ub7ec\uba74 \ud504\ub85c \ucd95\uad6c\uc5d0\uc11c \uc5b4\ub5a4 \ud300\uc744 \uc9c0\uc9c0\ud569\ub2c8\uae4c?"
+    ],
+    [
+      "ParticipantB",
+      "Ah, that's tough to choose. I guess I don't really have a favorite pro football team, but I enjoy watching games from time to time."
+    ],
+    [
+      "ParticipantA",
+      "That's understandable. What do you think about the current state of professional football?"
+    ],
+    [
+      "ParticipantB",
+      "Well, I think the game has evolved quite a bit over the years."
+    ],
+    [
+      "ParticipantA",
+      "Yeah, definitely. Do you follow any particular players or teams closely?"
+    ],
+    [
+      "ParticipantB",
+      "Not really, but I do keep up with some of the big names in the league, like Tom Brady and Patrick Mahomes."
+    ],
+    [
+      "ParticipantA",
+      "Those guys are definitely legends in the sport. How do you think this season will go for them?"
+    ],
+    [
+      "ParticipantB",
+      "Honestly, I haven't been following sports too much lately."
+    ],
+    [
+      "ParticipantA",
+      "Oh, that's okay. It can be hard to stay updated on everything happening in the world of sports, especially since there's always something new going on."
+    ],
+    [
+      "ParticipantB",
+      "Absolutely, it's easy to get lost in all the updates and news coming out every day."
+    ],
+    [
+      "ParticipantA",
+      "Definitely true. If you had to pick one thing you loved most about football, what would it be?"
+    ],
+    [
+      "ParticipantB",
+      "For me, it's the excitement and energy of the crowd during a live game."
+    ],
+    [
+      "ParticipantA",
+      "I can imagine how amazing that must be. Have you ever gone to a live football game before?"
+    ],
+    [
+      "ParticipantB",
+      "Yes, I have. It was such an incredible experience \u2013 the atmosphere was electric!"
+    ],
+    [
+      "ParticipantA",
+      "Wow, sounds like an unforgettable memory. Thanks for sharing your thoughts on football with me today!"
+    ],
+    [
+      "ParticipantB",
+      "Of course, it was great chatting with you about it!\n\n\ubc94\uc8fc : \uacf5\uac1c"
+    ],
+    [
+      "ParticipantA",
+      "Sure, anytime you want to chat, just give me a ring! Take care!"
+    ]
+  ],
+  "n_turns": 21,
+  "multi_turn_emissions": 0
+}

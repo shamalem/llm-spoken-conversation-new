@@ -1,0 +1,136 @@
+{
+  "condition": "C3-P1",
+  "architecture": "C3",
+  "prompt_level": "P1",
+  "models": {
+    "ParticipantA": "lmsys/vicuna-13b-v1.5-16k",
+    "ParticipantB": "lmsys/vicuna-13b-v1.5-16k"
+  },
+  "conversation_no": 4356,
+  "topic": "Buying A Car",
+  "sb_prompt": "WHAT KIND OF CAR DO YOU THINK YOU MIGHT BUY NEXT?  WHAT SORTS OF THINGS WILL ENTER INTO YOUR DECISION?  SEE IF YOUR REQUIREMENTS AND THE OTHER CALLER'S REQUIREMENTS ARE SIMILAR.",
+  "persona_a": {
+    "label": "ParticipantA",
+    "gender": "man",
+    "age": 30,
+    "education": "a college degree"
+  },
+  "persona_b": {
+    "label": "ParticipantB",
+    "gender": "man",
+    "age": 34,
+    "education": "some college"
+  },
+  "turns": [
+    [
+      "ParticipantA",
+      "Hello!"
+    ],
+    [
+      "ParticipantB",
+      "Hello!"
+    ],
+    [
+      "ParticipantA",
+      "How are you doing today?"
+    ],
+    [
+      "ParticipantB",
+      "I'm good, thanks for asking. How about you?"
+    ],
+    [
+      "ParticipantA",
+      "I'm doing well, thank you for asking. So, let's get started."
+    ],
+    [
+      "ParticipantB",
+      "Sure thing. What kind of car are you thinking of buying next?"
+    ],
+    [
+      "ParticipantA",
+      "Honestly, I haven't really thought about it too much yet."
+    ],
+    [
+      "ParticipantB",
+      "Yeah, I know how that goes. I tend to put off big decisions like that until the last minute."
+    ],
+    [
+      "ParticipantA",
+      "Exactly, it can be overwhelming to think about. But I guess I want something reliable and efficient."
+    ],
+    [
+      "ParticipantB",
+      "Definitely important factors to consider. For me, I've been considering something with good safety ratings and decent fuel economy."
+    ],
+    [
+      "ParticipantA",
+      "Those are great priorities to have. And do you have any specific makes or models in mind?"
+    ],
+    [
+      "ParticipantB",
+      "Not really, but I've heard good things about Toyota and Honda."
+    ],
+    [
+      "ParticipantA",
+      "Yes, those are definitely reputable brands with a lot of options to choose from."
+    ],
+    [
+      "ParticipantB",
+      "Absolutely. Have you had any past experience with cars that you liked or disliked?"
+    ],
+    [
+      "ParticipantA",
+      "My current car is a Honda Accord, which I really like. It's been very reliable and comfortable."
+    ],
+    [
+      "ParticipantB",
+      "That sounds nice. My last car was a Ford Focus, which was pretty good, but I had some issues with the transmission."
+    ],
+    [
+      "ParticipantA",
+      "Oh, that can be a major headache. It's always good to take into consideration past problems with certain makes and models."
+    ],
+    [
+      "ParticipantB",
+      "Agreed. And what about features? Are there any that you're looking for specifically?"
+    ],
+    [
+      "ParticipantA",
+      "Well, I would love to have a sunroof, but beyond that, I don't have many specific requirements."
+    ],
+    [
+      "ParticipantB",
+      "Same here, although I am interested in getting a car with Bluetooth connectivity so I can make hands-free calls safely."
+    ],
+    [
+      "ParticipantA",
+      "Smart idea. I should probably look into that feature more seriously. Overall, our requirements seem pretty similar."
+    ],
+    [
+      "ParticipantB",
+      "They do. It seems like we both value reliability and efficiency, and we're both open to different types of vehicles depending on what best fits our needs."
+    ],
+    [
+      "ParticipantA",
+      "That's right. It's good to hear that we have some shared interests when it comes to buying a car."
+    ],
+    [
+      "ParticipantB",
+      "Yes, it helps to have a starting point for our discussions. Do you have any questions for me or anything else you want to talk about?"
+    ],
+    [
+      "ParticipantA",
+      "No, I think we covered everything. Thanks for chatting with me about this!"
+    ],
+    [
+      "ParticipantB",
+      "Of course, it was my pleasure. Take care! Bye!"
+    ],
+    [
+      "ParticipantA",
+      "Bye! Talk to you soon! \u270c\ufe0f\ud83d\ude4f"
+    ]
+  ],
+  "n_turns": 27,
+  "multi_turn_emissions": 2
+}
