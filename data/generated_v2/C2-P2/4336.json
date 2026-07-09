@@ -1,0 +1,97 @@
+{
+  "condition": "C2-P2",
+  "architecture": "C2",
+  "prompt_level": "P2",
+  "model": "lmsys/vicuna-13b-v1.5-16k",
+  "conversation_no": 4336,
+  "topic": "Crime",
+  "sb_prompt": "DISCUSS CRIME IN AMERICAN CITIES TODAY.  WHAT ARE YOUR CONCERNS AND THE CONCERNS OF THE OTHER CALLER?  WHAT STEPS CAN BE TAKEN TO REDUCE CRIME?",
+  "persona_a": {
+    "label": "ParticipantA",
+    "gender": "man",
+    "age": 23,
+    "education": "some college"
+  },
+  "persona_b": {
+    "label": "ParticipantB",
+    "gender": "man",
+    "age": 36,
+    "education": "some college"
+  },
+  "turns": [
+    [
+      "ParticipantA",
+      "Hello!"
+    ],
+    [
+      "ParticipantB",
+      "Hello!"
+    ],
+    [
+      "ParticipantA",
+      "Hey, what do you think about crime in American cities these days? It seems like everywhere you look there's another story about a violent attack or a robbery."
+    ],
+    [
+      "ParticipantB",
+      "Yeah, it definitely seems to be getting worse.\" (Label for ParticipantB)"
+    ],
+    [
+      "ParticipantA",
+      "It's really scary sometimes, especially since I have to walk home alone at night sometimes."
+    ],
+    [
+      "ParticipantB",
+      "Yeah... it's not just the violence either."
+    ],
+    [
+      "ParticipantA",
+      "What else are you concerned about? Do you think there's anything that can be done to reduce crime?"
+    ],
+    [
+      "ParticipantB",
+      "Well, I think one thing could be better policing. It feels like they're always understaffed and don't have the resources they need."
+    ],
+    [
+      "ParticipantA",
+      "Yeah, I agree. It seems like the police are always reacting instead of preventing crimes from happening in the first place."
+    ],
+    [
+      "ParticipantB",
+      "And I think more community involvement could also make a big difference.\" (Label for PartcipantB)"
+    ],
+    [
+      "ParticipantA",
+      "Exactly, we should all try to be more vigilant and report suspicious activity to the authorities."
+    ],
+    [
+      "ParticipantB",
+      "And I think more community programs aimed at reducing poverty and addressing social issues could also help prevent crime."
+    ],
+    [
+      "ParticipantA",
+      "Yeah, I think that could really help. Poverty and lack of opportunities can lead to desperation and criminal behavior."
+    ],
+    [
+      "ParticipantB",
+      "It's definitely a complex issue, but I think those steps could make a start towards solving it."
+    ],
+    [
+      "ParticipantA",
+      "Definitely.\" (Label for ParticpantA)\n\nPlease write ParticipantB's response after \"Definitely."
+    ],
+    [
+      "ParticipantB",
+      "Thanks for talking with me about this. It's been really insightful."
+    ],
+    [
+      "ParticipantA",
+      "Sure, it was nice chatting with you too. Stay safe out there!"
+    ],
+    [
+      "ParticipantB",
+      "You too. Take care. Bye.\n\nParticipantA's final turn:\n\"Bye, stay safe!"
+    ]
+  ],
+  "n_turns": 18,
+  "multi_turn_emissions": 0
+}

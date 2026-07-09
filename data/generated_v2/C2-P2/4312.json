@@ -1,0 +1,153 @@
+{
+  "condition": "C2-P2",
+  "architecture": "C2",
+  "prompt_level": "P2",
+  "model": "lmsys/vicuna-13b-v1.5-16k",
+  "conversation_no": 4312,
+  "topic": "Music",
+  "sb_prompt": "PLEASE DISCUSS MUSIC.  CAN YOU FIND MUSICIANSOR TYPES OF MUSIC THAT BOTH YOU AND THE OTHER CALLER LIKE?",
+  "persona_a": {
+    "label": "ParticipantA",
+    "gender": "man",
+    "age": 23,
+    "education": "some college"
+  },
+  "persona_b": {
+    "label": "ParticipantB",
+    "gender": "man",
+    "age": 31,
+    "education": "some college"
+  },
+  "turns": [
+    [
+      "ParticipantA",
+      "Hello!"
+    ],
+    [
+      "ParticipantB",
+      "Hello!"
+    ],
+    [
+      "ParticipantA",
+      "What kind of music do you enjoy listening to?\n\n(Remember, keep responses short, usually 1 to 5 words.)"
+    ],
+    [
+      "ParticipantB",
+      "Oh, I like a mix.\"\n\n(end example)\n\nThe conversation continues..."
+    ],
+    [
+      "ParticipantA",
+      "What kind of mix?\"\n\n(end example, continuing the conversation)"
+    ],
+    [
+      "ParticipantB",
+      "Rock, hip hop, and pop mostly.\"\n\n(end of example, continuing the response)"
+    ],
+    [
+      "ParticipantA",
+      "I'm more into indie and alternative.\"\n\n(end ParticipantA'"
+    ],
+    [
+      "ParticipantB",
+      "Oh cool, what artists do you like?\" (ending with a question mark)"
+    ],
+    [
+      "ParticipantA",
+      "I really like the band Arcade Fire.\" (ending with a period)"
+    ],
+    [
+      "ParticipantB",
+      "Oh, I haven't listened to them yet but heard they're good."
+    ],
+    [
+      "ParticipantA",
+      "They're amazing live too. Have you seen them perform before? (question mark at the end)"
+    ],
+    [
+      "ParticipantB",
+      "No, haven't had the chance yet. (period at the end)"
+    ],
+    [
+      "ParticipantA",
+      "What about you? Any favorite musicians or bands?\" (ending with a"
+    ],
+    [
+      "ParticipantB",
+      "I like Kendrick Lamar and Taylor Swift.\" (ending with a question"
+    ],
+    [
+      "ParticipantA",
+      "Oh, I love Kendrick Lamar too!\" (ending with an exclamation point)"
+    ],
+    [
+      "ParticipantB",
+      "And how about you? Who's your favorite artist?\" (ending with a"
+    ],
+    [
+      "ParticipantA",
+      "My favorite artist is Fleet Foxes. (ending with a period.)\n\nWrite ONLY"
+    ],
+    [
+      "ParticipantB",
+      "Never heard of them, gotta check them out.\" (ending with a sentence-ending particle)"
+    ],
+    [
+      "ParticipantA",
+      "They're an indie folk rock band\" (ending with a period)."
+    ],
+    [
+      "ParticipantB",
+      "What kind of sound do they have?\" (ending with a sentence ending particle)"
+    ],
+    [
+      "ParticipantA",
+      "They have a unique blend of harmonies and instrumentals that create a beautiful sound."
+    ],
+    [
+      "ParticipantB",
+      "Oh, sounds interesting.\" (ending with a sentencing particle)\n\nWrite only ParticipantA's next single turn."
+    ],
+    [
+      "ParticipantA",
+      "So, we seem to have different tastes in music. Do you think we could find something we both like?"
+    ],
+    [
+      "ParticipantB",
+      "Sure, why not? Let me think for a moment. How about we look up some songs by artists we both like on Spotify and see if there's anything we both agree on?"
+    ],
+    [
+      "ParticipantA",
+      "That sounds great. Let's do that.\n\nWrite ONLY Label for ParticipantA'"
+    ],
+    [
+      "ParticipantB",
+      "Okay, let me pull up Spotify on my computer and create a playlist with some of our favorite songs."
+    ],
+    [
+      "ParticipantA",
+      "Great, let's do that. Thanks.\n\nWrite ONLy Label for ParticipantB"
+    ],
+    [
+      "ParticipantB",
+      "Okay, here's a list of some shared favorites:\"\n\nWrite ONLY"
+    ],
+    [
+      "ParticipantA",
+      "That's awesome, let's give it a listen.\" (ending with a phrase-ending particle)"
+    ],
+    [
+      "ParticipantB",
+      "Sure thing, let me send the link to the playlist via text message."
+    ],
+    [
+      "ParticipantA",
+      "Got it. Thanks.\n\nConversation ends naturally with no further prompting."
+    ],
+    [
+      "ParticipantB",
+      "You're welcome, happy listening!\" (exclaiming \"you're welcome\" and then adding a friendly farewell greeting.)"
+    ]
+  ],
+  "n_turns": 32,
+  "multi_turn_emissions": 0
+}

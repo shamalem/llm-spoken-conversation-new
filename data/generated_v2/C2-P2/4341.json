@@ -1,0 +1,113 @@
+{
+  "condition": "C2-P2",
+  "architecture": "C2",
+  "prompt_level": "P2",
+  "model": "lmsys/vicuna-13b-v1.5-16k",
+  "conversation_no": 4341,
+  "topic": "Capital Punishment",
+  "sb_prompt": "COMPARE YOUR OPINIONS AND THOSE OF THE OTHER CALLER ON CAPITAL PUNISHMENT.  DO EITHER OF YOU THINK IT SHOULD BE RESTRICTED TO CERTAIN CRIMES OR CIRCUMSTANCES?  HOW DO THE POLICIES AND PRACTICES OF YOUR STATE FIT WITH YOUR OPINIONS?",
+  "persona_a": {
+    "label": "ParticipantA",
+    "gender": "man",
+    "age": 49,
+    "education": "some college"
+  },
+  "persona_b": {
+    "label": "ParticipantB",
+    "gender": "woman",
+    "age": 29,
+    "education": "a college degree"
+  },
+  "turns": [
+    [
+      "ParticipantA",
+      "Hello!"
+    ],
+    [
+      "ParticipantB",
+      "Hello!"
+    ],
+    [
+      "ParticipantA",
+      "So what do you think about capital punishment? Do you support it or not?"
+    ],
+    [
+      "ParticipantB",
+      "I think it should be restricted to certain crimes or circumstances.\"\n\nConversation continues:"
+    ],
+    [
+      "ParticipantA",
+      "What kind of crimes or circumstances do you think deserve capital punishment?"
+    ],
+    [
+      "ParticipantB",
+      "I think murder and treason should be considered for it.\"\n\nNext turn by ParticipantA"
+    ],
+    [
+      "ParticipantA",
+      "I see where you're coming from, but I believe it should be abolished entirely."
+    ],
+    [
+      "ParticipantB",
+      "Why do you think it should be abolished?\"\n\nNow continue with ParticipantA's response."
+    ],
+    [
+      "ParticipantA",
+      "Well, I don't think the government should have the power to take someone's life, especially since we have alternatives like life imprisonment."
+    ],
+    [
+      "ParticipantB",
+      "I understand where you're comingfrom, but I think there are cases wheremurderers and traitors deserve the death penalty."
+    ],
+    [
+      "ParticipantA",
+      "Yeah, I can understand that, but I still believe it goes against human rights."
+    ],
+    [
+      "ParticipantB",
+      "Well, I guess we'll have to agree to disagree on that one."
+    ],
+    [
+      "ParticipantA",
+      "Yeah, I guess so. But do you think the policies in your state align with your opinion on capital punishment?"
+    ],
+    [
+      "ParticipantB",
+      "Yes, they do. In fact, our state recently reinstated the death penalty for certain crimes."
+    ],
+    [
+      "ParticipantA",
+      "Interesting. Which crimes specifically are eligible for the death penalty in your state?"
+    ],
+    [
+      "ParticipantB",
+      "In our state, first-degree murder, treason, and certain aggravated rapes are eligible for capital punishment."
+    ],
+    [
+      "ParticipantA",
+      "Well, I can see why those crimes might warrant it, but I personally still can't get on board with it."
+    ],
+    [
+      "ParticipantB",
+      "Yeah, I mean, I respect your opinion, but I feel strongly that the death penalty is necessary in some cases."
+    ],
+    [
+      "ParticipantA",
+      "Yeah, I guess we just have different perspectives on the issue. It's interesting to hear your thoughts though."
+    ],
+    [
+      "ParticipantB",
+      "Yeah, it's always good to hear different perspectives."
+    ],
+    [
+      "ParticipantA",
+      "Well, it's been great chatting with you about this. Thanks for sharing your perspective."
+    ],
+    [
+      "ParticipantB",
+      "Yeah, it's always great to have these conversations and learn from others."
+    ]
+  ],
+  "n_turns": 22,
+  "multi_turn_emissions": 1
+}

@@ -1,0 +1,57 @@
+{
+  "condition": "C2-P2",
+  "architecture": "C2",
+  "prompt_level": "P2",
+  "model": "lmsys/vicuna-13b-v1.5-16k",
+  "conversation_no": 4646,
+  "topic": "Care Of The Elderly",
+  "sb_prompt": "PLEASE DISCUSS CARE OF THE ELDERLY.  FIND OUT HOW THE OTHER CALLER FEELS ABOUT SENDING AN ELDERLY FAMILY MEMBER TO A NURSING HOME.  WHAT SHOULD ONE KNOW ABOUT THE NURSING HOME ENVIRONMENT WHEN MAKING THIS DECISION?",
+  "persona_a": {
+    "label": "ParticipantA",
+    "gender": "man",
+    "age": 45,
+    "education": "less than a high-school education"
+  },
+  "persona_b": {
+    "label": "ParticipantB",
+    "gender": "woman",
+    "age": 22,
+    "education": "some college"
+  },
+  "turns": [
+    [
+      "ParticipantA",
+      "Hello!"
+    ],
+    [
+      "ParticipantB",
+      "Hello!"
+    ],
+    [
+      "ParticipantA",
+      "Hey, how's it going? What brings you to want to talk about elderly care today?"
+    ],
+    [
+      "ParticipantB",
+      "Well, my grandma recently had to move into a nursing home and it got me thinking about what it's like for seniors living there."
+    ],
+    [
+      "ParticipantA",
+      "Yeah, I've thought about that before. My parents are getting up there in age and I don't know what I'd do if they needed full-time care."
+    ],
+    [
+      "ParticipantB",
+      "It's definitely a tough decision.\"\n\nParticipantA responds next."
+    ],
+    [
+      "ParticipantA",
+      "It's hard to imagine them not being able to take care of themselves sometimes."
+    ],
+    [
+      "ParticipantB",
+      "It really is. But I think sending them to a nursing home could be the best option for their safety and wellbeing."
+    ]
+  ],
+  "n_turns": 8,
+  "multi_turn_emissions": 0
+}
