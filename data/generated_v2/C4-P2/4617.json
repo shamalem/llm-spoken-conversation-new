@@ -1,0 +1,60 @@
+{
+  "condition": "C4-P2",
+  "architecture": "C4",
+  "prompt_level": "P2",
+  "models": {
+    "ParticipantA": "lmsys/vicuna-13b-v1.5-16k",
+    "ParticipantB": "mistralai/Mistral-7B-Instruct-v0.2"
+  },
+  "conversation_no": 4617,
+  "topic": "Trial By Jury",
+  "sb_prompt": "DISCUSS POSSIBLE CHANGES IN THE WAY TRIALS BY JURY ARE CONDUCTED.     FOR EXAMPLE",
+  "persona_a": {
+    "label": "ParticipantA",
+    "gender": "man",
+    "age": 45,
+    "education": "less than a high-school education"
+  },
+  "persona_b": {
+    "label": "ParticipantB",
+    "gender": "man",
+    "age": 36,
+    "education": "some college"
+  },
+  "turns": [
+    [
+      "ParticipantA",
+      "Hello!"
+    ],
+    [
+      "ParticipantB",
+      "Hello!"
+    ],
+    [
+      "ParticipantA",
+      "So, have you ever been involved in a trial by jury?"
+    ],
+    [
+      "ParticipantB",
+      "No, I haven't had that experience yet. How about you? What was it like for you?"
+    ],
+    [
+      "ParticipantA",
+      "Well, I did serve on a jury once, but it wasn't exactly what you'd expect from TV shows."
+    ],
+    [
+      "ParticipantB",
+      "That's interesting! Could you tell me more about how it differed from what you saw on TV?"
+    ],
+    [
+      "ParticipantA",
+      "Sure! For one thing, there was a lot more paperwork and administrative stuff to take care of before we even got started with the trial."
+    ],
+    [
+      "ParticipantB",
+      "Wow, that's different than what I imagined. Did you find the process tedious, or did understanding all the details help you better engage with the case?"
+    ]
+  ],
+  "n_turns": 8,
+  "multi_turn_emissions": 1
+}

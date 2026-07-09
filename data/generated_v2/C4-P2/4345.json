@@ -1,0 +1,92 @@
+{
+  "condition": "C4-P2",
+  "architecture": "C4",
+  "prompt_level": "P2",
+  "models": {
+    "ParticipantA": "lmsys/vicuna-13b-v1.5-16k",
+    "ParticipantB": "mistralai/Mistral-7B-Instruct-v0.2"
+  },
+  "conversation_no": 4345,
+  "topic": "News Media",
+  "sb_prompt": "DISCUSS HOW YOU AND THE OTHER CALLER KEEP UP ON CURRENT EVENTS.      DO YOU GET MOST OF YOUR NEWS FROM TVOR PEOPLE YOU KNOW?  ARE YOU SATISFIED WITH THE QUALITY OF COVERAGE?",
+  "persona_a": {
+    "label": "ParticipantA",
+    "gender": "man",
+    "age": 34,
+    "education": "some college"
+  },
+  "persona_b": {
+    "label": "ParticipantB",
+    "gender": "man",
+    "age": 31,
+    "education": "some college"
+  },
+  "turns": [
+    [
+      "ParticipantA",
+      "Hello!"
+    ],
+    [
+      "ParticipantB",
+      "Hello!"
+    ],
+    [
+      "ParticipantA",
+      "So, how do you keep up with current events? Do you watch TV or get news from people you know?"
+    ],
+    [
+      "ParticipantB",
+      "Hey there, I mostly follow news through social media these days. But every once in a while, I do catch up on the evening news on television."
+    ],
+    [
+      "ParticipantA",
+      "That sounds interesting. What do you think about the quality of coverage on social media versus traditional TV news sources?"
+    ],
+    [
+      "ParticipantB",
+      "Well, I find that social media provides more diverse perspectives, but it can be harder to discern fact from opinion."
+    ],
+    [
+      "ParticipantA",
+      "True, it seems like there's a lot of misinformation on social media."
+    ],
+    [
+      "ParticipantB",
+      "Exactly. And TV news, while more credible, sometimes feels biased or one-sided."
+    ],
+    [
+      "ParticipantA",
+      "Yes, I agree. It's hard to find truly unbiased reporting."
+    ],
+    [
+      "ParticipantB",
+      "Absolutely. I guess we all have to make an effort to seek out multiple sources and critically evaluate the information we consume."
+    ],
+    [
+      "ParticipantA",
+      "Definitely. Staying informed without being misinformed can be quite a challenge."
+    ],
+    [
+      "ParticipantB",
+      "Agreed! It's important to stay curious and open-minded. And don't forget to check facts before sharing them."
+    ],
+    [
+      "ParticipantA",
+      "Absolutely! Being responsible consumers and sharers of news helps maintain the integrity of journalism."
+    ],
+    [
+      "ParticipantB",
+      "Amen to that! Well, I think we've covered enough ground for now."
+    ],
+    [
+      "ParticipantA",
+      "Alright, great chatting with you. Have a wonderful day ahead!"
+    ],
+    [
+      "ParticipantB",
+      "Likewise! Take care and enjoy your day too! Bye for now!"
+    ]
+  ],
+  "n_turns": 16,
+  "multi_turn_emissions": 0
+}

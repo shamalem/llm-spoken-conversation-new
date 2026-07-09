@@ -1,0 +1,108 @@
+{
+  "condition": "C4-P2",
+  "architecture": "C4",
+  "prompt_level": "P2",
+  "models": {
+    "ParticipantA": "lmsys/vicuna-13b-v1.5-16k",
+    "ParticipantB": "mistralai/Mistral-7B-Instruct-v0.2"
+  },
+  "conversation_no": 4356,
+  "topic": "Buying A Car",
+  "sb_prompt": "WHAT KIND OF CAR DO YOU THINK YOU MIGHT BUY NEXT?  WHAT SORTS OF THINGS WILL ENTER INTO YOUR DECISION?  SEE IF YOUR REQUIREMENTS AND THE OTHER CALLER'S REQUIREMENTS ARE SIMILAR.",
+  "persona_a": {
+    "label": "ParticipantA",
+    "gender": "man",
+    "age": 30,
+    "education": "a college degree"
+  },
+  "persona_b": {
+    "label": "ParticipantB",
+    "gender": "man",
+    "age": 34,
+    "education": "some college"
+  },
+  "turns": [
+    [
+      "ParticipantA",
+      "Hello!"
+    ],
+    [
+      "ParticipantB",
+      "Hello!"
+    ],
+    [
+      "ParticipantA",
+      "So, have you given any thought to what kind of car you might buy next?"
+    ],
+    [
+      "ParticipantB",
+      "Yes, I've been considering getting an SUV for my family. We need something roomy and reliable for our growing needs."
+    ],
+    [
+      "ParticipantA",
+      "That sounds practical. What factors will influence your decision, aside from space and reliability?"
+    ],
+    [
+      "ParticipantB",
+      "Fuel efficiency is a big concern for me since gas prices keep going up."
+    ],
+    [
+      "ParticipantA",
+      "Definitely important. How about safety features? Are they a priority for you?"
+    ],
+    [
+      "ParticipantB",
+      "Absolutely. Safety should never be compromised, so having advanced safety features is essential for us."
+    ],
+    [
+      "ParticipantA",
+      "Completely agree. Have you considered any specific brands or models?"
+    ],
+    [
+      "ParticipantB",
+      "Not yet, but I've been looking at Honda CR-V and Toyota RAV4."
+    ],
+    [
+      "ParticipantA",
+      "Both great options. What about you? What sort of car are you thinking about buying next?"
+    ],
+    [
+      "ParticipantB",
+      "I'm planning to get a compact sedan, probably a Hyundai Elantra or Mazda3."
+    ],
+    [
+      "ParticipantA",
+      "Nice choice. Do you prioritize different aspects while making your selection?"
+    ],
+    [
+      "ParticipantB",
+      "For me, fuel economy, affordability, and good driving dynamics are most important."
+    ],
+    [
+      "ParticipantA",
+      "Those are all smart considerations. It seems we share similar requirements. What made you choose those particular vehicles?"
+    ],
+    [
+      "ParticipantB",
+      "Based on research and personal preferences, those models seem to provide the best balance of cost, efficiency, and performance that aligns with my priorities."
+    ],
+    [
+      "ParticipantA",
+      "I see. Well, it looks like our requirements overlap quite a bit. Hopefully, we'll find cars that meet our expectations."
+    ],
+    [
+      "ParticipantB",
+      "Agreed! Best of luck to you in your search. Enjoy your shopping experience!"
+    ],
+    [
+      "ParticipantA",
+      "Thanks, you too! Talk soon. Bye. [hangup]"
+    ],
+    [
+      "ParticipantB",
+      "Bye for now! Take care and happy hunting for your new car! [hangup]"
+    ]
+  ],
+  "n_turns": 20,
+  "multi_turn_emissions": 0
+}
