@@ -1,0 +1,153 @@
+{
+  "condition": "C2-P1",
+  "architecture": "C2",
+  "prompt_level": "P1",
+  "model": "lmsys/vicuna-13b-v1.5-16k",
+  "conversation_no": 4312,
+  "topic": "Music",
+  "sb_prompt": "PLEASE DISCUSS MUSIC.  CAN YOU FIND MUSICIANSOR TYPES OF MUSIC THAT BOTH YOU AND THE OTHER CALLER LIKE?",
+  "persona_a": {
+    "label": "ParticipantA",
+    "gender": "man",
+    "age": 23,
+    "education": "some college"
+  },
+  "persona_b": {
+    "label": "ParticipantB",
+    "gender": "man",
+    "age": 31,
+    "education": "some college"
+  },
+  "turns": [
+    [
+      "ParticipantA",
+      "Hello!"
+    ],
+    [
+      "ParticipantB",
+      "Hello!"
+    ],
+    [
+      "ParticipantA",
+      "Hey, have you been listening to any good music lately? I've been really into hip hop and rap."
+    ],
+    [
+      "ParticipantB",
+      "Actually, I've been listening to more indie rock lately."
+    ],
+    [
+      "ParticipantA",
+      "Oh nice, what kind of indie rock bands have you been listening to?"
+    ],
+    [
+      "ParticipantB",
+      "I've been liking the band Arctic Monkeys recently.\"\n\n(Note: Participants should speak in natural language, but for clarity, I will use quotation marks around my responses.)\n\n\"Oh cool, I haven't listened to them in a while."
+    ],
+    [
+      "ParticipantA",
+      "Have you seen them live?\"\n\nWrite only ParticipantB's next single turn - just the utterance,"
+    ],
+    [
+      "ParticipantB",
+      "No, I haven't had the chance yet.\" (participantB)"
+    ],
+    [
+      "ParticipantA",
+      "That sounds amazing. I heard they put on a great show.\" (participantA)"
+    ],
+    [
+      "ParticipantB",
+      "Yeah, I've heard that too. It's definitely on my concert bucket list now."
+    ],
+    [
+      "ParticipantA",
+      "What's on top of your concert bucket list?\" (participantA)."
+    ],
+    [
+      "ParticipantB",
+      "Seeing Radiohead perform at Glastonbury Festival.\" (participant"
+    ],
+    [
+      "ParticipantA",
+      "That's awesome. I've always been a big fan of Radiohead too."
+    ],
+    [
+      "ParticipantB",
+      "They're one of my all-time favorite bands.\" (participant"
+    ],
+    [
+      "ParticipantA",
+      "Me too. Their album Kid A was a game changer for me."
+    ],
+    [
+      "ParticipantB",
+      "Definitely agree, it's one of my favorites too.\" (participant"
+    ],
+    [
+      "ParticipantA",
+      "Have you ever seen any other bands perform live that blew you away?"
+    ],
+    [
+      "ParticipantB",
+      "Yeah, seeing The National live was incredible.\" (participant"
+    ],
+    [
+      "ParticipantA",
+      "No, I haven't seen them before. How was their performance?"
+    ],
+    [
+      "ParticipantB",
+      "It was absolutely electrifying. The energy in the room was palpable, and the vocals were incredibly powerful."
+    ],
+    [
+      "ParticipantA",
+      "Yeah, I can imagine that. I'll have to check them out sometime."
+    ],
+    [
+      "ParticipantB",
+      "Definitely give them a listen.\" (participant B)\n\nParticipantA"
+    ],
+    [
+      "ParticipantA",
+      "Thanks for the recommendation, I'll definitely check out The National.\" (participant"
+    ],
+    [
+      "ParticipantB",
+      "No problem, happy to share!\" (participantB)."
+    ],
+    [
+      "ParticipantA",
+      "So, have you ever been to any music festivals?\" (participant"
+    ],
+    [
+      "ParticipantB",
+      "I went to Coachella once.\" (participant A)\n\nParticip"
+    ],
+    [
+      "ParticipantA",
+      "That sounds exciting. Did you enjoy it?\" (participant A)."
+    ],
+    [
+      "ParticipantB",
+      "It was an unforgettable experience. The atmosphere was electric.\" (participant"
+    ],
+    [
+      "ParticipantA",
+      "That sounds amazing. I've never been to a music festival before, but it's definitely something I want to do eventually."
+    ],
+    [
+      "ParticipantB",
+      "Definitely recommend checking out a festival if you get the chance.\" (participant"
+    ],
+    [
+      "ParticipantA",
+      "What was your favorite part about Coachella?\" (participant)"
+    ],
+    [
+      "ParticipantB",
+      "There was so much diversity in the lineup, and discovering new artists was one of the best parts.\" (participant"
+    ]
+  ],
+  "n_turns": 32,
+  "multi_turn_emissions": 0
+}

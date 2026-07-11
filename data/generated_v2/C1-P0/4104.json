@@ -1,0 +1,22 @@
+{
+  "condition": "C1-P0",
+  "architecture": "C1",
+  "prompt_level": "P0",
+  "model": "lmsys/vicuna-13b-v1.5-16k",
+  "conversation_no": 4104,
+  "topic": "Family Finance",
+  "sb_prompt": "DOES YOUR FAMILY KEEP A MONTHLY BUDGETCAN YOU GIVE A GENERAL DESCRIPTION OF YOUR PROCEDURES",
+  "persona_a": {
+    "label": "ParticipantA",
+    "gender": "man",
+    "age": 29,
+    "education": "some college"
+  },
+  "persona_b": {
+    "label": "ParticipantB",
+    "gender": "woman",
+    "age": 29,
+    "education": "a college degree"
+  },
+  "raw_output": "Participants: ParticiaNtA & Emily (f)\nTopic: Monthly budgeting procedures\n\n---\n\nParticiaNta: Hello there! How are you doing?\nEmily: I am good, thank you for asking. And yourself?\nParticianta: I'm well also, thanks. So, what brings you to call today?\n\n(Note: The below transcript contains some fictional responses for the sake of length and clarity.)\n\nEm"
+}

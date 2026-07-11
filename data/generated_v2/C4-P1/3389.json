@@ -1,0 +1,92 @@
+{
+  "condition": "C4-P1",
+  "architecture": "C4",
+  "prompt_level": "P1",
+  "models": {
+    "ParticipantA": "lmsys/vicuna-13b-v1.5-16k",
+    "ParticipantB": "mistralai/Mistral-7B-Instruct-v0.2"
+  },
+  "conversation_no": 3389,
+  "topic": "Football",
+  "sb_prompt": "PLEASE DISCUSS PROFESSIONAL FOOTBALL.  FIND OUT THE OTHER CALLER'S FAVORITE PRO FOOTBALL TEAM AND WHERE IT'S HEADED THIS YEAR.       DO YOU AGREE WITH THE CALLER'S PREDICTION?",
+  "persona_a": {
+    "label": "ParticipantA",
+    "gender": "man",
+    "age": 20,
+    "education": "some college"
+  },
+  "persona_b": {
+    "label": "ParticipantB",
+    "gender": "man",
+    "age": 26,
+    "education": "some college"
+  },
+  "turns": [
+    [
+      "ParticipantA",
+      "Hello!"
+    ],
+    [
+      "ParticipantB",
+      "Hello!"
+    ],
+    [
+      "ParticipantA",
+      "So, do you have a favorite pro football team? What's your prediction for them this year?"
+    ],
+    [
+      "ParticipantB",
+      "Yeah, I root for the Patriots. I think they'll make it to the playoffs again, but it might be a tougher season for them with Brady retired."
+    ],
+    [
+      "ParticipantA",
+      "That's interesting. I used to watch Tom Brady play back in the day."
+    ],
+    [
+      "ParticipantB",
+      "Oh really? Which team did you follow then? And what are your thoughts on this current NFL season so far?"
+    ],
+    [
+      "ParticipantA",
+      "Well, I mostly followed the Cowboys back then, but nowadays, I don't really have a specific team I root for."
+    ],
+    [
+      "ParticipantB",
+      "Ah, the Cowboys! They've had quite a history, haven't they?"
+    ],
+    [
+      "ParticipantA",
+      "Definitely! Emmitt Smith was one of my all-time favorite players."
+    ],
+    [
+      "ParticipantB",
+      "That's awesome! Emmitt Smith was a force to reckon with."
+    ],
+    [
+      "ParticipantA",
+      "Absolutely! He was such a dominant player during his time."
+    ],
+    [
+      "ParticipantB",
+      "Agreed, he sure made a difference on the field. It seems both our teams have had iconic figures in professional football!"
+    ],
+    [
+      "ParticipantA",
+      "Yes, that's true. It's always exciting to see how new players step up and leave their mark on the game."
+    ],
+    [
+      "ParticipantB",
+      "Absolutely! There's always room for fresh talent. Well, we've chatted quite a bit about football today."
+    ],
+    [
+      "ParticipantA",
+      "Yeah, it was great talking with you! Thanks for sharing your insights on the game."
+    ],
+    [
+      "ParticipantB",
+      "Likewise! It was nice chatting with you too. Have a good day!"
+    ]
+  ],
+  "n_turns": 16,
+  "multi_turn_emissions": 1
+}

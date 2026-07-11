@@ -1,0 +1,22 @@
+{
+  "condition": "C1-P0",
+  "architecture": "C1",
+  "prompt_level": "P0",
+  "model": "lmsys/vicuna-13b-v1.5-16k",
+  "conversation_no": 4177,
+  "topic": "News Media",
+  "sb_prompt": "DISCUSS HOW YOU AND THE OTHER CALLER KEEP UP ON CURRENT EVENTS.      DO YOU GET MOST OF YOUR NEWS FROM TVOR PEOPLE YOU KNOW?  ARE YOU SATISFIED WITH THE QUALITY OF COVERAGE?",
+  "persona_a": {
+    "label": "ParticipantA",
+    "gender": "man",
+    "age": 31,
+    "education": "a college degree"
+  },
+  "persona_b": {
+    "label": "ParticipantB",
+    "gender": "man",
+    "age": 23,
+    "education": "some college"
+  },
+  "raw_output": "Participants: Particiant A (PA) and Participiant B (PB)\n\nLog:\n\nPA: Hi there! How are you doing today?\nPB: I'm good, thanks for asking. What brings you to call today?"
+}

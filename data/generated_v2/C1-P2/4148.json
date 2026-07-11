@@ -1,0 +1,22 @@
+{
+  "condition": "C1-P2",
+  "architecture": "C1",
+  "prompt_level": "P2",
+  "model": "lmsys/vicuna-13b-v1.5-16k",
+  "conversation_no": 4148,
+  "topic": "Trial By Jury",
+  "sb_prompt": "DISCUSS POSSIBLE CHANGES IN THE WAY TRIALS BY JURY ARE CONDUCTED.     FOR EXAMPLE",
+  "persona_a": {
+    "label": "ParticipantA",
+    "gender": "man",
+    "age": 26,
+    "education": "a college degree"
+  },
+  "persona_b": {
+    "label": "ParticipantB",
+    "gender": "man",
+    "age": 47,
+    "education": "some college"
+  },
+  "raw_output": "ParticipantsA: Hi there, how are you doing today?\n\nParticlesB: I've been doing pretty well, thanks for asking. How about yourself?\n```vbnet\n        ParticipateA: I have been having quite the busy day at work but trying to make time for everything. What about you?\n        \n        B: Same here, always seems like there's more to do than hours in a day. But anyway, what did you want to discuss today?  \n    ```\n\nA: Well, we were supposed to chat today about changes in trials by jury, so I thought let's give our thoughts on it since we don't know much about each other yet.\nB: Sure, sounds interesting. As far as I know, trial by j"
+}

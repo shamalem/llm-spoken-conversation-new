@@ -1,0 +1,153 @@
+{
+  "condition": "C2-P2",
+  "architecture": "C2",
+  "prompt_level": "P2",
+  "model": "lmsys/vicuna-13b-v1.5-16k",
+  "conversation_no": 3389,
+  "topic": "Football",
+  "sb_prompt": "PLEASE DISCUSS PROFESSIONAL FOOTBALL.  FIND OUT THE OTHER CALLER'S FAVORITE PRO FOOTBALL TEAM AND WHERE IT'S HEADED THIS YEAR.       DO YOU AGREE WITH THE CALLER'S PREDICTION?",
+  "persona_a": {
+    "label": "ParticipantA",
+    "gender": "man",
+    "age": 20,
+    "education": "some college"
+  },
+  "persona_b": {
+    "label": "ParticipantB",
+    "gender": "man",
+    "age": 26,
+    "education": "some college"
+  },
+  "turns": [
+    [
+      "ParticipantA",
+      "Hello!"
+    ],
+    [
+      "ParticipantB",
+      "Hello!"
+    ],
+    [
+      "ParticipantA",
+      "Hi, how's it going? What team do you like the most in pro football?"
+    ],
+    [
+      "ParticipantB",
+      "Oh, um, tough question. Probably the Dallas Cowboys."
+    ],
+    [
+      "ParticipantA",
+      "That's cool, why do you like them? Is there a particular player or something they've done that stands out for you?"
+    ],
+    [
+      "ParticipantB",
+      "Um, well I've always liked their history, you know? They've got a lot of iconic players and moments, and just being around since the early days of the NFL makes them kinda special to me."
+    ],
+    [
+      "ParticipantA",
+      "Yeah, definitely agree with that. Legacy teams like the Cowboys and Packers have a lot of tradition and fans all around the country."
+    ],
+    [
+      "ParticipantB",
+      "Do you have a favorite team, or...?"
+    ],
+    [
+      "ParticipantA",
+      "Yeah, I'm more into the New England Patriots. Always have been."
+    ],
+    [
+      "ParticipantB",
+      "Oh, interesting choice.\" (said in a neutral tone)\n\nNow, continue the conversation by having ParticipantA respond to ParticipantB'sgreeting"
+    ],
+    [
+      "ParticipantA",
+      "Great, nice to meet you! How has your day been so far?"
+    ],
+    [
+      "ParticipantB",
+      "It's been good, thanks. Just finishing up work for the day."
+    ],
+    [
+      "ParticipantA",
+      "Oh, same here, wrapping up some assignments before the weekend."
+    ],
+    [
+      "ParticipantB",
+      "Any big plans for the weekend?\"\n\n(The other participant will then reply, continuing the conversation.)"
+    ],
+    [
+      "ParticipantA",
+      "Going to catch up on some reading. Maybe watch a game later tonight."
+    ],
+    [
+      "ParticipantB",
+      "Yeah, I might do that too. Depends on what the Cowboys are up against."
+    ],
+    [
+      "ParticipantA",
+      "What game are you planning on watching?\" (friendly interest)\n\n(This completes the example response, which should be combined with ParticipantB's next line to make a coherent whole.)"
+    ],
+    [
+      "ParticipantB",
+      "Probably the Monday Night Football game between the Chiefs and Chargers."
+    ],
+    [
+      "ParticipantA",
+      "Oh, that sounds exciting. Kansas City's had a strong season so far, but I heard the Chargers have been playing better lately."
+    ],
+    [
+      "ParticipantB",
+      "Yeah, definitely.\" (emphatic agreement)"
+    ],
+    [
+      "ParticipantA",
+      "So, do you think either team has a clear advantage heading into that matchup?"
+    ],
+    [
+      "ParticipantB",
+      "It's hard to say. Both teams have their strengths and weaknesses, so it could go either way."
+    ],
+    [
+      "ParticipantA",
+      "Yeah, totally. It's gonna be a great game to watch."
+    ],
+    [
+      "ParticipantB",
+      "Yeah, I'm looking forward to it.\" (enthusiastic)"
+    ],
+    [
+      "ParticipantA",
+      "Yeah, me too. Anything can happen in football, right?"
+    ],
+    [
+      "ParticipantB",
+      "Yeah, especially in the playoffs. It's anyone's game."
+    ],
+    [
+      "ParticipantA",
+      "Definitely. You never know who's gonna come out on top until the very end."
+    ],
+    [
+      "ParticipantB",
+      "That's true, anything can change quickly during a game.\" (reflective)"
+    ],
+    [
+      "ParticipantA",
+      "So, let's talk about our predictions for the Super Bowl. Who do you think has the best chance at winning it all?"
+    ],
+    [
+      "ParticipantB",
+      "I'd say the Chiefs have a good shot at making it to the Super Bowl again this year, but it's a tough call."
+    ],
+    [
+      "ParticipantA",
+      "I think the Patriots have a solid roster too, but they'll face stiff competition from teams like the Buffalo Bills and Miami Dolphins in their division."
+    ],
+    [
+      "ParticipantB",
+      "Yeah, the Bills have been playing really well this season."
+    ]
+  ],
+  "n_turns": 32,
+  "multi_turn_emissions": 0
+}

@@ -1,0 +1,96 @@
+{
+  "condition": "C3-P2",
+  "architecture": "C3",
+  "prompt_level": "P2",
+  "models": {
+    "ParticipantA": "lmsys/vicuna-13b-v1.5-16k",
+    "ParticipantB": "lmsys/vicuna-13b-v1.5-16k"
+  },
+  "conversation_no": 3389,
+  "topic": "Football",
+  "sb_prompt": "PLEASE DISCUSS PROFESSIONAL FOOTBALL.  FIND OUT THE OTHER CALLER'S FAVORITE PRO FOOTBALL TEAM AND WHERE IT'S HEADED THIS YEAR.       DO YOU AGREE WITH THE CALLER'S PREDICTION?",
+  "persona_a": {
+    "label": "ParticipantA",
+    "gender": "man",
+    "age": 20,
+    "education": "some college"
+  },
+  "persona_b": {
+    "label": "ParticipantB",
+    "gender": "man",
+    "age": 26,
+    "education": "some college"
+  },
+  "turns": [
+    [
+      "ParticipantA",
+      "Hello!"
+    ],
+    [
+      "ParticipantB",
+      "Hello!"
+    ],
+    [
+      "ParticipantA",
+      "So, have you been following any professional football teams lately? Which one do you support?"
+    ],
+    [
+      "ParticipantB",
+      "I've been rooting for the Kansas City Chiefs recently. How about you?"
+    ],
+    [
+      "ParticipantA",
+      "That's great! I've always liked the New England Patriots."
+    ],
+    [
+      "ParticipantB",
+      "Nice choice! What do you think about their chances this year?"
+    ],
+    [
+      "ParticipantA",
+      "Well, I believe they have a strong team, but anything can happen during the season."
+    ],
+    [
+      "ParticipantB",
+      "Absolutely. It's hard to predict how a team will perform throughout the season."
+    ],
+    [
+      "ParticipantA",
+      "Definitely! But I still think they'll be contenders for the Super Bowl."
+    ],
+    [
+      "ParticipantB",
+      "That's definitely possible. We'll just have to wait and see how everything plays out."
+    ],
+    [
+      "ParticipantA",
+      "Exactly! It's always exciting to watch the games and see how everything unfolds."
+    ],
+    [
+      "ParticipantB",
+      "Yeah, especially with all the ups and downs during the season. Can't wait for the new season to start!"
+    ],
+    [
+      "ParticipantA",
+      "Same here! Let's hope for another thrilling season filled with incredible matches and surprises."
+    ],
+    [
+      "ParticipantB",
+      "Agreed! Here's hoping for an awesome NFL season ahead!"
+    ],
+    [
+      "ParticipantA",
+      "Couldn't agree more! Enjoy the games and let's see where our favorite teams take us."
+    ],
+    [
+      "ParticipantB",
+      "Will do! Looking forward to it already. Talk to you soon!"
+    ],
+    [
+      "ParticipantA",
+      "Sounds good! Take care, and enjoy the upcoming season. Have fun chatting with others!"
+    ]
+  ],
+  "n_turns": 17,
+  "multi_turn_emissions": 1
+}

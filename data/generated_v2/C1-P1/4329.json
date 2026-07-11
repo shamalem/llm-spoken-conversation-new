@@ -1,0 +1,22 @@
+{
+  "condition": "C1-P1",
+  "architecture": "C1",
+  "prompt_level": "P1",
+  "model": "lmsys/vicuna-13b-v1.5-16k",
+  "conversation_no": 4329,
+  "topic": "Recycling",
+  "sb_prompt": "WHAT IS BEING DONE IN YOUR COMMUNITY OR AREA ABOUT RECYCLING WASTE MATERIALS?  DO YOU THINK MORE SHOULD BE DONE?  DO YOU HAVE ANY IDEAS ON HOW TO ENCOURAGE MORE RECYCLING OR ON WHAT OTHER MATERIALS SHOULD BE INCLUDED?",
+  "persona_a": {
+    "label": "ParticipantA",
+    "gender": "woman",
+    "age": 39,
+    "education": "some college"
+  },
+  "persona_b": {
+    "label": "ParticipantB",
+    "gender": "man",
+    "age": 37,
+    "education": "some college"
+  },
+  "raw_output": "Participants:\n* ParticipaA: Woman, aged 30, has completed high school education. Has worked in retail for 5 years.\n* Parti"
+}

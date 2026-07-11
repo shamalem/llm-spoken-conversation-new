@@ -1,0 +1,22 @@
+{
+  "condition": "C1-P1",
+  "architecture": "C1",
+  "prompt_level": "P1",
+  "model": "lmsys/vicuna-13b-v1.5-16k",
+  "conversation_no": 4133,
+  "topic": "Capital Punishment",
+  "sb_prompt": "COMPARE YOUR OPINIONS AND THOSE OF THE OTHER CALLER ON CAPITAL PUNISHMENT.  DO EITHER OF YOU THINK IT SHOULD BE RESTRICTED TO CERTAIN CRIMES OR CIRCUMSTANCES?  HOW DO THE POLICIES AND PRACTICES OF YOUR STATE FIT WITH YOUR OPINIONS?",
+  "persona_a": {
+    "label": "ParticipantA",
+    "gender": "man",
+    "age": 30,
+    "education": "some college"
+  },
+  "persona_b": {
+    "label": "ParticipantB",
+    "gender": "man",
+    "age": 30,
+    "education": "a college degree"
+  },
+  "raw_output": "ParticipantsA: So what brings you here today? Are we talking about capital punishment?\n\nParticleB: Yeah, that\u2019s right. I think it\u2019s a really important issue and I want to hear someone else\u2019s perspective. What about you?\nParticiaNTASA: Yes, definitely interested in discussing it. To be honest, I don\u2019t have strong feelings either way but I find myself wanting to learn more about it.\nPatiriB: Me too. Well, let me start off by saying I believe capital punishments should only be used for extreme cases such as murder or treason.\nPariticaNTSAA: That makes sense. But I wonder if there might be situations where it could be applied in a more nuanced manner depending on circumstances surrounding the crime committed. For example, maybe taking into account motive or intentions behind committing the act.\nPatriticB: Hmm, interesting point. While I agree that every case is different, I still maintain that certain crimes deserve the ultimate consequence because they pose a threat to society. However, I am open to hearing more arguments against my stance. Do you disagree with my view completely?\nPaetriciaNTSAB: Not entirely. I understand why you think certain cr"
+}

@@ -1,0 +1,153 @@
+{
+  "condition": "C2-P2",
+  "architecture": "C2",
+  "prompt_level": "P2",
+  "model": "lmsys/vicuna-13b-v1.5-16k",
+  "conversation_no": 4177,
+  "topic": "News Media",
+  "sb_prompt": "DISCUSS HOW YOU AND THE OTHER CALLER KEEP UP ON CURRENT EVENTS.      DO YOU GET MOST OF YOUR NEWS FROM TVOR PEOPLE YOU KNOW?  ARE YOU SATISFIED WITH THE QUALITY OF COVERAGE?",
+  "persona_a": {
+    "label": "ParticipantA",
+    "gender": "man",
+    "age": 31,
+    "education": "a college degree"
+  },
+  "persona_b": {
+    "label": "ParticipantB",
+    "gender": "man",
+    "age": 23,
+    "education": "some college"
+  },
+  "turns": [
+    [
+      "ParticipantA",
+      "Hello!"
+    ],
+    [
+      "ParticipantB",
+      "Hello!"
+    ],
+    [
+      "ParticipantA",
+      "Hi there, how has your day been so far? Mine has been pretty good, just got done with work."
+    ],
+    [
+      "ParticipantB",
+      "Yeah, mine has been decent too.\" (casual)\n\nConversation continues:\n\nParticipantA"
+    ],
+    [
+      "ParticipantA",
+      "So, what do you think about the news media these days? Do you have a preferred source for getting your news?"
+    ],
+    [
+      "ParticipantB",
+      "Honestly, I don't pay too much attention to it."
+    ],
+    [
+      "ParticipantA",
+      "That's interesting. What made you lose interest in following the news?"
+    ],
+    [
+      "ParticipantB",
+      "Just feels like a lot of noise most of the time, you know?"
+    ],
+    [
+      "ParticipantA",
+      "Yeah, I get that feeling sometimes too. It seems like there's always something new coming up, but half the time it's just sensationalism or biased reporting."
+    ],
+    [
+      "ParticipantB",
+      "Yeah, exactly.\" (agrees with ParticipantA)"
+    ],
+    [
+      "ParticipantA",
+      "I try to stick to more reliable sources, but even then, it can be hard to separate fact from opinion sometimes."
+    ],
+    [
+      "ParticipantB",
+      "Yeah, it's definitely tricky.\" (agrees with previous sentiment and adds his own thoughts)"
+    ],
+    [
+      "ParticipantA",
+      "Have you found any particular news sources that you trust?\" (open-ended question)"
+    ],
+    [
+      "ParticipantB",
+      "Well, I mainly get my news from social media, but I don't know how reliable it all is."
+    ],
+    [
+      "ParticipantA",
+      "Yeah, I hear ya. Social media can be hit or miss sometimes."
+    ],
+    [
+      "ParticipantB",
+      "But sometimes, you come across articles that seem well researched and credible."
+    ],
+    [
+      "ParticipantA",
+      "Yeah, that's true.\" (agrees and validates B's statement)"
+    ],
+    [
+      "ParticipantB",
+      "It's like finding a needle in a haystack.\" (expresses difficulty and frustration)"
+    ],
+    [
+      "ParticipantA",
+      "Yeah, it can be tough to find the right information sometimes."
+    ],
+    [
+      "ParticipantB",
+      "But I try to read multiple sources to get a better understanding of what's going on."
+    ],
+    [
+      "ParticipantA",
+      "I try to do the same thing. It helps me stay informed without getting overwhelmed by all the noise."
+    ],
+    [
+      "ParticipantB",
+      "Yeah, that's smart.\" (agrees with A's suggestion)"
+    ],
+    [
+      "ParticipantA",
+      "So, which social media platforms do you use to keep up with news?"
+    ],
+    [
+      "ParticipantB",
+      "Mainly Facebook and Twitter.\" (answers ParticipantA's question)"
+    ],
+    [
+      "ParticipantA",
+      "Yeah, I use those platforms too, especially for breaking news."
+    ],
+    [
+      "ParticipantB",
+      "Yeah, I find Facebook particularly useful for keeping up with local news."
+    ],
+    [
+      "ParticipantA",
+      "Yeah, me too.\" (agrees with B's statement about FB being useful for local news)"
+    ],
+    [
+      "ParticipantB",
+      "Yeah, it's nice to be able to see what's happening in my community."
+    ],
+    [
+      "ParticipantA",
+      "Yeah, totally.\" (agrees with the last statement made by ParticipantB)"
+    ],
+    [
+      "ParticipantB",
+      "But sometimes it feels like we only hear about certain issues while others get ignored."
+    ],
+    [
+      "ParticipantA",
+      "Yeah, it can feel that way sometimes. Like there's only a certain narrative being pushed."
+    ],
+    [
+      "ParticipantB",
+      "It can be overwhelming at times.\" (shared sentiment and expressed feeling about the complexity of the news media landscape)"
+    ]
+  ],
+  "n_turns": 32,
+  "multi_turn_emissions": 0
+}

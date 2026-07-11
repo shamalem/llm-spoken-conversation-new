@@ -1,0 +1,22 @@
+{
+  "condition": "C1-P2",
+  "architecture": "C1",
+  "prompt_level": "P2",
+  "model": "lmsys/vicuna-13b-v1.5-16k",
+  "conversation_no": 4320,
+  "topic": "Crime",
+  "sb_prompt": "DISCUSS CRIME IN AMERICAN CITIES TODAY.  WHAT ARE YOUR CONCERNS AND THE CONCERNS OF THE OTHER CALLER?  WHAT STEPS CAN BE TAKEN TO REDUCE CRIME?",
+  "persona_a": {
+    "label": "ParticipantA",
+    "gender": "man",
+    "age": 49,
+    "education": "some college"
+  },
+  "persona_b": {
+    "label": "ParticipantB",
+    "gender": "man",
+    "age": 28,
+    "education": "some college"
+  },
+  "raw_output": "ParticipantsA: Hi there, how are you doing today?\n\nPart"
+}

@@ -1,0 +1,92 @@
+{
+  "condition": "C4-P0",
+  "architecture": "C4",
+  "prompt_level": "P0",
+  "models": {
+    "ParticipantA": "lmsys/vicuna-13b-v1.5-16k",
+    "ParticipantB": "mistralai/Mistral-7B-Instruct-v0.2"
+  },
+  "conversation_no": 4360,
+  "topic": "Social Change",
+  "sb_prompt": "DISCUSS RECENT SOCIAL CHANGES.  HOW IS LIFE IN AMERICA DIFFERENT TODAY COMPARED TO LIVING TENY",
+  "persona_a": {
+    "label": "ParticipantA",
+    "gender": "woman",
+    "age": 29,
+    "education": "some college"
+  },
+  "persona_b": {
+    "label": "ParticipantB",
+    "gender": "woman",
+    "age": 24,
+    "education": "some college"
+  },
+  "turns": [
+    [
+      "ParticipantA",
+      "Hello!"
+    ],
+    [
+      "ParticipantB",
+      "Hello!"
+    ],
+    [
+      "ParticipantA",
+      "So, what are your thoughts on recent social changes? Do you think things are better or worse than they were ten years ago?"
+    ],
+    [
+      "ParticipantB",
+      "Well, I believe there have been significant advancements in areas like technology and social justice."
+    ],
+    [
+      "ParticipantA",
+      "Yes, definitely. Technology has made our lives easier in so many ways, but it also has its downsides, like privacy concerns and digital addiction."
+    ],
+    [
+      "ParticipantB",
+      "Absolutely, it's a double-edged sword. But I think the benefits outweigh the drawbacks for now."
+    ],
+    [
+      "ParticipantA",
+      "Agreed. And when it comes to social justice, we've seen important movements like Black Lives Matter and increased representation of marginalized groups, which is long overdue."
+    ],
+    [
+      "ParticipantB",
+      "Yes, progress is being made, but there's still a lot of work to be done."
+    ],
+    [
+      "ParticipantA",
+      "Definitely. We need to keep pushing for more inclusivity and equality across all aspects of society, from education to healthcare and beyond."
+    ],
+    [
+      "ParticipantB",
+      "Agreed. It's essential that we continue to advocate for change and hold those in power accountable."
+    ],
+    [
+      "ParticipantA",
+      "Absolutely. By working together and staying informed, we can create positive change and make America a better place for everyone."
+    ],
+    [
+      "ParticipantB",
+      "I couldn't agree more. Let's keep the conversation going and stay engaged in making a difference."
+    ],
+    [
+      "ParticipantA",
+      "Sure thing! It's great to connect with someone who shares similar values."
+    ],
+    [
+      "ParticipantB",
+      "Likewise! I appreciate your perspective and insight into this important topic. Let's keep discussing and learning from each other."
+    ],
+    [
+      "ParticipantA",
+      "Sounds perfect! Looking forward to our future conversations. Goodbye for now!"
+    ],
+    [
+      "ParticipantB",
+      "Goodbye for now, take care and have a wonderful day! See you soon!"
+    ]
+  ],
+  "n_turns": 16,
+  "multi_turn_emissions": 0
+}

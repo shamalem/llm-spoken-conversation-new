@@ -1,0 +1,156 @@
+{
+  "condition": "C4-P0",
+  "architecture": "C4",
+  "prompt_level": "P0",
+  "models": {
+    "ParticipantA": "lmsys/vicuna-13b-v1.5-16k",
+    "ParticipantB": "mistralai/Mistral-7B-Instruct-v0.2"
+  },
+  "conversation_no": 3389,
+  "topic": "Football",
+  "sb_prompt": "PLEASE DISCUSS PROFESSIONAL FOOTBALL.  FIND OUT THE OTHER CALLER'S FAVORITE PRO FOOTBALL TEAM AND WHERE IT'S HEADED THIS YEAR.       DO YOU AGREE WITH THE CALLER'S PREDICTION?",
+  "persona_a": {
+    "label": "ParticipantA",
+    "gender": "man",
+    "age": 20,
+    "education": "some college"
+  },
+  "persona_b": {
+    "label": "ParticipantB",
+    "gender": "man",
+    "age": 26,
+    "education": "some college"
+  },
+  "turns": [
+    [
+      "ParticipantA",
+      "Hello!"
+    ],
+    [
+      "ParticipantB",
+      "Hello!"
+    ],
+    [
+      "ParticipantA",
+      "Hey, so what team are you rooting for this year in the NFL?"
+    ],
+    [
+      "ParticipantB",
+      "I'm a big fan of the Pittsburgh Steelers. How about you?"
+    ],
+    [
+      "ParticipantA",
+      "Nice! I've been a diehard Dallas Cowboys fan since I was a kid."
+    ],
+    [
+      "ParticipantB",
+      "The Cowboys always have a strong squad. Do you think they'll make it to the playoffs this season?"
+    ],
+    [
+      "ParticipantA",
+      "Definitely! With their solid defense and explosive offense, I believe they have what it takes to go all the way."
+    ],
+    [
+      "ParticipantB",
+      "That's a bold prediction. I agree that their defense is looking good, but their offense has had its ups and downs so far."
+    ],
+    [
+      "ParticipantA",
+      "Yeah, true. But I think once they find their groove, they'll be unstoppable."
+    ],
+    [
+      "ParticipantB",
+      "Here's hoping for that! It would be an exciting finish if they do make it to the Super Bowl."
+    ],
+    [
+      "ParticipantA",
+      "Absolutely! The anticipation alone is getting me pumped up."
+    ],
+    [
+      "ParticipantB",
+      "Same here! Let's keep our fingers crossed for both teams to put on a great show this football season."
+    ],
+    [
+      "ParticipantA",
+      "Sounds like a plan! May the best team win, and let's enjoy some amazing games along the way."
+    ],
+    [
+      "ParticipantB",
+      "Agreed! Best of luck to the Steelers and Cowboys. Here's to an exciting season filled with thrilling matches and unexpected twists."
+    ],
+    [
+      "ParticipantA",
+      "Couldn't agree more! Enjoy the games and may our favorite teams make us proud."
+    ],
+    [
+      "ParticipantB",
+      "You got it! Let's stay tuned for every match and cheer them on."
+    ],
+    [
+      "ParticipantA",
+      "Count on it! This football season promises to be one for the books. We'll share our excitement and passion together as fans."
+    ],
+    [
+      "ParticipantB",
+      "Absolutely! Here's to unforgettable moments, heart-stopping plays, and incredible come-from-behind victories."
+    ],
+    [
+      "ParticipantA",
+      "Cheering for those exhilarating moments already! Let's embrace the spirit of competition and revel in the joy of being fans."
+    ],
+    [
+      "ParticipantB",
+      "Amen to that! Whether our teams face challenges or triumph, we'll stand by their side through thick and thin."
+    ],
+    [
+      "ParticipantA",
+      "No doubt about it! Being a fan is all about supporting your team and believing in their potential."
+    ],
+    [
+      "ParticipantB",
+      "Exactly right! Even when things get tough, we'll hold on to hope and confidence in their ability to rise above the challenges and overcome obstacles."
+    ],
+    [
+      "ParticipantA",
+      "True grit and determination - that's what makes football such an inspiring sport."
+    ],
+    [
+      "ParticipantB",
+      "Indeed! Football embodies resilience, teamwork, and the indomitable human spirit."
+    ],
+    [
+      "ParticipantA",
+      "I couldn't agree more! And it's even better when shared with fellow fans who appreciate the game just as much."
+    ],
+    [
+      "ParticipantB",
+      "100%! Building camaraderie with other passionate fans creates an electrifying atmosphere that amplifies the entire experience."
+    ],
+    [
+      "ParticipantA",
+      "You said it! Sharing the love for our favorite teams brings people together and strengthens the bonds between us."
+    ],
+    [
+      "ParticipantB",
+      "Yes, absolutely! Engaging in conversations about professional football is one of the many ways fans connect and build lasting friendships."
+    ],
+    [
+      "ParticipantA",
+      "So true! The love for the game transcends boundaries and brings fans from diverse backgrounds closer."
+    ],
+    [
+      "ParticipantB",
+      "Couldn'ta agreed more! The beauty of football lies in its ability to unite people from various walks of life under a common passion."
+    ],
+    [
+      "ParticipantA",
+      "It's a testament to the power of sports and how they can bring communities together."
+    ],
+    [
+      "ParticipantB",
+      "Without a doubt! Sports have the unique ability to inspire, motivate, and create connections among individuals, fostering a sense of unity and belonging."
+    ]
+  ],
+  "n_turns": 32,
+  "multi_turn_emissions": 0
+}

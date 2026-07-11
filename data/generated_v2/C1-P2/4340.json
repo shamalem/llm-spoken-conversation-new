@@ -1,0 +1,22 @@
+{
+  "condition": "C1-P2",
+  "architecture": "C1",
+  "prompt_level": "P2",
+  "model": "lmsys/vicuna-13b-v1.5-16k",
+  "conversation_no": 4340,
+  "topic": "Crime",
+  "sb_prompt": "DISCUSS CRIME IN AMERICAN CITIES TODAY.  WHAT ARE YOUR CONCERNS AND THE CONCERNS OF THE OTHER CALLER?  WHAT STEPS CAN BE TAKEN TO REDUCE CRIME?",
+  "persona_a": {
+    "label": "ParticipantA",
+    "gender": "man",
+    "age": 31,
+    "education": "a college degree"
+  },
+  "persona_b": {
+    "label": "ParticipantB",
+    "gender": "man",
+    "age": 29,
+    "education": "some college"
+  },
+  "raw_output": "Participants should introduce themselves briefly before discussing crime rate in American cities. They could mention where they live currently or have lived previously. Both could give examples of places that had low/high crimes rates based on personal experience or news reports. Then participants could share what steps they think need to be taken for reducing crime rate.\nAfter introductions, Particip"
+}

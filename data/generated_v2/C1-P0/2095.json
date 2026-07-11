@@ -1,0 +1,22 @@
+{
+  "condition": "C1-P0",
+  "architecture": "C1",
+  "prompt_level": "P0",
+  "model": "lmsys/vicuna-13b-v1.5-16k",
+  "conversation_no": 2095,
+  "topic": "Weather Climate",
+  "sb_prompt": "DISCUSS THE WEATHER.   WHAT HAS IT BEEN LIKE IN YOUR AREA?   HAS IT BEEN TYPICAL FOR THIS TIME OF YEAR?  COMPARE IT WITH THE OTHER CALLER'S WEATHER.",
+  "persona_a": {
+    "label": "ParticipantA",
+    "gender": "man",
+    "age": 30,
+    "education": "some college"
+  },
+  "persona_b": {
+    "label": "ParticipantB",
+    "gender": "man",
+    "age": 49,
+    "education": "a college degree"
+  },
+  "raw_output": "Participants: ParticiapntA (PA) & ParticipantaB (PB)\nTopic: Weather\nPA: Hi there! How are you doing today?\nPB: I'm good, thanks for asking. What brings you to call today?"
+}

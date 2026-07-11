@@ -1,0 +1,22 @@
+{
+  "condition": "C1-P2",
+  "architecture": "C1",
+  "prompt_level": "P2",
+  "model": "lmsys/vicuna-13b-v1.5-16k",
+  "conversation_no": 4362,
+  "topic": "Public Education",
+  "sb_prompt": "DISCUSS WITH THE OTHER CALLER WHETHER THERE IS SOMETHING SERIOUSLY WRONG WITH OUR PUBLIC SCHOOL SYSTEMS TODAYY",
+  "persona_a": {
+    "label": "ParticipantA",
+    "gender": "man",
+    "age": 31,
+    "education": "a college degree"
+  },
+  "persona_b": {
+    "label": "ParticipantB",
+    "gender": "man",
+    "age": 23,
+    "education": "some college"
+  },
+  "raw_output": "Participants: Anonymous Male #1 & Anonymous Female #1\n\nAnonMale1: Hi there, how are you doing today?\nAnonymFem1: Hey, I've been better. How about yourself?\n\nHey, did you hear about the new budget cuts for schools?\nYeah, they're saying they might have to lay off teachers or increase class sizes again. It's crazy."
+}

@@ -1,0 +1,84 @@
+{
+  "condition": "C3-P2",
+  "architecture": "C3",
+  "prompt_level": "P2",
+  "models": {
+    "ParticipantA": "lmsys/vicuna-13b-v1.5-16k",
+    "ParticipantB": "lmsys/vicuna-13b-v1.5-16k"
+  },
+  "conversation_no": 4345,
+  "topic": "News Media",
+  "sb_prompt": "DISCUSS HOW YOU AND THE OTHER CALLER KEEP UP ON CURRENT EVENTS.      DO YOU GET MOST OF YOUR NEWS FROM TVOR PEOPLE YOU KNOW?  ARE YOU SATISFIED WITH THE QUALITY OF COVERAGE?",
+  "persona_a": {
+    "label": "ParticipantA",
+    "gender": "man",
+    "age": 34,
+    "education": "some college"
+  },
+  "persona_b": {
+    "label": "ParticipantB",
+    "gender": "man",
+    "age": 31,
+    "education": "some college"
+  },
+  "turns": [
+    [
+      "ParticipantA",
+      "Hello!"
+    ],
+    [
+      "ParticipantB",
+      "Hello!"
+    ],
+    [
+      "ParticipantA",
+      "So, how do you keep up with current events? Do you watch TV news or get information from friends and family?"
+    ],
+    [
+      "ParticipantB",
+      "Mostly from social media and online sources, but I also try to read newspapers and magazines whenever possible."
+    ],
+    [
+      "ParticipantA",
+      "That's interesting. How do you find the quality of coverage from these sources?"
+    ],
+    [
+      "ParticipantB",
+      "It varies depending on the source, but overall, I think there are more biases than I would like."
+    ],
+    [
+      "ParticipantA",
+      "Definitely agree. What kind of biases have you noticed?"
+    ],
+    [
+      "ParticipantB",
+      "Sometimes it feels like certain political agendas are being pushed instead of just reporting the facts objectively."
+    ],
+    [
+      "ParticipantA",
+      "Yes, unfortunately, that seems to be the case with many news outlets nowadays."
+    ],
+    [
+      "ParticipantB",
+      "Have you found any specific sources to be particularly reliable and unbiased?"
+    ],
+    [
+      "ParticipantA",
+      "To be honest, I haven't come across any that are completely free of bias, but I do try to follow multiple sources so I can get different perspectives."
+    ],
+    [
+      "ParticipantB",
+      "Same here, variety definitely helps in getting a better understanding of the situation. Thanks for chatting!"
+    ],
+    [
+      "ParticipantA",
+      "No problem, great talking with you too! Take care! Bye!"
+    ],
+    [
+      "ParticipantB",
+      "Bye! Stay safe and take care! \ud83d\ude0a\ud83d\udc4b"
+    ]
+  ],
+  "n_turns": 14,
+  "multi_turn_emissions": 1
+}

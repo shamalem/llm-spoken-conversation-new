@@ -1,0 +1,22 @@
+{
+  "condition": "C1-P1",
+  "architecture": "C1",
+  "prompt_level": "P1",
+  "model": "lmsys/vicuna-13b-v1.5-16k",
+  "conversation_no": 4103,
+  "topic": "Family Finance",
+  "sb_prompt": "DOES YOUR FAMILY KEEP A MONTHLY BUDGETCAN YOU GIVE A GENERAL DESCRIPTION OF YOUR PROCEDURES",
+  "persona_a": {
+    "label": "ParticipantA",
+    "gender": "man",
+    "age": 29,
+    "education": "some college"
+  },
+  "persona_b": {
+    "label": "ParticipantB",
+    "gender": "man",
+    "age": 40,
+    "education": "a college degree"
+  },
+  "raw_output": "ParticipantsA: Hi there, how are you doing today?\nPartici"
+}

@@ -1,0 +1,22 @@
+{
+  "condition": "C1-P0",
+  "architecture": "C1",
+  "prompt_level": "P0",
+  "model": "lmsys/vicuna-13b-v1.5-16k",
+  "conversation_no": 4103,
+  "topic": "Family Finance",
+  "sb_prompt": "DOES YOUR FAMILY KEEP A MONTHLY BUDGETCAN YOU GIVE A GENERAL DESCRIPTION OF YOUR PROCEDURES",
+  "persona_a": {
+    "label": "ParticipantA",
+    "gender": "man",
+    "age": 29,
+    "education": "some college"
+  },
+  "persona_b": {
+    "label": "ParticipantB",
+    "gender": "man",
+    "age": 40,
+    "education": "a college degree"
+  },
+  "raw_output": "Participants: ParticiapntA (PA), ParticipantinB (PB)\n\nPA: Hello!, I was wondering if you could give me any advice on creating a family budget?\n\nPB: Sure thing, we definitely keep a monthly budget. It helps us stay organized and financially secure. What kind of help are you looking for exactly?\nPA : Well , i am trying to get my finances together after graduation . How did u start doing that ?\nPb: We started by sitting down as a family and making a list of all our expenses, including things like rent/mortgage payments, utilities, groceries, transportation costs, etc. Then we set up categories for each type of expense and assigned a certain amount of money to be spent on them each month. This way, we can see where our money is going and make adjustments accordingly.\nPA ; That sounds like a good idea but how do you manage your savings and emergency funds?\nP"
+}

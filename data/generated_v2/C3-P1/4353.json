@@ -1,0 +1,104 @@
+{
+  "condition": "C3-P1",
+  "architecture": "C3",
+  "prompt_level": "P1",
+  "models": {
+    "ParticipantA": "lmsys/vicuna-13b-v1.5-16k",
+    "ParticipantB": "lmsys/vicuna-13b-v1.5-16k"
+  },
+  "conversation_no": 4353,
+  "topic": "Family Finance",
+  "sb_prompt": "DOES YOUR FAMILY KEEP A MONTHLY BUDGETCAN YOU GIVE A GENERAL DESCRIPTION OF YOUR PROCEDURES",
+  "persona_a": {
+    "label": "ParticipantA",
+    "gender": "man",
+    "age": 36,
+    "education": "some college"
+  },
+  "persona_b": {
+    "label": "ParticipantB",
+    "gender": "woman",
+    "age": 47,
+    "education": "a college degree"
+  },
+  "turns": [
+    [
+      "ParticipantA",
+      "Hello!"
+    ],
+    [
+      "ParticipantB",
+      "Hello!"
+    ],
+    [
+      "ParticipantA",
+      "So, do you keep a monthly budget for your family?"
+    ],
+    [
+      "ParticipantB",
+      "Yes, we do. We sit down at the beginning of every month and go through our income and expenses to create a budget plan for the month ahead."
+    ],
+    [
+      "ParticipantA",
+      "That sounds great! What kind of procedures do you follow to make sure you stick to your budget?"
+    ],
+    [
+      "ParticipantB",
+      "Well, we track all of our expenses throughout the month, so that by the end of the month, we have a clear picture of where our money has gone."
+    ],
+    [
+      "ParticipantA",
+      "Do you use any tools or apps to help you manage your finances and stay on track with your budget?"
+    ],
+    [
+      "ParticipantB",
+      "We use a spreadsheet program to input all of our expenses and income, and then we can see where we stand in real time."
+    ],
+    [
+      "ParticipantA",
+      "Oh, that's smart. How do you prioritize spending in your budget?"
+    ],
+    [
+      "ParticipantB",
+      "Our main priority is always making sure we have enough money set aside for essential bills such as housing, utilities, and groceries."
+    ],
+    [
+      "ParticipantA",
+      "Definitely important to cover those basics first. And after that?"
+    ],
+    [
+      "ParticipantB",
+      "After taking care of essentials, we prioritize saving for retirement and other long-term goals, followed by discretionary spending on entertainment, travel, and hobbies."
+    ],
+    [
+      "ParticipantA",
+      "It seems like you have a good balance there. Have you found it challenging to stick to your budget at any point?"
+    ],
+    [
+      "ParticipantB",
+      "Sometimes, yes. Life happens and unexpected expenses come up, but we try to be flexible while still keeping our overall financial goals in mind."
+    ],
+    [
+      "ParticipantA",
+      "Good attitude to have. Do you have any tips for others looking to establish and maintain a monthly budget?"
+    ],
+    [
+      "ParticipantB",
+      "Just start small and be consistent. Set achievable goals and review your progress regularly."
+    ],
+    [
+      "ParticipantA",
+      "Sounds simple yet effective. Thank you for sharing your experience with me today."
+    ],
+    [
+      "ParticipantB",
+      "You're welcome! It was nice chatting with you. Take care!"
+    ],
+    [
+      "ParticipantA",
+      "Same to you, have a great day! Bye! *click* (End of conversation)"
+    ]
+  ],
+  "n_turns": 19,
+  "multi_turn_emissions": 2
+}

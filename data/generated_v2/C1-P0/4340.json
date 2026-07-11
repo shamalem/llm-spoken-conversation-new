@@ -1,0 +1,22 @@
+{
+  "condition": "C1-P0",
+  "architecture": "C1",
+  "prompt_level": "P0",
+  "model": "lmsys/vicuna-13b-v1.5-16k",
+  "conversation_no": 4340,
+  "topic": "Crime",
+  "sb_prompt": "DISCUSS CRIME IN AMERICAN CITIES TODAY.  WHAT ARE YOUR CONCERNS AND THE CONCERNS OF THE OTHER CALLER?  WHAT STEPS CAN BE TAKEN TO REDUCE CRIME?",
+  "persona_a": {
+    "label": "ParticipantA",
+    "gender": "man",
+    "age": 31,
+    "education": "a college degree"
+  },
+  "persona_b": {
+    "label": "ParticipantB",
+    "gender": "man",
+    "age": 29,
+    "education": "some college"
+  },
+  "raw_output": "Participants: Participa (P) and Participante (B)\nP: Hi there, I was wondering if we could discuss crime in American cities today. It seems like something that affects both of us directly or indirectly. What are your thoughts on this issue?\n\nB: Yeah, definitely. Crime has been an issue for me as well because I live in a city, but also because it affects my work as a security guard. So what concerns do you have specifically when it comes to crime in cities?\nP"
+}

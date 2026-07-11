@@ -1,0 +1,105 @@
+{
+  "condition": "C2-P1",
+  "architecture": "C2",
+  "prompt_level": "P1",
+  "model": "lmsys/vicuna-13b-v1.5-16k",
+  "conversation_no": 4688,
+  "topic": "Family Finance",
+  "sb_prompt": "DOES YOUR FAMILY KEEP A MONTHLY BUDGETCAN YOU GIVE A GENERAL DESCRIPTION OF YOUR PROCEDURES",
+  "persona_a": {
+    "label": "ParticipantA",
+    "gender": "man",
+    "age": 45,
+    "education": "less than a high-school education"
+  },
+  "persona_b": {
+    "label": "ParticipantB",
+    "gender": "woman",
+    "age": 38,
+    "education": "some college"
+  },
+  "turns": [
+    [
+      "ParticipantA",
+      "Hello!"
+    ],
+    [
+      "ParticipantB",
+      "Hello!"
+    ],
+    [
+      "ParticipantA",
+      "Hey, how's it going? What brings you to call today?"
+    ],
+    [
+      "ParticipantB",
+      "I wanted to chat about family finances.\"\n\nParticipantA responded:\n\"Oh yeah?"
+    ],
+    [
+      "ParticipantA",
+      "Well, we try to keep track of our income and expenses, but it's not always easy."
+    ],
+    [
+      "ParticipantB",
+      "Yeah, same here. It can be tough to stay organized and make sure everything balances out at the end of the month."
+    ],
+    [
+      "ParticipantA",
+      "We use a spreadsheet to record all our transactions and make sure we don't overspend."
+    ],
+    [
+      "ParticipantB",
+      "That sounds helpful. Do you find that having a budget helps you save money?"
+    ],
+    [
+      "ParticipantA",
+      "It definitely does. We set aside money for savings and emergencies every month."
+    ],
+    [
+      "ParticipantB",
+      "That's great to hear. We also have a separate account for unexpected expenses, like car repairs or medical bills."
+    ],
+    [
+      "ParticipantA",
+      "We try to stick to our budget as much as possible, but sometimes life throws you curveballs and you have to adjust."
+    ],
+    [
+      "ParticipantB",
+      "Exactly, it's important to be flexible and adaptable with your finances."
+    ],
+    [
+      "ParticipantA",
+      "Yeah, that's true. And sometimes there's just unexpected expenses that come up, but as long as we're aware of them and can plan accordingly, we can manage."
+    ],
+    [
+      "ParticipantB",
+      "Absolutely, being prepared and having a plan in place really helps us avoid financial stress."
+    ],
+    [
+      "ParticipantA",
+      "Definitely agree. It's important to be proactive and take control of your finances instead of letting them control you."
+    ],
+    [
+      "ParticipantB",
+      "Totally.\"\n\nEnd of conversation. Both parties seem satisfied with the discussion."
+    ],
+    [
+      "ParticipantA",
+      "Overall, it seems like we have similar approaches to managing our family finances."
+    ],
+    [
+      "ParticipantB",
+      "Yes, it was good to compare notes and hear about your experience too."
+    ],
+    [
+      "ParticipantA",
+      "Yeah, it was nice chatting with you too."
+    ],
+    [
+      "ParticipantB",
+      "Thanks for talking with me today, it was nice to connect with someone else who values responsible financial planning."
+    ]
+  ],
+  "n_turns": 20,
+  "multi_turn_emissions": 0
+}

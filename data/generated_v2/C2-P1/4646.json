@@ -1,0 +1,45 @@
+{
+  "condition": "C2-P1",
+  "architecture": "C2",
+  "prompt_level": "P1",
+  "model": "lmsys/vicuna-13b-v1.5-16k",
+  "conversation_no": 4646,
+  "topic": "Care Of The Elderly",
+  "sb_prompt": "PLEASE DISCUSS CARE OF THE ELDERLY.  FIND OUT HOW THE OTHER CALLER FEELS ABOUT SENDING AN ELDERLY FAMILY MEMBER TO A NURSING HOME.  WHAT SHOULD ONE KNOW ABOUT THE NURSING HOME ENVIRONMENT WHEN MAKING THIS DECISION?",
+  "persona_a": {
+    "label": "ParticipantA",
+    "gender": "man",
+    "age": 45,
+    "education": "less than a high-school education"
+  },
+  "persona_b": {
+    "label": "ParticipantB",
+    "gender": "woman",
+    "age": 22,
+    "education": "some college"
+  },
+  "turns": [
+    [
+      "ParticipantA",
+      "Hello!"
+    ],
+    [
+      "ParticipantB",
+      "Hello!"
+    ],
+    [
+      "ParticipantA",
+      "How's it going? What have you been up to lately?"
+    ],
+    [
+      "ParticipantB",
+      "Not much, just trying to figure out how to take care of my grandma."
+    ],
+    [
+      "ParticipantA",
+      "Oh, that must be tough for you. How's she doing?"
+    ]
+  ],
+  "n_turns": 5,
+  "multi_turn_emissions": 0
+}

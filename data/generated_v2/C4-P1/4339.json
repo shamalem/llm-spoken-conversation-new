@@ -1,0 +1,100 @@
+{
+  "condition": "C4-P1",
+  "architecture": "C4",
+  "prompt_level": "P1",
+  "models": {
+    "ParticipantA": "lmsys/vicuna-13b-v1.5-16k",
+    "ParticipantB": "mistralai/Mistral-7B-Instruct-v0.2"
+  },
+  "conversation_no": 4339,
+  "topic": "Buying A Car",
+  "sb_prompt": "WHAT KIND OF CAR DO YOU THINK YOU MIGHT BUY NEXT?  WHAT SORTS OF THINGS WILL ENTER INTO YOUR DECISION?  SEE IF YOUR REQUIREMENTS AND THE OTHER CALLER'S REQUIREMENTS ARE SIMILAR.",
+  "persona_a": {
+    "label": "ParticipantA",
+    "gender": "man",
+    "age": 54,
+    "education": "some college"
+  },
+  "persona_b": {
+    "label": "ParticipantB",
+    "gender": "man",
+    "age": 41,
+    "education": "some college"
+  },
+  "turns": [
+    [
+      "ParticipantA",
+      "Hello!"
+    ],
+    [
+      "ParticipantB",
+      "Hello!"
+    ],
+    [
+      "ParticipantA",
+      "So, what kind of car are you thinking of buying next?"
+    ],
+    [
+      "ParticipantB",
+      "Well, I've been considering getting an SUV for my family. Something roomy and reliable for our road trips."
+    ],
+    [
+      "ParticipantA",
+      "That sounds great! What specific features or brands are you looking at?"
+    ],
+    [
+      "ParticipantB",
+      "I'm leaning towards a Honda CR-V or Toyota RAV4."
+    ],
+    [
+      "ParticipantA",
+      "Those are popular choices! Do you have a preference between gasoline or hybrid engines?"
+    ],
+    [
+      "ParticipantB",
+      "Honestly, fuel efficiency is important to me so I'd prefer a hybrid if the budget allows for it."
+    ],
+    [
+      "ParticipantA",
+      "Yes, that makes sense. Have you test driven any cars recently or looked into financing options?"
+    ],
+    [
+      "ParticipantB",
+      "Not yet, but I plan on visiting dealerships soon to check out some models in person and explore financing possibilities."
+    ],
+    [
+      "ParticipantA",
+      "Great! Test driving and comparing different models will give you a better idea of which one suits your needs best."
+    ],
+    [
+      "ParticipantB",
+      "Absolutely! And I'll definitely take financing into consideration during my decision-making process."
+    ],
+    [
+      "ParticipantA",
+      "It's always smart to consider all aspects before making such a big purchase."
+    ],
+    [
+      "ParticipantB",
+      "Definitely. Budget, features, fuel economy, and resale value are all factors I'll be evaluating closely."
+    ],
+    [
+      "ParticipantA",
+      "Sounds like you have a good approach to your decision-making process. Good luck with finding the perfect vehicle for your family!"
+    ],
+    [
+      "ParticipantB",
+      "Thank you! I appreciate your support and well wishes. Best of luck to you as well with your future car search."
+    ],
+    [
+      "ParticipantA",
+      "Thanks, you too! Enjoy your car shopping experience. Bye!"
+    ],
+    [
+      "ParticipantB",
+      "Bye! Take care. Have a nice day!"
+    ]
+  ],
+  "n_turns": 18,
+  "multi_turn_emissions": 1
+}

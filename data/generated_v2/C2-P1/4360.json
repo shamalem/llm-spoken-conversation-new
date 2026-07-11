@@ -1,0 +1,125 @@
+{
+  "condition": "C2-P1",
+  "architecture": "C2",
+  "prompt_level": "P1",
+  "model": "lmsys/vicuna-13b-v1.5-16k",
+  "conversation_no": 4360,
+  "topic": "Social Change",
+  "sb_prompt": "DISCUSS RECENT SOCIAL CHANGES.  HOW IS LIFE IN AMERICA DIFFERENT TODAY COMPARED TO LIVING TENY",
+  "persona_a": {
+    "label": "ParticipantA",
+    "gender": "woman",
+    "age": 29,
+    "education": "some college"
+  },
+  "persona_b": {
+    "label": "ParticipantB",
+    "gender": "woman",
+    "age": 24,
+    "education": "some college"
+  },
+  "turns": [
+    [
+      "ParticipantA",
+      "Hello!"
+    ],
+    [
+      "ParticipantB",
+      "Hello!"
+    ],
+    [
+      "ParticipantA",
+      "Hey, have you been following any recent social changes? I\u2019m really interested in hearing different perspectives."
+    ],
+    [
+      "ParticipantB",
+      "Well, I think one of the biggest changes has been the movement for racial justice and equality, especially after the killing of George Floyd."
+    ],
+    [
+      "ParticipantA",
+      "Yeah, that's definitely something that's been on my mind too."
+    ],
+    [
+      "ParticipantB",
+      "And what are your thoughts on that?\"\n\n(Note: This question is asking for ParticipantA's thoughts on the racial justice movement.)"
+    ],
+    [
+      "ParticipantA",
+      "I think it's incredibly important and necessary for us to address systemic racism and work towards creating a more equal society."
+    ],
+    [
+      "ParticipantB",
+      "Definitely.\"\n\n(Note: ParticipantB agrees with ParticipantA'"
+    ],
+    [
+      "ParticipantA",
+      "I've seen firsthand how discrimination can affect people's lives, and it's heartbreaking."
+    ],
+    [
+      "ParticipantB",
+      "And I think it's great to see more conversations happening around race and inequality now than ever before."
+    ],
+    [
+      "ParticipantA",
+      "Yeah, I think it's important for us to keep having these conversations and taking action towards change."
+    ],
+    [
+      "ParticipantB",
+      "Exactly, we need to keep pushing for progress.\"\n\n(Note from script writer: ParticipantB nods in agreement, feeling encouraged by ParticipantA'"
+    ],
+    [
+      "ParticipantA",
+      "And I think it\u2019s important for individuals to educate themselves and others on these issues, even if it might be uncomfortable at times."
+    ],
+    [
+      "ParticipantB",
+      "Definitely agree, education and awareness is key.\"\n\n(Note"
+    ],
+    [
+      "ParticipantA",
+      "So, what are some ways you think people can get involved in promoting social change?"
+    ],
+    [
+      "ParticipantB",
+      "Well, there are many ways to get involved, such as attending protests, signing petitions, volunteering for organizations that promote social justice, or even just talking to family and friends about these issues and sharing resources to learn more."
+    ],
+    [
+      "ParticipantA",
+      "That sounds like a great starting point. What kind of organizations do you recommend people look into supporting or volunteering for?"
+    ],
+    [
+      "ParticipantB",
+      "There are many organizations working towards various social causes, but some notable ones include Black Lives Matter, NAACP, and the Southern Poverty Law Center."
+    ],
+    [
+      "ParticipantA",
+      "Thanks for those suggestions, I'll definitely check them out.\" (turning to listen)"
+    ],
+    [
+      "ParticipantB",
+      "Sure thing. And if you have any questions or want to talk further about any of these organizations or the movements they support, feel free to reach out."
+    ],
+    [
+      "ParticipantA",
+      "Definitely will do that.\"\n\n--- END OF SCRIPT ---\n\nThank you for using this service."
+    ],
+    [
+      "ParticipantB",
+      "That's awesome, let me know if you need any resources or information."
+    ],
+    [
+      "ParticipantA",
+      "Thanks again, really appreciate it.\" (said with gratitude)\n\n--- END OF CONVERSATION ---"
+    ],
+    [
+      "ParticipantB",
+      "Have a great day! :)\" (said cheerfully)\n\n--- END of ONE turn from ParticipantB ---"
+    ],
+    [
+      "ParticipantA",
+      "You too!\" (said cheerfully and reciprocally)\n\n--- END"
+    ]
+  ],
+  "n_turns": 25,
+  "multi_turn_emissions": 0
+}

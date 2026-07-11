@@ -1,0 +1,100 @@
+{
+  "condition": "C3-P0",
+  "architecture": "C3",
+  "prompt_level": "P0",
+  "models": {
+    "ParticipantA": "lmsys/vicuna-13b-v1.5-16k",
+    "ParticipantB": "lmsys/vicuna-13b-v1.5-16k"
+  },
+  "conversation_no": 4379,
+  "topic": "Family Finance",
+  "sb_prompt": "DOES YOUR FAMILY KEEP A MONTHLY BUDGETCAN YOU GIVE A GENERAL DESCRIPTION OF YOUR PROCEDURES",
+  "persona_a": {
+    "label": "ParticipantA",
+    "gender": "woman",
+    "age": 33,
+    "education": "a high-school education"
+  },
+  "persona_b": {
+    "label": "ParticipantB",
+    "gender": "woman",
+    "age": 30,
+    "education": "a high-school education"
+  },
+  "turns": [
+    [
+      "ParticipantA",
+      "Hello!"
+    ],
+    [
+      "ParticipantB",
+      "Hello!"
+    ],
+    [
+      "ParticipantA",
+      "Hi, how are you doing today?"
+    ],
+    [
+      "ParticipantB",
+      "I'm good, thank you. How about you?"
+    ],
+    [
+      "ParticipantA",
+      "I'm doing pretty well, thanks for asking. So, what was the question again?"
+    ],
+    [
+      "ParticipantB",
+      "Oh, right. Does your family keep a monthly budget and can you give a general description of your procedures?"
+    ],
+    [
+      "ParticipantA",
+      "Well, we try to keep track of our expenses each month, but it's not always easy."
+    ],
+    [
+      "ParticipantB",
+      "Yeah, budgeting can be tough sometimes. What kind of procedures are you talking about?"
+    ],
+    [
+      "ParticipantA",
+      "Oh, sorry, my mistake. I meant to say that we don't really have any specific procedures in place when it comes to budgeting."
+    ],
+    [
+      "ParticipantB",
+      "That's okay, I understand. Do you find that keeping track of expenses on your own is challenging or time-consuming?"
+    ],
+    [
+      "ParticipantA",
+      "It can be at times, especially if there are unexpected bills or expenses that come up."
+    ],
+    [
+      "ParticipantB",
+      "Yes, those can definitely throw off a budget. Have you considered using any tools or apps to help manage your finances more easily?"
+    ],
+    [
+      "ParticipantA",
+      "We have tried some budgeting apps before, but they didn't seem to work out for us."
+    ],
+    [
+      "ParticipantB",
+      "Ah, I see. Maybe it would be helpful to explore different options or try working with a financial advisor who could provide personalized guidance and support."
+    ],
+    [
+      "ParticipantA",
+      "That sounds like a good idea actually. Thank you for suggesting that."
+    ],
+    [
+      "ParticipantB",
+      "You're welcome! Best of luck finding a solution that works for you and your family."
+    ],
+    [
+      "ParticipantA",
+      "Thanks so much for the chat! Take care! \u00f0\u0178\u02dc\u0160"
+    ],
+    [
+      "ParticipantB",
+      "Goodbye! Have a great day! \u00f0\u0178\u2122\ufffd\n\n*The conversation ends here, but there could be many more turns of talk depending on where the speakers want to take the discussion.*"
+    ]
+  ],
+  "n_turns": 18,
+  "multi_turn_emissions": 4
+}

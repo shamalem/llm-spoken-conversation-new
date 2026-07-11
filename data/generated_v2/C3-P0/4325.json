@@ -1,0 +1,56 @@
+{
+  "condition": "C3-P0",
+  "architecture": "C3",
+  "prompt_level": "P0",
+  "models": {
+    "ParticipantA": "lmsys/vicuna-13b-v1.5-16k",
+    "ParticipantB": "lmsys/vicuna-13b-v1.5-16k"
+  },
+  "conversation_no": 4325,
+  "topic": "Child Care",
+  "sb_prompt": "FIND OUT WHAT CRITERIA THE OTHER CALLER WOULD USE IN SELECTING CHILD CARE SERVICES FOR A PRESCHOOLER.  IS IT EASY OR DIFFICULT TO FIND SUCH CARE?",
+  "persona_a": {
+    "label": "ParticipantA",
+    "gender": "woman",
+    "age": 30,
+    "education": "some college"
+  },
+  "persona_b": {
+    "label": "ParticipantB",
+    "gender": "woman",
+    "age": 21,
+    "education": "a high-school education"
+  },
+  "turns": [
+    [
+      "ParticipantA",
+      "Hello!"
+    ],
+    [
+      "ParticipantB",
+      "Hello!"
+    ],
+    [
+      "ParticipantA",
+      "So, what criteria would you use to select child care services for a preschooler?"
+    ],
+    [
+      "ParticipantB",
+      "I'd want someone who's really good with kids and can keep them safe."
+    ],
+    [
+      "ParticipantA",
+      "That makes sense. How important is it for the staff at the facility to be trained in early childhood education or certified in some way?"
+    ],
+    [
+      "ParticipantB",
+      "Oh, that's super important! You definitely wanna make sure they know how to take care of little ones properly."
+    ],
+    [
+      "ParticipantA",
+      "Absolutely. What about the ratio of adults to children? Would you prefer a lower ratio for more individual attention?"
+    ]
+  ],
+  "n_turns": 7,
+  "multi_turn_emissions": 0
+}

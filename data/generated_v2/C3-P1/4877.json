@@ -1,0 +1,96 @@
+{
+  "condition": "C3-P1",
+  "architecture": "C3",
+  "prompt_level": "P1",
+  "models": {
+    "ParticipantA": "lmsys/vicuna-13b-v1.5-16k",
+    "ParticipantB": "lmsys/vicuna-13b-v1.5-16k"
+  },
+  "conversation_no": 4877,
+  "topic": "Child Care",
+  "sb_prompt": "FIND OUT WHAT CRITERIA THE OTHER CALLER WOULD USE IN SELECTING CHILD CARE SERVICES FOR A PRESCHOOLER.  IS IT EASY OR DIFFICULT TO FIND SUCH CARE?",
+  "persona_a": {
+    "label": "ParticipantA",
+    "gender": "man",
+    "age": 52,
+    "education": "less than a high-school education"
+  },
+  "persona_b": {
+    "label": "ParticipantB",
+    "gender": "woman",
+    "age": 52,
+    "education": "some college"
+  },
+  "turns": [
+    [
+      "ParticipantA",
+      "Hello!"
+    ],
+    [
+      "ParticipantB",
+      "Hello!"
+    ],
+    [
+      "ParticipantA",
+      "So, what criteria would you use in selecting child care services for a preschooler?"
+    ],
+    [
+      "ParticipantB",
+      "Well, for me, the most important factor would be finding someone who is reliable, trustworthy, and has experience working with young children."
+    ],
+    [
+      "ParticipantA",
+      "That makes sense. Would you prefer a home-based child care provider or a center-based one?"
+    ],
+    [
+      "ParticipantB",
+      "It depends on my needs at that time, but generally speaking, I think a center-based provider might be better because they have more resources and support systems in place for the kids."
+    ],
+    [
+      "ParticipantA",
+      "Yeah, that could be good. Do you find it easy or difficult to find such care?"
+    ],
+    [
+      "ParticipantB",
+      "Honestly, it can be challenging to find quality childcare that meets all of your requirements."
+    ],
+    [
+      "ParticipantA",
+      "Oh, I see. What do you do if you can\u2019t find suitable options?"
+    ],
+    [
+      "ParticipantB",
+      "If I can't find suitable options, I try asking friends, family members, or colleagues for referrals."
+    ],
+    [
+      "ParticipantA",
+      "Ah, that's smart. Have you ever used a child care service yourself?"
+    ],
+    [
+      "ParticipantB",
+      "Yes, I have. When my children were younger, we needed child care services and we found a great in-home provider through a friend's recommendation."
+    ],
+    [
+      "ParticipantA",
+      "Nice, that sounds helpful. Thanks for sharing! How was your overall experience with that provider?"
+    ],
+    [
+      "ParticipantB",
+      "Overall, it was excellent. She was very caring, professional, and provided a safe environment for our son."
+    ],
+    [
+      "ParticipantA",
+      "Sounds great. Thank you so much for chatting with me today, I really appreciate it!"
+    ],
+    [
+      "ParticipantB",
+      "No problem, happy to help. Take care! Bye bye now."
+    ],
+    [
+      "ParticipantA",
+      "Bye bye! Have a nice day!"
+    ]
+  ],
+  "n_turns": 17,
+  "multi_turn_emissions": 0
+}

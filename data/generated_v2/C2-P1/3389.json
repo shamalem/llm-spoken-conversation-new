@@ -1,0 +1,153 @@
+{
+  "condition": "C2-P1",
+  "architecture": "C2",
+  "prompt_level": "P1",
+  "model": "lmsys/vicuna-13b-v1.5-16k",
+  "conversation_no": 3389,
+  "topic": "Football",
+  "sb_prompt": "PLEASE DISCUSS PROFESSIONAL FOOTBALL.  FIND OUT THE OTHER CALLER'S FAVORITE PRO FOOTBALL TEAM AND WHERE IT'S HEADED THIS YEAR.       DO YOU AGREE WITH THE CALLER'S PREDICTION?",
+  "persona_a": {
+    "label": "ParticipantA",
+    "gender": "man",
+    "age": 20,
+    "education": "some college"
+  },
+  "persona_b": {
+    "label": "ParticipantB",
+    "gender": "man",
+    "age": 26,
+    "education": "some college"
+  },
+  "turns": [
+    [
+      "ParticipantA",
+      "Hello!"
+    ],
+    [
+      "ParticipantB",
+      "Hello!"
+    ],
+    [
+      "ParticipantA",
+      "Hey, how's it going? Do you watch football often? And which team do you root for?"
+    ],
+    [
+      "ParticipantB",
+      "Yeah, I enjoy watching football from time to time. As for my favorite team, I'm more of a New England Patriots fan."
+    ],
+    [
+      "ParticipantA",
+      "That's cool. I used to live in Massachusetts, so I know quite a few fans up there."
+    ],
+    [
+      "ParticipantB",
+      "Yeah, it seems like they have a lot of dedicated fans."
+    ],
+    [
+      "ParticipantA",
+      "What do you think about Tom Brady leaving and now having Cam Newton as their quarterback?"
+    ],
+    [
+      "ParticipantB",
+      "Well, I was surprised by the move at first, but I think it could work out well for them."
+    ],
+    [
+      "ParticipantA",
+      "Oh yeah? Why do you think that?\n\n(Note: This response assumes ParticipantA was asking for ParticipantB's reasoning behind his opinion.)"
+    ],
+    [
+      "ParticipantB",
+      "He's got a lot of experience, and I think he can bring a winning mentality to the team."
+    ],
+    [
+      "ParticipantA",
+      "That sounds good. How do you think they'll fare this season?"
+    ],
+    [
+      "ParticipantB",
+      "I think they're definitely still one of the top teams in the league."
+    ],
+    [
+      "ParticipantA",
+      "Yeah, I agree. They've always been strong contenders."
+    ],
+    [
+      "ParticipantB",
+      "So what about you? Who's your favorite pro football team?"
+    ],
+    [
+      "ParticipantA",
+      "Well, I'm a big Dallas Cowboys fan.\"\n\n(Note: In the previous conversation, ParticipantA had not mentioned their favorite team yet, hence the question is being asked again."
+    ],
+    [
+      "ParticipantB",
+      "Oh, I see. How do you like their chances this year?"
+    ],
+    [
+      "ParticipantA",
+      "I think they're looking pretty solid too, especially with their new additions to the team."
+    ],
+    [
+      "ParticipantB",
+      "Yeah, I heard they made some great pickups in the draft."
+    ],
+    [
+      "ParticipantA",
+      "Yeah, I think those pickups will really make a difference this season."
+    ],
+    [
+      "ParticipantB",
+      "Who do you think will be the toughest competition for them?\"\n\n(This question allows ParticipantB to express their thoughts and predictions about the Cowboys' performance in the upcoming season while continuing the conversation.)"
+    ],
+    [
+      "ParticipantA",
+      "Well, I think the Green Bay Packers will give them a run for their money."
+    ],
+    [
+      "ParticipantB",
+      "Interesting choice, I think the Packers will be a tough matchup for anyone this season."
+    ],
+    [
+      "ParticipantA",
+      "Yeah, I saw some highlights from their pre-season games and they looked impressive."
+    ],
+    [
+      "ParticipantB",
+      "Yeah, their defense looks really strong.\" (note: this is a continuation of the previous conversation where they discussed the Packers)"
+    ],
+    [
+      "ParticipantA",
+      "Yeah, I think their defense is going to be key for them this year."
+    ],
+    [
+      "ParticipantB",
+      "But we'll see how things play out once the regular season starts."
+    ],
+    [
+      "ParticipantA",
+      "Yeah, for sure. It's hard to predict what will happen until they start playing actual games."
+    ],
+    [
+      "ParticipantB",
+      "Definitely.\" (agrees with ParticipantA's statement)"
+    ],
+    [
+      "ParticipantA",
+      "Yeah, it's gonna be exciting to see how everything unfolds."
+    ],
+    [
+      "ParticipantB",
+      "Absolutely, I can't wait for the season to start!"
+    ],
+    [
+      "ParticipantA",
+      "Me neither. Are you planning on attending any games this season?\" (asking whether the other person plans to attend any games during the season)"
+    ],
+    [
+      "ParticipantB",
+      "No, unfortunately not. I haven't been able to catch any games in person recently."
+    ]
+  ],
+  "n_turns": 32,
+  "multi_turn_emissions": 0
+}

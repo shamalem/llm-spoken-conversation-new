@@ -1,0 +1,116 @@
+{
+  "condition": "C3-P2",
+  "architecture": "C3",
+  "prompt_level": "P2",
+  "models": {
+    "ParticipantA": "lmsys/vicuna-13b-v1.5-16k",
+    "ParticipantB": "lmsys/vicuna-13b-v1.5-16k"
+  },
+  "conversation_no": 4168,
+  "topic": "Music",
+  "sb_prompt": "PLEASE DISCUSS MUSIC.  CAN YOU FIND MUSICIANSOR TYPES OF MUSIC THAT BOTH YOU AND THE OTHER CALLER LIKE?",
+  "persona_a": {
+    "label": "ParticipantA",
+    "gender": "woman",
+    "age": 29,
+    "education": "some college"
+  },
+  "persona_b": {
+    "label": "ParticipantB",
+    "gender": "man",
+    "age": 29,
+    "education": "some college"
+  },
+  "turns": [
+    [
+      "ParticipantA",
+      "Hello!"
+    ],
+    [
+      "ParticipantB",
+      "Hello!"
+    ],
+    [
+      "ParticipantA",
+      "How's it going today?"
+    ],
+    [
+      "ParticipantB",
+      "It's going pretty good, thanks for asking."
+    ],
+    [
+      "ParticipantA",
+      "That's great to hear! What have you been up to lately?"
+    ],
+    [
+      "ParticipantB",
+      "Not much, just trying to stay busy and keep myself occupied during these strange times."
+    ],
+    [
+      "ParticipantA",
+      "Same here. Have you listened to any new music releases recently that you liked?"
+    ],
+    [
+      "ParticipantB",
+      "Yes, I recently discovered a band called \"The 1975\" and I really enjoy their sound."
+    ],
+    [
+      "ParticipantA",
+      "Oh, cool! I haven't listened to them yet, but I heard they put on an awesome live performance."
+    ],
+    [
+      "ParticipantB",
+      "Yeah, definitely worth checking out. They have a unique sound and the lead singer's voice is very distinctive."
+    ],
+    [
+      "ParticipantA",
+      "Sounds interesting. Is there another type of music or artist that you enjoy listening to?"
+    ],
+    [
+      "ParticipantB",
+      "I also love classic rock, particularly bands from the 60s and 70s such as Led Zeppelin, Pink Floyd, and Queen."
+    ],
+    [
+      "ParticipantA",
+      "Nice, those bands are legendary. Do you prefer listening to older music or do you follow newer artists as well?"
+    ],
+    [
+      "ParticipantB",
+      "Definitely a mix of both, I think it's important to appreciate the history of music while also keeping up with current artists and trends."
+    ],
+    [
+      "ParticipantA",
+      "Agreed, it's always fun to discover new artists and genres while still appreciating the classics."
+    ],
+    [
+      "ParticipantB",
+      "Absolutely, it keeps things fresh and exciting. So, do you have any favorite musicians or types of music that you enjoy listening to"
+    ],
+    [
+      "ParticipantA",
+      "Sure, I've been really into indie/alternative music lately, especially artists like Phoebe Bridgers, Taylor Swift's folklore album, and the new Arlo Parks album."
+    ],
+    [
+      "ParticipantB",
+      "Those are all great choices, I'll have to check them out soon."
+    ],
+    [
+      "ParticipantA",
+      "Definitely give them a listen, I think you might enjoy their styles. Thanks for chatting about music with me!"
+    ],
+    [
+      "ParticipantB",
+      "Of course, it was great discussing music with you too! Thank you!"
+    ],
+    [
+      "ParticipantA",
+      "Bye! Stay safe and take care!"
+    ],
+    [
+      "ParticipantB",
+      "Bye, you too! Stay safe and healthy! *click*"
+    ]
+  ],
+  "n_turns": 22,
+  "multi_turn_emissions": 3
+}

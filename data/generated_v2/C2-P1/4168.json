@@ -1,0 +1,117 @@
+{
+  "condition": "C2-P1",
+  "architecture": "C2",
+  "prompt_level": "P1",
+  "model": "lmsys/vicuna-13b-v1.5-16k",
+  "conversation_no": 4168,
+  "topic": "Music",
+  "sb_prompt": "PLEASE DISCUSS MUSIC.  CAN YOU FIND MUSICIANSOR TYPES OF MUSIC THAT BOTH YOU AND THE OTHER CALLER LIKE?",
+  "persona_a": {
+    "label": "ParticipantA",
+    "gender": "woman",
+    "age": 29,
+    "education": "some college"
+  },
+  "persona_b": {
+    "label": "ParticipantB",
+    "gender": "man",
+    "age": 29,
+    "education": "some college"
+  },
+  "turns": [
+    [
+      "ParticipantA",
+      "Hello!"
+    ],
+    [
+      "ParticipantB",
+      "Hello!"
+    ],
+    [
+      "ParticipantA",
+      "Hi, so what kind of music do you enjoy listening to?\n\n(Note: This response assumes that ParticipantB has already introduced themselves, otherwise ParticipantA might respond more formally.)"
+    ],
+    [
+      "ParticipantB",
+      "Oh, I really love indie rock.\"\n\n(Note: Since ParticipantB mentioned enjoying indie rock in their introduction, they will likely reply by mentioning the type of music they like.)"
+    ],
+    [
+      "ParticipantA",
+      "I used to listen to a lot of indie rock too, but nowadays I'm more into pop."
+    ],
+    [
+      "ParticipantB",
+      "That's cool, there are some great pop artists out there these days."
+    ],
+    [
+      "ParticipantA",
+      "What are some of your favorite pop artists?\"\n\nNote: As ParticipantA asked for recommendations, they want to hear about the participant's favorites and seek further discussion on the topic of pop music."
+    ],
+    [
+      "ParticipantB",
+      "Well, I really like Ariana Grande and Taylor Swift.\"\n\nNote: ParticipantB names two popular pop artists they enjoy listening to."
+    ],
+    [
+      "ParticipantA",
+      "Oh, I really like Arianna Grande too!\" (emphasis on the last name)"
+    ],
+    [
+      "ParticipantB",
+      "What's your favorite song from her?\" (emphasis on \"your\")"
+    ],
+    [
+      "ParticipantA",
+      "My favorite song from her is probably \"Break Free\" from her second album."
+    ],
+    [
+      "ParticipantB",
+      "Oh nice, I really like that song too!\" (emphasis also on the word \"too\")"
+    ],
+    [
+      "ParticipantA",
+      "Do you have any favorite pop songs or albums that we could agree on? (looking for suggestions)"
+    ],
+    [
+      "ParticipantB",
+      "Well, one song that I think you might like is \"Shallow\" by Lady Gaga and Bradley Cooper from the movie A Star Is Born."
+    ],
+    [
+      "ParticipantA",
+      "Yeah, I heard that song before, sounds interesting! Let me check it out later."
+    ],
+    [
+      "ParticipantB",
+      "I've been listening to a lot of hip hop lately, especially Lil Nas X's \"Old Town Road\"."
+    ],
+    [
+      "ParticipantA",
+      "Oh, I haven't listened to much hip hop lately, but I remember liking some tracks from Drake and Kendrick Lamar in the past."
+    ],
+    [
+      "ParticipantB",
+      "You should definitely give Old Town Road a listen, it's been on repeat for me lately."
+    ],
+    [
+      "ParticipantA",
+      "Maybe I'll give it a try. Thanks for the recommendation. (ending the conversation)"
+    ],
+    [
+      "ParticipantB",
+      "No problem, happy to recommend new songs. (transitioning to end the conversation)"
+    ],
+    [
+      "ParticipantA",
+      "Sure, thanks for suggesting it. (trying to be polite while ending the conversation)"
+    ],
+    [
+      "ParticipantB",
+      "Well, it was great chatting with you, have a good day!"
+    ],
+    [
+      "ParticipantA",
+      "You too, take care! (finishing the conversation politely)"
+    ]
+  ],
+  "n_turns": 23,
+  "multi_turn_emissions": 0
+}

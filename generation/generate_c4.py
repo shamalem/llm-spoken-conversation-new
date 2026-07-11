@@ -64,8 +64,8 @@ def main() -> None:
                     help="disable sentence-boundary stopping (for A/B comparison)")
     ap.add_argument("--repetition-penalty", type=float, default=1.15,
                     help="softer than the old 1.2; lower = less anti-repetition pressure")
-    ap.add_argument("--no-repeat-ngram", type=int, default=4,
-                    help="ban exact n-gram repeats; 3 was too aggressive, 0 disables")
+    ap.add_argument("--no-repeat-ngram", type=int, default=6,
+                    help="ban exact n-gram repeats; 6 stops loops without causing language drift (3-4 too tight, 0 loops)")
     ap.add_argument("--out-root", default=str(OUT_ROOT),
                     help="output root; point at a separate dir to avoid overwriting existing data")
     args = ap.parse_args()

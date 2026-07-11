@@ -1,0 +1,64 @@
+{
+  "condition": "C3-P2",
+  "architecture": "C3",
+  "prompt_level": "P2",
+  "models": {
+    "ParticipantA": "lmsys/vicuna-13b-v1.5-16k",
+    "ParticipantB": "lmsys/vicuna-13b-v1.5-16k"
+  },
+  "conversation_no": 4877,
+  "topic": "Child Care",
+  "sb_prompt": "FIND OUT WHAT CRITERIA THE OTHER CALLER WOULD USE IN SELECTING CHILD CARE SERVICES FOR A PRESCHOOLER.  IS IT EASY OR DIFFICULT TO FIND SUCH CARE?",
+  "persona_a": {
+    "label": "ParticipantA",
+    "gender": "man",
+    "age": 52,
+    "education": "less than a high-school education"
+  },
+  "persona_b": {
+    "label": "ParticipantB",
+    "gender": "woman",
+    "age": 52,
+    "education": "some college"
+  },
+  "turns": [
+    [
+      "ParticipantA",
+      "Hello!"
+    ],
+    [
+      "ParticipantB",
+      "Hello!"
+    ],
+    [
+      "ParticipantA",
+      "So, how was your day so far?"
+    ],
+    [
+      "ParticipantB",
+      "It's been good, thanks for asking. How about yours?"
+    ],
+    [
+      "ParticipantA",
+      "My day has been pretty average. What about you? Is there anything interesting happening today?"
+    ],
+    [
+      "ParticipantB",
+      "Not particularly exciting, but we can always find something to chat about, right?"
+    ],
+    [
+      "ParticipantA",
+      "Definitely! So, let's talk about child care. Have you ever had to look for childcare services before?"
+    ],
+    [
+      "ParticipantB",
+      "Yes, I have. My sister used to work full time and needed someone to take care of her kids during the day."
+    ],
+    [
+      "ParticipantA",
+      "That must have been quite a challenge for her. Did she face any difficulties while searching for childcare services?"
+    ]
+  ],
+  "n_turns": 9,
+  "multi_turn_emissions": 2
+}

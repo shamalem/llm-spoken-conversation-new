@@ -1,0 +1,153 @@
+{
+  "condition": "C2-P2",
+  "architecture": "C2",
+  "prompt_level": "P2",
+  "model": "lmsys/vicuna-13b-v1.5-16k",
+  "conversation_no": 4168,
+  "topic": "Music",
+  "sb_prompt": "PLEASE DISCUSS MUSIC.  CAN YOU FIND MUSICIANSOR TYPES OF MUSIC THAT BOTH YOU AND THE OTHER CALLER LIKE?",
+  "persona_a": {
+    "label": "ParticipantA",
+    "gender": "woman",
+    "age": 29,
+    "education": "some college"
+  },
+  "persona_b": {
+    "label": "ParticipantB",
+    "gender": "man",
+    "age": 29,
+    "education": "some college"
+  },
+  "turns": [
+    [
+      "ParticipantA",
+      "Hello!"
+    ],
+    [
+      "ParticipantB",
+      "Hello!"
+    ],
+    [
+      "ParticipantA",
+      "Do you have a favorite type of music or artist?"
+    ],
+    [
+      "ParticipantB",
+      "Sure, I like rock music. What about you? Any preferences?"
+    ],
+    [
+      "ParticipantA",
+      "I enjoy pop music, especially some of Taylor Swift's albums. How about you?"
+    ],
+    [
+      "ParticipantB",
+      "Yeah, Taylor Swift has some catchy songs for sure.\"\n\nNote: As per the instructions, please write only one turn at a time."
+    ],
+    [
+      "ParticipantA",
+      "I also like listening to some old classics like Elvis Presley and The Beatles."
+    ],
+    [
+      "ParticipantB",
+      "Oh yeah, those artists are legendary!\"\n\nParticipantA's next turn:\n\"Definitely!"
+    ],
+    [
+      "ParticipantA",
+      "Do you have any favorite musicians or bands?\"\n\nWrite ONLY"
+    ],
+    [
+      "ParticipantB",
+      "Some of my favorites include Led Zeppelin, Nirvana, and Radiohead."
+    ],
+    [
+      "ParticipantA",
+      "Oh, cool! Have you seen them perform live?\"\n\nWrite ON"
+    ],
+    [
+      "ParticipantB",
+      "No, unfortunately I haven't had the chance yet.\"\n\nWrite ON\nParticipantA\u2019s next single turn \u2014just the utterance, no"
+    ],
+    [
+      "ParticipantA",
+      "Me neither, but I hope to someday.\"\n\nWrite ONLY"
+    ],
+    [
+      "ParticipantB",
+      "What about you?\"\n\nWrite ON only the next turn by"
+    ],
+    [
+      "ParticipantA",
+      "Some of my favorite musicians are Beyonc\u00e9, Rihanna, and Ariana Grande."
+    ],
+    [
+      "ParticipantB",
+      "Oh, they're all great performers!\"\n\nWrite ON\n\nParticipantB's turn \u2014 next sentence only:\n\"Do you have a favorite concert or music festival that you've attended?"
+    ],
+    [
+      "ParticipantA",
+      "Yes, I went to Coachella last year and it was amazing!"
+    ],
+    [
+      "ParticipantB",
+      "Nice, I've been wanting to go there sometime!\"\n\nWrite ON only ParticipantA's response."
+    ],
+    [
+      "ParticipantA",
+      "It was such an unforgettable experience!\"\n\nWrite ON ParticipantB's response."
+    ],
+    [
+      "ParticipantB",
+      "What was the best part of Coachella for you?\"\n\nWrite only ParticipantA\u2019s response to this question."
+    ],
+    [
+      "ParticipantA",
+      "The lineup of artists was incredible and the atmosphere was so lively and fun!"
+    ],
+    [
+      "ParticipantB",
+      "Oh, that sounds awesome!\"\n\nWrite ONLY participant A's response to this."
+    ],
+    [
+      "ParticipantA",
+      "What about you?\"\n\nWould you like me to continue writing more turns based on your input?"
+    ],
+    [
+      "ParticipantB",
+      "I haven't been to any big festivals yet, but I heard good things about Lollapalooza."
+    ],
+    [
+      "ParticipantA",
+      "That's definitely on my bucket list!\"\n\nWould you also like me to provide more dialogue options for you to choose from, or should we keep going with the current flow?"
+    ],
+    [
+      "ParticipantB",
+      "I heard that it's a must-see event.\"\n\nWrite ON only"
+    ],
+    [
+      "ParticipantA",
+      "Oh yeah, I'd love to see Lady Gaga live!\"\n\nWrite ON"
+    ],
+    [
+      "ParticipantB",
+      "She puts on quite a show!\"\n\nWrite ON Only ParticipantA'"
+    ],
+    [
+      "ParticipantA",
+      "What about you?\"\n\nPlease let me know what you would like ParticipantB'"
+    ],
+    [
+      "ParticipantB",
+      "I'd love to see AC/DC perform live!\"\n\nPlease let me"
+    ],
+    [
+      "ParticipantA",
+      "Oh wow, I bet that would be intense!\"\n\nDo you want to continue with more turns?"
+    ],
+    [
+      "ParticipantB",
+      "Yeah, definitely! Their energy on stage is unmatched."
+    ]
+  ],
+  "n_turns": 32,
+  "multi_turn_emissions": 1
+}

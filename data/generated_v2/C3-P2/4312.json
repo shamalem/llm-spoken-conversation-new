@@ -1,0 +1,140 @@
+{
+  "condition": "C3-P2",
+  "architecture": "C3",
+  "prompt_level": "P2",
+  "models": {
+    "ParticipantA": "lmsys/vicuna-13b-v1.5-16k",
+    "ParticipantB": "lmsys/vicuna-13b-v1.5-16k"
+  },
+  "conversation_no": 4312,
+  "topic": "Music",
+  "sb_prompt": "PLEASE DISCUSS MUSIC.  CAN YOU FIND MUSICIANSOR TYPES OF MUSIC THAT BOTH YOU AND THE OTHER CALLER LIKE?",
+  "persona_a": {
+    "label": "ParticipantA",
+    "gender": "man",
+    "age": 23,
+    "education": "some college"
+  },
+  "persona_b": {
+    "label": "ParticipantB",
+    "gender": "man",
+    "age": 31,
+    "education": "some college"
+  },
+  "turns": [
+    [
+      "ParticipantA",
+      "Hello!"
+    ],
+    [
+      "ParticipantB",
+      "Hello!"
+    ],
+    [
+      "ParticipantA",
+      "So, have you been listening to any new albums lately?"
+    ],
+    [
+      "ParticipantB",
+      "Not recently, but I did listen to Taylor Swift's \"Red\" album last weekend."
+    ],
+    [
+      "ParticipantA",
+      "Nice! What's your favorite song off of that album?"
+    ],
+    [
+      "ParticipantB",
+      "My favorite song is probably \"All Too Well.\" It's such a powerful ballad."
+    ],
+    [
+      "ParticipantA",
+      "Yes, it's definitely one of her best songs. How about you, any favorite artists or genres?"
+    ],
+    [
+      "ParticipantB",
+      "I enjoy listening to indie rock and alternative music. Some of my favorite bands include Arctic Monkeys and Foals."
+    ],
+    [
+      "ParticipantA",
+      "Those are great choices! Have you listened to anything by Wolf Alice or The 1975?"
+    ],
+    [
+      "ParticipantB",
+      "Actually, I haven't had the chance to check out either of those bands yet."
+    ],
+    [
+      "ParticipantA",
+      "Definitely worth a listen! Both have put out some fantastic albums in recent years."
+    ],
+    [
+      "ParticipantB",
+      "Thanks for the recommendation! I'll be sure to give them a try."
+    ],
+    [
+      "ParticipantA",
+      "No problem! It's always exciting to discover new music. Do you have any favorite concert memories?"
+    ],
+    [
+      "ParticipantB",
+      "One of my favorites was seeing Foo Fighters at a festival. They put on such an energetic performance."
+    ],
+    [
+      "ParticipantA",
+      "That sounds amazing! Festivals can be so much fun. What was the most memorable part of the experience for you?"
+    ],
+    [
+      "ParticipantB",
+      "Just the energy and excitement in the air. Everyone was so engaged and having a great time."
+    ],
+    [
+      "ParticipantA",
+      "Absolutely! Music has a unique ability to bring people together like nothing else."
+    ],
+    [
+      "ParticipantB",
+      "Agreed! It's incredible how something as simple as a song can create such strong connections between people."
+    ],
+    [
+      "ParticipantA",
+      "Exactly! Music truly has the power to unite us all. Is there any type of music you don't particularly care for?"
+    ],
+    [
+      "ParticipantB",
+      "Honestly, I don't have much interest in country music. But I understand that everyone has different tastes, and that's okay!"
+    ],
+    [
+      "ParticipantA",
+      "Totally agree! Music taste is very personal and subjective. It's important to respect others' preferences even if they differ from our own."
+    ],
+    [
+      "ParticipantB",
+      "Absolutely! We all have different backgrounds and life experiences that shape our musical tastes, which makes it interesting to explore different genres and styles."
+    ],
+    [
+      "ParticipantA",
+      "It's fascinating how diverse music can be and still connect us on such a deep level."
+    ],
+    [
+      "ParticipantB",
+      "Yes, it' s amazing! Even though we may come from different worlds, we can find common ground through music."
+    ],
+    [
+      "ParticipantA",
+      "Isn't that the truth! It's one of the many ways music transcends boundaries and brings us closer together."
+    ],
+    [
+      "ParticipantB",
+      "Indeed, it's a beautiful thing. Thank you for sharing your thoughts on music with me today!"
+    ],
+    [
+      "ParticipantA",
+      "Thank you, too! It's been great chatting with you about our shared love for music."
+    ],
+    [
+      "ParticipantB",
+      "Same here! Take care and happy listening!\n\n*Note: This is an AI-generated response."
+    ]
+  ],
+  "n_turns": 28,
+  "multi_turn_emissions": 2
+}

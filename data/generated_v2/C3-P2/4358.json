@@ -1,0 +1,56 @@
+{
+  "condition": "C3-P2",
+  "architecture": "C3",
+  "prompt_level": "P2",
+  "models": {
+    "ParticipantA": "lmsys/vicuna-13b-v1.5-16k",
+    "ParticipantB": "lmsys/vicuna-13b-v1.5-16k"
+  },
+  "conversation_no": 4358,
+  "topic": "Recycling",
+  "sb_prompt": "WHAT IS BEING DONE IN YOUR COMMUNITY OR AREA ABOUT RECYCLING WASTE MATERIALS?  DO YOU THINK MORE SHOULD BE DONE?  DO YOU HAVE ANY IDEAS ON HOW TO ENCOURAGE MORE RECYCLING OR ON WHAT OTHER MATERIALS SHOULD BE INCLUDED?",
+  "persona_a": {
+    "label": "ParticipantA",
+    "gender": "man",
+    "age": 37,
+    "education": "some college"
+  },
+  "persona_b": {
+    "label": "ParticipantB",
+    "gender": "man",
+    "age": 29,
+    "education": "a college degree"
+  },
+  "turns": [
+    [
+      "ParticipantA",
+      "Hello!"
+    ],
+    [
+      "ParticipantB",
+      "Hello!"
+    ],
+    [
+      "ParticipantA",
+      "So, have you noticed anything specific regarding recycling efforts where you live?"
+    ],
+    [
+      "ParticipantB",
+      "Well, we do have a recycling program here, but I don't think many people participate in it."
+    ],
+    [
+      "ParticipantA",
+      "That's unfortunate. Do you think more should be done to encourage participation in recycling?"
+    ],
+    [
+      "ParticipantB",
+      "Yes, definitely. It's important for us to take care of our environment and reduce waste."
+    ],
+    [
+      "ParticipantA",
+      "Absolutely. What do you think could be done to encourage more people to recycle?"
+    ]
+  ],
+  "n_turns": 7,
+  "multi_turn_emissions": 0
+}

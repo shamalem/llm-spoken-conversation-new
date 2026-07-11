@@ -1,0 +1,22 @@
+{
+  "condition": "C1-P0",
+  "architecture": "C1",
+  "prompt_level": "P0",
+  "model": "lmsys/vicuna-13b-v1.5-16k",
+  "conversation_no": 4356,
+  "topic": "Buying A Car",
+  "sb_prompt": "WHAT KIND OF CAR DO YOU THINK YOU MIGHT BUY NEXT?  WHAT SORTS OF THINGS WILL ENTER INTO YOUR DECISION?  SEE IF YOUR REQUIREMENTS AND THE OTHER CALLER'S REQUIREMENTS ARE SIMILAR.",
+  "persona_a": {
+    "label": "ParticipantA",
+    "gender": "man",
+    "age": 30,
+    "education": "a college degree"
+  },
+  "persona_b": {
+    "label": "ParticipantB",
+    "gender": "man",
+    "age": 34,
+    "education": "some college"
+  },
+  "raw_output": "Participants: ParticiaptA (PA), ParticipiaptB(PB)\n\n---\n\nPA: Hi there! I was wondering if you could help me out with something. What kind of car are you thinking of buying next?\n\nPB: Oh, hi! Well, I haven't really decided yet. But I am considering getting a new car soon because my current one has been giving me some problems lately.\n\n--\n\n PA: That sounds frustrating. Have you thought about what features or qualities you might be looking for in your next car?\nI mean, would you prefer a sedan, SUV, truck, or maybe something else entirely?\n```scss\nP B : Actually, I've been leaning towards an SUV. I need something that can handle the winter weather here where I live and also provide enough space for my family and our gear when we go camping.\n```"
+}

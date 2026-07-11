@@ -1,0 +1,80 @@
+{
+  "condition": "C4-P2",
+  "architecture": "C4",
+  "prompt_level": "P2",
+  "models": {
+    "ParticipantA": "lmsys/vicuna-13b-v1.5-16k",
+    "ParticipantB": "mistralai/Mistral-7B-Instruct-v0.2"
+  },
+  "conversation_no": 3389,
+  "topic": "Football",
+  "sb_prompt": "PLEASE DISCUSS PROFESSIONAL FOOTBALL.  FIND OUT THE OTHER CALLER'S FAVORITE PRO FOOTBALL TEAM AND WHERE IT'S HEADED THIS YEAR.       DO YOU AGREE WITH THE CALLER'S PREDICTION?",
+  "persona_a": {
+    "label": "ParticipantA",
+    "gender": "man",
+    "age": 20,
+    "education": "some college"
+  },
+  "persona_b": {
+    "label": "ParticipantB",
+    "gender": "man",
+    "age": 26,
+    "education": "some college"
+  },
+  "turns": [
+    [
+      "ParticipantA",
+      "Hello!"
+    ],
+    [
+      "ParticipantB",
+      "Hello!"
+    ],
+    [
+      "ParticipantA",
+      "So, what's your favorite professional football team?\n\n\ubc88\uc5ed\uacb0\uacfc  \n\ud658\uc601\ud569\ub2c8\ub2e4!"
+    ],
+    [
+      "ParticipantB",
+      "Well, I've always been a big fan of the New England Patriots."
+    ],
+    [
+      "ParticipantA",
+      "That's great! They have a pretty impressive track record. How do you think they'll do this season?"
+    ],
+    [
+      "ParticipantB",
+      "I believe they're going to have another strong year. Tom Brady still has it, and Bill Belichick never fails to make adjustments."
+    ],
+    [
+      "ParticipantA",
+      "Yeah, I agree. Their consistency over the years is incredible. What about you?"
+    ],
+    [
+      "ParticipantB",
+      "Me? I follow the Dallas Cowboys. I'm optimistic about them this season as well."
+    ],
+    [
+      "ParticipantA",
+      "Nice! The Cowboys have a lot of talent. Do you think they'll finally break through and win a Super Bowl?"
+    ],
+    [
+      "ParticipantB",
+      "Absolutely. With Dak Prescott leading the team and Ezekiel Elliott playing at his best, I think they have a good shot at it this time around."
+    ],
+    [
+      "ParticipantA",
+      "Definitely possible. It could be an exciting season for them. Thanks for chatting with me today!"
+    ],
+    [
+      "ParticipantB",
+      "Likewise! Have a great day!\n\n\ubc88\uc5ed\uacb0\ub8cc : \ub2f9\uc5f0\ud788\uc785\ub2c8\ub2e4."
+    ],
+    [
+      "ParticipantA",
+      "\uadf8\ub4e4\uc740 \uc218\ub144\uc5d0 \uac78\uccd0 \uc9c0\uc18d\uc801\uc778 \uc131\uacf5\uc744 \uc774\ub8ec \uc720\uba85\ud55c \ud300\uc785\ub2c8\ub2e4, \uc5b4\ub5bb\uac8c \ubcf4\uc2dc\ub098\uc694?"
+    ]
+  ],
+  "n_turns": 13,
+  "multi_turn_emissions": 0
+}

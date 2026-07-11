@@ -1,0 +1,96 @@
+{
+  "condition": "C4-P1",
+  "architecture": "C4",
+  "prompt_level": "P1",
+  "models": {
+    "ParticipantA": "lmsys/vicuna-13b-v1.5-16k",
+    "ParticipantB": "mistralai/Mistral-7B-Instruct-v0.2"
+  },
+  "conversation_no": 4168,
+  "topic": "Music",
+  "sb_prompt": "PLEASE DISCUSS MUSIC.  CAN YOU FIND MUSICIANSOR TYPES OF MUSIC THAT BOTH YOU AND THE OTHER CALLER LIKE?",
+  "persona_a": {
+    "label": "ParticipantA",
+    "gender": "woman",
+    "age": 29,
+    "education": "some college"
+  },
+  "persona_b": {
+    "label": "ParticipantB",
+    "gender": "man",
+    "age": 29,
+    "education": "some college"
+  },
+  "turns": [
+    [
+      "ParticipantA",
+      "Hello!"
+    ],
+    [
+      "ParticipantB",
+      "Hello!"
+    ],
+    [
+      "ParticipantA",
+      "So, have you got any favorite musicians or types of music that you enjoy listening to?"
+    ],
+    [
+      "ParticipantB",
+      "Yeah, I really love classic rock. Artists like Led Zeppelin and Pink Floyd are some of my all-time favorites."
+    ],
+    [
+      "ParticipantA",
+      "That's cool! I also enjoy listening to classic rock from time to time."
+    ],
+    [
+      "ParticipantB",
+      "Great! Some of my favorite classic rock songs are \"Stairway to Heaven\" by Led Zeppelin and \"Comfortably Numb\" by Pink Floyd."
+    ],
+    [
+      "ParticipantA",
+      "Oh, nice choices! \"Comfortably Nummy\" is one of my favorites too."
+    ],
+    [
+      "ParticipantB",
+      "Awesome! What about other artists or genres you like besides classic rock?"
+    ],
+    [
+      "ParticipantA",
+      "Well, I also enjoy listening to pop music. My current favorite artist is Taylor Swift."
+    ],
+    [
+      "ParticipantB",
+      "Got it. I don't listen to much pop music myself, but I've heard great things about Taylor Swift."
+    ],
+    [
+      "ParticipantA",
+      "Yes, she has a lot of talent and her music is very catchy."
+    ],
+    [
+      "ParticipantB",
+      "Definitely agree. Classic rock and pop music - we've got quite a mix there!"
+    ],
+    [
+      "ParticipantA",
+      "Exactly! It's always interesting to discover different tastes in music."
+    ],
+    [
+      "ParticipantB",
+      "Absolutely! And sometimes finding common ground makes for even better conversations. I think we'll have plenty more topics to discuss then."
+    ],
+    [
+      "ParticipantA",
+      "Agreed! Looking forward to our future chats!\n\n*Call ends naturally*"
+    ],
+    [
+      "ParticipantB",
+      "Bye for now! Have a great day! See you later!"
+    ],
+    [
+      "ParticipantA",
+      "Bye! Take care! Talk to you soon!\n\n*Call disconnected*"
+    ]
+  ],
+  "n_turns": 17,
+  "multi_turn_emissions": 0
+}

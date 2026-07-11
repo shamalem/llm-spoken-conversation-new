@@ -1,0 +1,22 @@
+{
+  "condition": "C1-P1",
+  "architecture": "C1",
+  "prompt_level": "P1",
+  "model": "lmsys/vicuna-13b-v1.5-16k",
+  "conversation_no": 4341,
+  "topic": "Capital Punishment",
+  "sb_prompt": "COMPARE YOUR OPINIONS AND THOSE OF THE OTHER CALLER ON CAPITAL PUNISHMENT.  DO EITHER OF YOU THINK IT SHOULD BE RESTRICTED TO CERTAIN CRIMES OR CIRCUMSTANCES?  HOW DO THE POLICIES AND PRACTICES OF YOUR STATE FIT WITH YOUR OPINIONS?",
+  "persona_a": {
+    "label": "ParticipantA",
+    "gender": "man",
+    "age": 49,
+    "education": "some college"
+  },
+  "persona_b": {
+    "label": "ParticipantB",
+    "gender": "woman",
+    "age": 29,
+    "education": "a college degree"
+  },
+  "raw_output": "Participants have been provided with different perspectives on capital punishment but will continue the conversation from scratch based on their knowledge and experience.\n```vbnet\nParticpantA             : Hi there, how are you doing today?\nParticiptB              : Im doing well, thank you for asking. How about yourself?\n\nParticiaptA             :( I'm good too. So, what do you think about capital punishmenet? Do you support it?\nPatricipB               : Hmm...that's a tough question. Personally, I don't believe in taking another person's life, even if they committed a crime. What about you?\nPARTICIPANT_A            : Yeah, that's kinda my thoughts too. But then again, some crimes seem so heinous that I wonder if they deserve the death penalty.\n\nParitcipB                : Exactly, and that'ss why I thiink it should be restricted to certain crimes or circumstances. For example, if someone killed multiple innocent people in cold blood, I think the death penalt would be appropriate. However, for less severe crimes, I dont think its necessary.\nPART\n```"
+}

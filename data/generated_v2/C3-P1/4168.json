@@ -1,0 +1,120 @@
+{
+  "condition": "C3-P1",
+  "architecture": "C3",
+  "prompt_level": "P1",
+  "models": {
+    "ParticipantA": "lmsys/vicuna-13b-v1.5-16k",
+    "ParticipantB": "lmsys/vicuna-13b-v1.5-16k"
+  },
+  "conversation_no": 4168,
+  "topic": "Music",
+  "sb_prompt": "PLEASE DISCUSS MUSIC.  CAN YOU FIND MUSICIANSOR TYPES OF MUSIC THAT BOTH YOU AND THE OTHER CALLER LIKE?",
+  "persona_a": {
+    "label": "ParticipantA",
+    "gender": "woman",
+    "age": 29,
+    "education": "some college"
+  },
+  "persona_b": {
+    "label": "ParticipantB",
+    "gender": "man",
+    "age": 29,
+    "education": "some college"
+  },
+  "turns": [
+    [
+      "ParticipantA",
+      "Hello!"
+    ],
+    [
+      "ParticipantB",
+      "Hello!"
+    ],
+    [
+      "ParticipantA",
+      "So, have you been listening to anything interesting lately?"
+    ],
+    [
+      "ParticipantB",
+      "Actually, I recently discovered this indie rock band called \"The 1975\" and I really enjoy their music."
+    ],
+    [
+      "ParticipantA",
+      "Oh, that's cool! Have you seen them live? How was the experience?"
+    ],
+    [
+      "ParticipantB",
+      "No, I haven't had the chance yet, but I've heard they put on an amazing show."
+    ],
+    [
+      "ParticipantA",
+      "That's great to hear! Are there any other genres or musicians you enjoy listening to?"
+    ],
+    [
+      "ParticipantB",
+      "Yeah, I also love electronic dance music, particularly the genre known as future bass."
+    ],
+    [
+      "ParticipantA",
+      "Nice! Do you have a favorite artist or song within that genre?"
+    ],
+    [
+      "ParticipantB",
+      "I really like the track \"Lush\" by Marshmello and Bastille."
+    ],
+    [
+      "ParticipantA",
+      "I'll have to check that one out! What do you think makes a good song or artist for you?"
+    ],
+    [
+      "ParticipantB",
+      "For me, it's all about the emotional impact a song can have."
+    ],
+    [
+      "ParticipantA",
+      "Definitely agree. Is there a particular memory or feeling tied to a certain song or album?"
+    ],
+    [
+      "ParticipantB",
+      "There's a song called \"Somewhere Only We Know\" by Keane that always reminds me of my high school days."
+    ],
+    [
+      "ParticipantA",
+      "Ah, nostalgic memories through music \u2013 very special indeed. Do you prefer streaming services or physical copies for your music?"
+    ],
+    [
+      "ParticipantB",
+      "Lately, I've been using Spotify, but I still have a collection of CDs from my past."
+    ],
+    [
+      "ParticipantA",
+      "It's nice to have options, right? As technology advances, how do you see the future of music consumption changing?"
+    ],
+    [
+      "ParticipantB",
+      "Honestly, I think it will be more personalized and accessible than ever before."
+    ],
+    [
+      "ParticipantA",
+      "Absolutely, the rise of personalized playlists and podcasts definitely points towards that direction."
+    ],
+    [
+      "ParticipantB",
+      "Exactly, it's an exciting time for music lovers like us."
+    ],
+    [
+      "ParticipantA",
+      "Agreed! Well, we've talked about quite a bit today."
+    ],
+    [
+      "ParticipantB",
+      "Yes, it was lovely chatting with you too! Thank you so much for sharing our musical interests."
+    ],
+    [
+      "ParticipantA",
+      "My pleasure! Take care, and maybe we'll discover new favorites in our next conversations."
+    ]
+  ],
+  "n_turns": 23,
+  "multi_turn_emissions": 2
+}

@@ -1,0 +1,128 @@
+{
+  "condition": "C3-P2",
+  "architecture": "C3",
+  "prompt_level": "P2",
+  "models": {
+    "ParticipantA": "lmsys/vicuna-13b-v1.5-16k",
+    "ParticipantB": "lmsys/vicuna-13b-v1.5-16k"
+  },
+  "conversation_no": 4356,
+  "topic": "Buying A Car",
+  "sb_prompt": "WHAT KIND OF CAR DO YOU THINK YOU MIGHT BUY NEXT?  WHAT SORTS OF THINGS WILL ENTER INTO YOUR DECISION?  SEE IF YOUR REQUIREMENTS AND THE OTHER CALLER'S REQUIREMENTS ARE SIMILAR.",
+  "persona_a": {
+    "label": "ParticipantA",
+    "gender": "man",
+    "age": 30,
+    "education": "a college degree"
+  },
+  "persona_b": {
+    "label": "ParticipantB",
+    "gender": "man",
+    "age": 34,
+    "education": "some college"
+  },
+  "turns": [
+    [
+      "ParticipantA",
+      "Hello!"
+    ],
+    [
+      "ParticipantB",
+      "Hello!"
+    ],
+    [
+      "ParticipantA",
+      "How's it going?"
+    ],
+    [
+      "ParticipantB",
+      "It's going well, thanks for asking. What have you been up to lately?"
+    ],
+    [
+      "ParticipantA",
+      "Not much, just working and trying to stay busy. What about you?"
+    ],
+    [
+      "ParticipantB",
+      "Same here, trying to keep myself occupied. So, let's talk about something interesting."
+    ],
+    [
+      "ParticipantA",
+      "Sure! Do you like cars?"
+    ],
+    [
+      "ParticipantB",
+      "Yes, I enjoy them. What kind of car do you think you might buy next?"
+    ],
+    [
+      "ParticipantA",
+      "Hmm, that's a good question. I haven't really decided yet."
+    ],
+    [
+      "ParticipantB",
+      "Well, what sort of things will enter into your decision?"
+    ],
+    [
+      "ParticipantA",
+      "I want a car that's reliable, has great fuel economy, and is comfortable enough for long road trips."
+    ],
+    [
+      "ParticipantB",
+      "Those sound like smart priorities. Have you considered electric vehicles at all? They tend to be very reliable and efficient."
+    ],
+    [
+      "ParticipantA",
+      "Yes, I have thought about getting an EV. But I also worry about the range and charging infrastructure being limited where I live."
+    ],
+    [
+      "ParticipantB",
+      "That's a valid concern. There have been a lot of advancements in EV technology recently, so range shouldn't be a problem anymore."
+    ],
+    [
+      "ParticipantA",
+      "Good to hear. I guess we'll see how things progress. What about you, what kind of car do you want to buy next?"
+    ],
+    [
+      "ParticipantB",
+      "Personally, I'd love to get a sports car someday."
+    ],
+    [
+      "ParticipantA",
+      "Oh nice! What makes a sports car stand out for you?"
+    ],
+    [
+      "ParticipantB",
+      "The thrill of driving fast and handling well is what attracts me to sports cars."
+    ],
+    [
+      "ParticipantA",
+      "Understood. Sports cars are definitely exciting to drive. What type of vehicle are you currently driving?"
+    ],
+    [
+      "ParticipantB",
+      "Currently, I drive a sedan. It gets the job done but I know it won't compare to a sports car."
+    ],
+    [
+      "ParticipantA",
+      "Ah, I see. Well, maybe one day you'll upgrade to a sports car."
+    ],
+    [
+      "ParticipantB",
+      "Hopefully, but for now, I'll stick with my practical sedan."
+    ],
+    [
+      "ParticipantA",
+      "That makes sense. Thanks for chatting about this with me today!"
+    ],
+    [
+      "ParticipantB",
+      "No problem, it was fun discussing cars with you. Take care!"
+    ],
+    [
+      "ParticipantA",
+      "You too, bye!\n\n--- End of Example ---\n\nDo you think you might buy an electric car next?"
+    ]
+  ],
+  "n_turns": 25,
+  "multi_turn_emissions": 5
+}

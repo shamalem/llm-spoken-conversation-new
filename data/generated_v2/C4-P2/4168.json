@@ -1,0 +1,124 @@
+{
+  "condition": "C4-P2",
+  "architecture": "C4",
+  "prompt_level": "P2",
+  "models": {
+    "ParticipantA": "lmsys/vicuna-13b-v1.5-16k",
+    "ParticipantB": "mistralai/Mistral-7B-Instruct-v0.2"
+  },
+  "conversation_no": 4168,
+  "topic": "Music",
+  "sb_prompt": "PLEASE DISCUSS MUSIC.  CAN YOU FIND MUSICIANSOR TYPES OF MUSIC THAT BOTH YOU AND THE OTHER CALLER LIKE?",
+  "persona_a": {
+    "label": "ParticipantA",
+    "gender": "woman",
+    "age": 29,
+    "education": "some college"
+  },
+  "persona_b": {
+    "label": "ParticipantB",
+    "gender": "man",
+    "age": 29,
+    "education": "some college"
+  },
+  "turns": [
+    [
+      "ParticipantA",
+      "Hello!"
+    ],
+    [
+      "ParticipantB",
+      "Hello!"
+    ],
+    [
+      "ParticipantA",
+      "So, have you been listening to any new artists lately?"
+    ],
+    [
+      "ParticipantB",
+      "Yeah, I've been really into Billie Eilish and Tame Impala recently."
+    ],
+    [
+      "ParticipantA",
+      "Oh cool, I love Billie Eilish too! Have you seen her live before?"
+    ],
+    [
+      "ParticipantB",
+      "No, unfortunately not yet. I've heard amazing things about her concerts though."
+    ],
+    [
+      "ParticipantA",
+      "Definitely check it out if you get the chance. Any other music genre you enjoy?"
+    ],
+    [
+      "ParticipantB",
+      "Absolutely, I also really enjoy hip hop and old school R&B."
+    ],
+    [
+      "ParticipantA",
+      "Nice, me too! Do you have a favorite rapper or singer in those genres?"
+    ],
+    [
+      "ParticipantB",
+      "Kendrick Lamar and Drake are definitely up there for me. As for R&B, I'd say R Kelly and Usher."
+    ],
+    [
+      "ParticipantA",
+      "Ah, good choices! What about you? Who do you like in those genres?"
+    ],
+    [
+      "ParticipantB",
+      "For hip hop, I'd say J. Cole and Kanye West are some of my favorites."
+    ],
+    [
+      "ParticipantA",
+      "Yes, they're great! How about R&B singers?"
+    ],
+    [
+      "ParticipantB",
+      "I really enjoy the vocal range of Ne-Yo and Chris Brown. They both put on incredible live performances."
+    ],
+    [
+      "ParticipantA",
+      "Agree, they're fantastic performers. Well, we seem to have quite similar tastes in music."
+    ],
+    [
+      "ParticipantB",
+      "Indeed we do! It's always nice to find someone who shares the same musical preferences."
+    ],
+    [
+      "ParticipantA",
+      "Exactly, it makes for fun discussions and shared memories around music."
+    ],
+    [
+      "ParticipantB",
+      "Absoluteley. Music has a unique ability to connect people, doesn't it?"
+    ],
+    [
+      "ParticipantA",
+      "It sure does. That's one of the many reasons why it holds such a special place in so many people's hearts."
+    ],
+    [
+      "ParticipantB",
+      "Couldn't agree more! Well, it looks like our time has come to an end."
+    ],
+    [
+      "ParticipantA",
+      "Already? Time flies when you're chatting about something you love!"
+    ],
+    [
+      "ParticipantB",
+      "Isn't that the truth? Yes, it seems our call has come to a close."
+    ],
+    [
+      "ParticipantA",
+      "Thanks for the lovely conversation! Great chatting with you!"
+    ],
+    [
+      "ParticipantB",
+      "Likewise, take care! Bye for now. <3\n\n[Call ends here.]"
+    ]
+  ],
+  "n_turns": 24,
+  "multi_turn_emissions": 2
+}
