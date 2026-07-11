@@ -819,6 +819,12 @@ def print_summary(groups: list[dict], ceds: list[dict], embedder_name: str) -> N
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--n-sb", type=int, default=50, help="number of Switchboard conversations")
+    parser.add_argument(
+        "--data-dir",
+        default=None,
+        help="directory of <condition>/*.json to read instead of data/generated "
+        "(e.g. data/generated_v2, before that's promoted to data/generated)",
+    )
     parser.add_argument("--k-wrong", type=int, default=20, help="wrong contexts sampled per CAS turn")
     parser.add_argument("--seed", type=int, default=7, help="random seed for CAS negatives")
     parser.add_argument(
@@ -864,6 +870,10 @@ def main() -> None:
         help="2-D projection of conversation embeddings colored by condition; requires scikit-learn (pca) or umap-learn (umap)",
     )
     args = parser.parse_args()
+
+    if args.data_dir:
+        global GEN_ROOT
+        GEN_ROOT = pathlib.Path(args.data_dir)
 
     conversations = load_generated() + load_switchboard(args.n_sb)
     if not conversations:
