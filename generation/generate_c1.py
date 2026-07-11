@@ -50,22 +50,25 @@ def main() -> None:
     ap.add_argument("--max-new-tokens", type=int, default=2048)
     ap.add_argument("--temperature", type=float, default=0.8)
     ap.add_argument("--top-p", type=float, default=0.95)
-    # C1 generates the WHOLE ~30-turn conversation in one generate() call (up to
-    # max-new-tokens), unlike C2/C3/C4 which call chat() once per short turn. chat()'s
-    # defaults (repetition_penalty=1.2, no_repeat_ngram_size=3) were tuned for those short
-    # per-turn calls; a hard "never repeat any 3-gram" ban over ~2000 tokens of natural
-    # dialogue is nearly unsatisfiable (turns reuse words/phrases constantly) and was
-    # forcing the model to hit EOS almost immediately, producing 1-2 line fragments instead
-    # of full conversations. Use the same no-repeat-ngram=6 the C2/C3/C4 family settled on
-    # after their own repetition-drift testing: loose enough to allow normal short-phrase
-    # reuse ("I think that", "do you think"), but still bans a genuine verbatim-sentence
-    # loop (the pre-fix C1 pathology repeated whole clauses, well over 6 tokens). The soft
-    # repetition_penalty stays on top as a second line of defense against loops that stay
-    # just under the n-gram ban's radar.
-    ap.add_argument("--repetition-penalty", type=float, default=1.15)
-    ap.add_argument("--no-repeat-ngram", type=int, default=6,
-                    help="bans exact n-gram repeats; 0 disables (risks 3-gram-style breakage "
-                         "if set too low over a whole conversation)")
+    # C1 generates the WHOLE ~30-turn conversation in one generate() call, unlike C2/C3/C4
+    # which call chat() once per short turn. It must repeat the speaker labels ("ParticipantA:"
+    # / "ParticipantB:") on EVERY line. chat()'s per-turn defaults (repetition_penalty=1.2,
+    # no_repeat_ngram_size=3) — added on 2026-07-01 to stop the C3 two-agent loops — punish
+    # exactly that required label repetition, so after a turn or two the model can no longer
+    # cheaply start a new labelled line and hits EOS instead → the 1-2 line fragments.
+    # The early C1 pilots (which produced full 250-400-word conversations) ran with BOTH of
+    # these OFF; that is the known-good config, restored here. NOTE: loosening only the n-gram
+    # ban to 6 was tried (commit 32ca994) and did NOT fix it — because repetition_penalty was
+    # still on. C1 all-at-once does not fall into the verbatim-loop failure mode that motivated
+    # these controls (that was C3's two-agents-feeding-each-other spiral), so it does not need
+    # them. If a regenerated C1 conversation ever shows a real verbatim loop, add a MILD penalty
+    # (e.g. 1.05) rather than reinstating the 1.15/6 that truncates.
+    ap.add_argument("--repetition-penalty", type=float, default=1.0,
+                    help="1.0 = off (the known-good C1 setting). >1.0 penalizes the repeated "
+                         "speaker labels C1 needs and truncates the conversation.")
+    ap.add_argument("--no-repeat-ngram", type=int, default=0,
+                    help="0 = off (the known-good C1 setting). A hard n-gram ban over a whole "
+                         "2000-token conversation fights natural phrase reuse and truncates it.")
     ap.add_argument("--out-root", default=str(OUT_ROOT),
                     help="output root; point at a separate dir to avoid overwriting existing data")
     args = ap.parse_args()
