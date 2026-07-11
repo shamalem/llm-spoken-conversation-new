@@ -22,6 +22,12 @@ data/switchboard/
 # `text` column — regenerate it locally for review, NEVER commit it.
 results/social_metrics/turn_labels.csv
 
+# export_align.py's scratch directory: _work/raw/SB__*.txt is the actual verbatim Switchboard
+# transcript text reformatted for ALIGN's input format (LDC) -- keep local only, like
+# data/switchboard/ above. Only data/align/alignment_turns.csv (the numeric CSV output) is
+# meant to be committed.
+data/align/_work/
+
 # --- Raw corpus archives — keep local ---
 *.zip
 
