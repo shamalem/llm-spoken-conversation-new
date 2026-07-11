@@ -1,0 +1,22 @@
+{
+  "condition": "C1-P2",
+  "architecture": "C1",
+  "prompt_level": "P2",
+  "model": "lmsys/vicuna-13b-v1.5-16k",
+  "conversation_no": 4379,
+  "topic": "Family Finance",
+  "sb_prompt": "DOES YOUR FAMILY KEEP A MONTHLY BUDGETCAN YOU GIVE A GENERAL DESCRIPTION OF YOUR PROCEDURES",
+  "persona_a": {
+    "label": "ParticipantA",
+    "gender": "woman",
+    "age": 33,
+    "education": "a high-school education"
+  },
+  "persona_b": {
+    "label": "ParticipantB",
+    "gender": "woman",
+    "age": 30,
+    "education": "a high-school education"
+  },
+  "raw_output": "ParticipantA: Hi, I'm calling about the family finance topic. Can you tell me about your family's budgeting process?\n\nParticipantB: Sure, we try to keep track of our expenses and income each month. We make a list of all our bills and set aside money for savings and fun activities.\n\nParticipantA: That sounds great. I don't think my family has ever really sat down to make a budget. We just kind of wing it each month.\n\nParticipantB: Oh, that can be tricky. Have you ever considered making a budget to help you manage your money better?\n\nParticipantA: Yeah, I've thought about it before. But it always seems like too much work.\n\nParticipantB: Well, it can be time-consuming at first, but it really helps you stay on track and avoid overspending.\n\nParticipantA: Maybe I'll give it a try. Do you have any tips for getting started?\n\nParticipantB: Sure, start by listing all your income sources and then make a list of all your expenses, including bills and any extra spending.\n\nParticipantA: That makes sense. Thanks for the advice!\n\nParticipantB: No problem. Good luck with your budgeting!\n\nParticipantA: Thanks, you too!"
+}

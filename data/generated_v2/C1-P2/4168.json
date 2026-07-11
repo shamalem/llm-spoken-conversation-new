@@ -1,0 +1,22 @@
+{
+  "condition": "C1-P2",
+  "architecture": "C1",
+  "prompt_level": "P2",
+  "model": "lmsys/vicuna-13b-v1.5-16k",
+  "conversation_no": 4168,
+  "topic": "Music",
+  "sb_prompt": "PLEASE DISCUSS MUSIC.  CAN YOU FIND MUSICIANSOR TYPES OF MUSIC THAT BOTH YOU AND THE OTHER CALLER LIKE?",
+  "persona_a": {
+    "label": "ParticipantA",
+    "gender": "woman",
+    "age": 29,
+    "education": "some college"
+  },
+  "persona_b": {
+    "label": "ParticipantB",
+    "gender": "man",
+    "age": 29,
+    "education": "some college"
+  },
+  "raw_output": "ParticipantA: Hello!\nParticipantB: Hello!\n\nParticipantA: So, do you like listening to music?\nParticipantB: Yeah, I do. How about you?\nParticipantA: Definitely! What's your favorite genre?\nParticipantB: I'd say rock music. What about you?\nParticipantA: I'm more into pop and hip-hop.\nParticipantB: Nice! Do you have a favorite artist or song?\nParticipantA: My favorite artist is Taylor Swift, and my favorite song is \"Shake It Off.\" How about you?\nParticipantB: My favorite artist is Ed Sheeran, and my favorite song is \"Thinking Out Loud.\"\nParticipantA: Oh, I love Ed Sheeran! \"Thinking Out Loud\" is such a beautiful song.\nParticipantB: Yeah, it's one of my all-time favorites too.\n\nParticipantA: So, have you been to any concerts lately?\nParticipantB: Not recently, no. How about you?\nParticipantA: I went to a Ariana Grande concert last year, and it was amazing!\nParticipantB: That sounds awesome! I've never been to a concert before.\nParticipantA: You should definitely go to one sometime. It's an experience you won't forget.\n\nParticipantB: Yeah, maybe I'll look into it. Thanks for the suggestion!\nParticipantA: No problem! It was great chatting with you about music.\nParticipantB: Likewise! It was really fun."
+}

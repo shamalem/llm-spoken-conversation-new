@@ -1,0 +1,22 @@
+{
+  "condition": "C1-P2",
+  "architecture": "C1",
+  "prompt_level": "P2",
+  "model": "lmsys/vicuna-13b-v1.5-16k",
+  "conversation_no": 4611,
+  "topic": "News Media",
+  "sb_prompt": "DISCUSS HOW YOU AND THE OTHER CALLER KEEP UP ON CURRENT EVENTS.      DO YOU GET MOST OF YOUR NEWS FROM TVOR PEOPLE YOU KNOW?  ARE YOU SATISFIED WITH THE QUALITY OF COVERAGE?",
+  "persona_a": {
+    "label": "ParticipantA",
+    "gender": "man",
+    "age": 52,
+    "education": "less than a high-school education"
+  },
+  "persona_b": {
+    "label": "ParticipantB",
+    "gender": "man",
+    "age": 26,
+    "education": "a college degree"
+  },
+  "raw_output": "ParticipantA: Hey there! What's up?\nParticipantB: Not much, how about you?\nParticipantA: Just trying to keep up with current events, you know?\nParticipantB: Yeah, same here. What's your go-to source for news?\nParticipantA: Mostly TV, I'd say. Just catch the evening news or whatever's on during the day.\nParticipantB: Same for me, but I also check out a few online sources.\nParticipantA: Online, huh? Sounds fancy.\nParticipantB: Well, it's quick and easy to access, you know?\nParticipantA: Sure, I can see that. But do you think the coverage is quality?\nParticipantB: It varies, sometimes it's good, sometimes it's not.\nParticipantA: Yeah, I hear you. I usually stick to the big networks though.\nParticipantB: That's a good idea. They're usually reliable, I think.\nParticipantA: Agree, agree. But sometimes it seems like they only report what they want you to know.\nParticipantB: Yeah, there's definitely some bias out there.\nParticipantA: You said it. But what can you do, right?\nParticipantB: Exactly. It's a big world, and there's only so much time in a day.\nParticipantA: Couldn't agree more. Well, it was good chatting with you.\nParticipantB: You too! Take care!"
+}

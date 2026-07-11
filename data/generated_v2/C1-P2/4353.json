@@ -1,0 +1,22 @@
+{
+  "condition": "C1-P2",
+  "architecture": "C1",
+  "prompt_level": "P2",
+  "model": "lmsys/vicuna-13b-v1.5-16k",
+  "conversation_no": 4353,
+  "topic": "Family Finance",
+  "sb_prompt": "DOES YOUR FAMILY KEEP A MONTHLY BUDGETCAN YOU GIVE A GENERAL DESCRIPTION OF YOUR PROCEDURES",
+  "persona_a": {
+    "label": "ParticipantA",
+    "gender": "man",
+    "age": 36,
+    "education": "some college"
+  },
+  "persona_b": {
+    "label": "ParticipantB",
+    "gender": "woman",
+    "age": 47,
+    "education": "a college degree"
+  },
+  "raw_output": "ParticipantA: Hi, I'm calling to talk about family finances. Do you mind?\nParticipantB: Sure, that sounds interesting. What do you want to know?\nParticipantA: I was just wondering, do you keep a monthly budget for your family?\nParticipantB: Yes, we do. We find it helps us stay on track with our expenses.\nParticipantA: That's great. How do you go about making the budget?\nParticipantB: Well, we sit down at the beginning of each month and go over our bills and income. We categorize everything and make sure we're not overspending.\nParticipantA: That's smart. We do something similar, but we also use an app to track our spending.\nParticipantB: Oh, that's a good idea. We've considered using an app, but we've never gotten around to it.\nParticipantA: Yeah, it's really helpful. We can see where we're spending too much money and adjust accordingly.\nParticipantB: That sounds great. Do you have any tips for sticking to the budget?\nParticipantA: Well, we try to make a plan for any big expenses that are coming up, like holiday gifts or car repairs. That way we can save money for those things throughout the month.\nParticipantB: That's a good idea. We usually just try to save a certain amount each month, but we haven't been great at sticking to it.\nParticipantA: Yeah, it can be tough. But I think the key is to be flexible and adjust the budget as needed.\nParticipantB: Definitely. Thanks for talking with me about this.\nParticipantA: No problem, it was nice chatting with you too."
+}

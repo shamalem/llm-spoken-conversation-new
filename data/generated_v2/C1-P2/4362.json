@@ -1,0 +1,22 @@
+{
+  "condition": "C1-P2",
+  "architecture": "C1",
+  "prompt_level": "P2",
+  "model": "lmsys/vicuna-13b-v1.5-16k",
+  "conversation_no": 4362,
+  "topic": "Public Education",
+  "sb_prompt": "DISCUSS WITH THE OTHER CALLER WHETHER THERE IS SOMETHING SERIOUSLY WRONG WITH OUR PUBLIC SCHOOL SYSTEMS TODAYY",
+  "persona_a": {
+    "label": "ParticipantA",
+    "gender": "man",
+    "age": 31,
+    "education": "a college degree"
+  },
+  "persona_b": {
+    "label": "ParticipantB",
+    "gender": "man",
+    "age": 23,
+    "education": "some college"
+  },
+  "raw_output": "ParticipantA: Hi, how's it going?\nParticipantB: Pretty good, thanks. How about you?\nParticipantA: I'm doing alright. So, what do you think about the state of public education today?\nParticipantB: Hmm, I think it's pretty messed up to be honest.\nParticipantA: Yeah, I agree. What do you think is the main problem?\nParticipantB: I think there's not enough funding going towards it.\nParticipantA: Yeah, that's definitely a big issue. I think there's also a lack of resources and support for teachers.\nParticipantB: Definitely. I had a few teachers who were really great, but it felt like they were struggling to do their job properly.\nParticipantA: Yeah, it's tough for them. I think there's also a lack of emphasis on certain subjects, like the arts and humanities.\nParticipantB: Absolutely. And then there's the issue of standardized testing and how it puts so much pressure on students.\nParticipantA: Yeah, I hated taking those tests. It felt like the entire value of a student was based on their test scores.\nParticipantB: Exactly. I think there needs to be a change in the way we approach education, to focus more on the individual needs of each student.\nParticipantA: Agreed. I think it's important to have a well-rounded education, not just focus on math and science.\nParticipantB: Definitely. Thanks for chatting with me about this.\nParticipantA: No problem, it was nice talking to you."
+}

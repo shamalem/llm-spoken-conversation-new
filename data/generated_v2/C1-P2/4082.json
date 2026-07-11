@@ -1,0 +1,22 @@
+{
+  "condition": "C1-P2",
+  "architecture": "C1",
+  "prompt_level": "P2",
+  "model": "lmsys/vicuna-13b-v1.5-16k",
+  "conversation_no": 4082,
+  "topic": "News Media",
+  "sb_prompt": "DISCUSS HOW YOU AND THE OTHER CALLER KEEP UP ON CURRENT EVENTS.      DO YOU GET MOST OF YOUR NEWS FROM TVOR PEOPLE YOU KNOW?  ARE YOU SATISFIED WITH THE QUALITY OF COVERAGE?",
+  "persona_a": {
+    "label": "ParticipantA",
+    "gender": "man",
+    "age": 23,
+    "education": "some college"
+  },
+  "persona_b": {
+    "label": "ParticipantB",
+    "gender": "man",
+    "age": 27,
+    "education": "some college"
+  },
+  "raw_output": "ParticipantA: Hey, what's up?\nParticipantB: Not much, you?\nParticipantA: I'm doing alright. So, what do you think about the news media?\nParticipantB: Uh, I mean, I try to stay informed but it can be overwhelming with all the different sources out there.\nParticipantA: Yeah, I feel the same. I usually get my news from TV and social media.\nParticipantB: Same here, but sometimes it can be difficult to separate fact from fiction.\nParticipantA: Definitely. I think it's important to have a few trusted sources to rely on.\nParticipantB: Agreed. I mostly get my news from friends and family.\nParticipantA: Oh, interesting. Do you find that their opinions influence your view on current events?\nParticipantB: Sometimes, but I also like to do my own research and form my own opinions.\nParticipantA: That makes sense. I feel like it's a mix of both for me too.\nParticipantB: Yeah, it's important to have a well-rounded understanding of what's going on in the world.\nParticipantA: Definitely. So, what do you think about the quality of news coverage these days?\nParticipantB: Honestly, I think it could be better. I feel like a lot of news outlets have an agenda and it can be hard to find unbiased reporting.\nParticipantA: Yeah, I've noticed that too. It can be frustrating at times.\nParticipantB: Definitely. But I think it's important to stay informed and keep an open mind.\nParticipantA: Agreed. Well, thanks for chatting with me.\nParticipantB: No problem, it was good talking to you."
+}

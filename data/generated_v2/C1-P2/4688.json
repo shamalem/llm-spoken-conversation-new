@@ -1,0 +1,22 @@
+{
+  "condition": "C1-P2",
+  "architecture": "C1",
+  "prompt_level": "P2",
+  "model": "lmsys/vicuna-13b-v1.5-16k",
+  "conversation_no": 4688,
+  "topic": "Family Finance",
+  "sb_prompt": "DOES YOUR FAMILY KEEP A MONTHLY BUDGETCAN YOU GIVE A GENERAL DESCRIPTION OF YOUR PROCEDURES",
+  "persona_a": {
+    "label": "ParticipantA",
+    "gender": "man",
+    "age": 45,
+    "education": "less than a high-school education"
+  },
+  "persona_b": {
+    "label": "ParticipantB",
+    "gender": "woman",
+    "age": 38,
+    "education": "some college"
+  },
+  "raw_output": "ParticipantA: Hello!\nParticipantB: Hello!\n\nParticipantA: So, how do you handle your family's finances?\nParticipantB: Well, we keep a monthly budget.\nParticipantA: Oh, that's great. I've never really tried that.\nParticipantB: Yeah, it helps us stay on track and avoid overspending.\nParticipantA: That sounds like a good idea. What's your process like?\nParticipantB: We sit down at the beginning of each month and make a list of all our income and expenses.\nParticipantA: That's a good start. I've never really thought about budgeting before.\nParticipantB: It's definitely worth it. It's helped us save money and pay off debt.\nParticipantA: That's great to hear. I'll have to try it out.\nParticipantB: Definitely give it a shot. It's not always easy, but it's worth it in the long run.\n\nParticipantA: Thanks for the advice.\nParticipantB: No problem. It was nice chatting with you.\nParticipantA: You too. Bye."
+}

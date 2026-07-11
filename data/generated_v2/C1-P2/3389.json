@@ -1,0 +1,22 @@
+{
+  "condition": "C1-P2",
+  "architecture": "C1",
+  "prompt_level": "P2",
+  "model": "lmsys/vicuna-13b-v1.5-16k",
+  "conversation_no": 3389,
+  "topic": "Football",
+  "sb_prompt": "PLEASE DISCUSS PROFESSIONAL FOOTBALL.  FIND OUT THE OTHER CALLER'S FAVORITE PRO FOOTBALL TEAM AND WHERE IT'S HEADED THIS YEAR.       DO YOU AGREE WITH THE CALLER'S PREDICTION?",
+  "persona_a": {
+    "label": "ParticipantA",
+    "gender": "man",
+    "age": 20,
+    "education": "some college"
+  },
+  "persona_b": {
+    "label": "ParticipantB",
+    "gender": "man",
+    "age": 26,
+    "education": "some college"
+  },
+  "raw_output": "ParticipantA: Hey, what's up?\nParticipantB: Not much, how about you?\nParticipantA: I'm good. So, do you watch football?\nParticipantB: Yeah, I'm a big fan. What about you?\nParticipantA: Yeah, I love it too. Who's your favorite pro football team?\nParticipantB: The New England Patriots. How about you?\nParticipantA: I'm a big fan of the Dallas Cowboys.\nParticipantB: Nice. I think they're headed to the Super Bowl this year.\nParticipantA: Really? I'm not so sure. I think they might struggle this season.\nParticipantB: Why do you think that?\nParticipantA: Well, they lost some key players in the offseason and their defense isn't looking too strong.\nParticipantB: Yeah, but they have a great offense and Tom Brady is still playing at a high level.\nParticipantA: True, but I think the NFC East is going to be tough this year.\nParticipantB: Yeah, it's definitely going to be a competitive season. What do you think about the other teams in the league?\nParticipantA: I think the Kansas City Chiefs and the Green Bay Packers are going to be tough to beat too.\nParticipantB: Yeah, I agree. The Chiefs have a lot of talent and the Packers always seem to find a way to win.\nParticipantA: For sure. Well, it should be an interesting season.\nParticipantB: Definitely. Thanks for chatting with me about football.\nParticipantA: No problem, it was great talking to you."
+}

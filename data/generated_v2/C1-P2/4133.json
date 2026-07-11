@@ -1,0 +1,22 @@
+{
+  "condition": "C1-P2",
+  "architecture": "C1",
+  "prompt_level": "P2",
+  "model": "lmsys/vicuna-13b-v1.5-16k",
+  "conversation_no": 4133,
+  "topic": "Capital Punishment",
+  "sb_prompt": "COMPARE YOUR OPINIONS AND THOSE OF THE OTHER CALLER ON CAPITAL PUNISHMENT.  DO EITHER OF YOU THINK IT SHOULD BE RESTRICTED TO CERTAIN CRIMES OR CIRCUMSTANCES?  HOW DO THE POLICIES AND PRACTICES OF YOUR STATE FIT WITH YOUR OPINIONS?",
+  "persona_a": {
+    "label": "ParticipantA",
+    "gender": "man",
+    "age": 30,
+    "education": "some college"
+  },
+  "persona_b": {
+    "label": "ParticipantB",
+    "gender": "man",
+    "age": 30,
+    "education": "a college degree"
+  },
+  "raw_output": "ParticipantA: Hey, what's up?\nParticipantB: Not much, how about you?\nParticipantA: Just got off work, how was your day?\nParticipantB: It was good, thanks for asking. What do you do?\nParticipantA: I work in a warehouse, not the most exciting job, but it pays the bills.\nParticipantB: Yeah, I get that. I work at a software company.\nParticipantA: Nice. So, what do you think about capital punishment?\nParticipantB: I think it's a necessary measure in some cases.\nParticipantA: Yeah, I agree. I think it should be reserved for the most heinous crimes.\nParticipantB: Exactly. I think the policies in my state fit with that view.\nParticipantA: That's good to hear. What state is that?\nParticipantB: North Carolina.\nParticipantA: Oh, cool. I'm from Texas. Our policies are pretty similar.\nParticipantB: Yeah, Texas is known for being tough on crime.\nParticipantA: Yeah, definitely. But I also think there needs to be safeguards in place to ensure that innocent people aren't wrongly convicted.\nParticipantB: I completely agree. There have been too many cases of that happening.\nParticipantA: Exactly. So, what made you interested in talking about this topic?\nParticipantB: I saw a documentary on the death penalty and it really got me thinking about the ethics of it all.\nParticipantA: Yeah, it's a complex issue for sure. I appreciate your perspective, thanks for chatting with me.\nParticipantB: Likewise, it was good to chat with you."
+}
