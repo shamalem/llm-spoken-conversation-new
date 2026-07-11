@@ -1,0 +1,22 @@
+{
+  "condition": "C1-P0",
+  "architecture": "C1",
+  "prompt_level": "P0",
+  "model": "lmsys/vicuna-13b-v1.5-16k",
+  "conversation_no": 3389,
+  "topic": "Football",
+  "sb_prompt": "PLEASE DISCUSS PROFESSIONAL FOOTBALL.  FIND OUT THE OTHER CALLER'S FAVORITE PRO FOOTBALL TEAM AND WHERE IT'S HEADED THIS YEAR.       DO YOU AGREE WITH THE CALLER'S PREDICTION?",
+  "persona_a": {
+    "label": "ParticipantA",
+    "gender": "man",
+    "age": 20,
+    "education": "some college"
+  },
+  "persona_b": {
+    "label": "ParticipantB",
+    "gender": "man",
+    "age": 26,
+    "education": "some college"
+  },
+  "raw_output": "ParticipantA: So, what do you think about professional football?\nParticipantB: I'm a huge fan! What about you?\nParticipantA: I enjoy watching it too. What's your favorite team?\nParticipantB: The Dallas Cowboys. How about you?\nParticipantA: I'm actually more into college football, but I like the New England Patriots in the pros.\nParticipantB: That's cool. I think the Cowboys have a good chance of making it to the playoffs this year.\nParticipantA: Really? I'm not so sure. I think the Kansas City Chiefs are looking pretty strong.\nParticipantB: I agree that the Chiefs are good, but I think the Cowboys have a better shot at it this year.\nParticipantA: Hmm, I guess we'll have to wait and see. How about the quarterback situation for the Cowboys?\nParticipantB: Well, Dak Prescott is their star quarterback, and he's been playing really well lately.\nParticipantA: Yeah, I've heard he's been doing great. How do you feel about the Cowboys' chances in the playoffs?\nParticipantB: If they make it, I think they could do some serious damage. But it's hard to predict what will happen in the postseason.\nParticipantA: Definitely. I'm hoping for a great season from the Patriots, though.\nParticipantB: I can't blame you for that. Who do you think will win the Super Bowl this year?\nParticipantA: It's tough to say, but I'm going with the Patriots. They have a lot of experience and a strong team.\nParticipantB: That's a good pick. I think the Cowboys could make a run for it too, but we'll have to see how the season plays out.\nParticipantA: Absolutely. It's always tough to predict how things will go in the NFL.\nParticipantB: For sure. Well, it was great chatting with you about football.\nParticipantA: Yeah, it was great chatting with you too. Talk to you soon!\nParticipantB: Same to you, have a good day!"
+}
