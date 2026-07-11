@@ -66,6 +66,14 @@ def main() -> None:
     ap.add_argument("--no-repeat-ngram", type=int, default=6,
                     help="bans exact n-gram repeats; 0 disables (risks 3-gram-style breakage "
                          "if set too low over a whole conversation)")
+    # chat()'s min_new_tokens defaults to 8 -- a floor tuned for a single short turn. That
+    # forbids the EOS token for only 8 tokens, so nothing stops C1's one-shot whole-conversation
+    # call from legitimately hitting EOS almost immediately once past that trivial floor
+    # (observed: median raw_output ~13-14 tokens even with the ngram/penalty fix applied,
+    # since neither of those params affects the EOS decision itself). Force a real floor.
+    ap.add_argument("--min-new-tokens", type=int, default=400,
+                    help="hard floor on tokens before EOS is allowed; a full ~30-turn "
+                         "conversation runs several hundred tokens, unlike a single turn")
     ap.add_argument("--out-root", default=str(OUT_ROOT),
                     help="output root; point at a separate dir to avoid overwriting existing data")
     args = ap.parse_args()
@@ -92,6 +100,7 @@ def main() -> None:
             top_p=args.top_p,
             repetition_penalty=args.repetition_penalty,
             no_repeat_ngram_size=args.no_repeat_ngram,
+            min_new_tokens=args.min_new_tokens,
         )
         rec = {
             "condition": cond,
