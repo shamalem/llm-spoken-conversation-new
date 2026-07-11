@@ -56,11 +56,16 @@ def main() -> None:
     # per-turn calls; a hard "never repeat any 3-gram" ban over ~2000 tokens of natural
     # dialogue is nearly unsatisfiable (turns reuse words/phrases constantly) and was
     # forcing the model to hit EOS almost immediately, producing 1-2 line fragments instead
-    # of full conversations. Disable the n-gram ban here and keep only a mild repetition
-    # penalty (matches C2/C3's tuned value) to discourage verbatim restatement loops.
+    # of full conversations. Use the same no-repeat-ngram=6 the C2/C3/C4 family settled on
+    # after their own repetition-drift testing: loose enough to allow normal short-phrase
+    # reuse ("I think that", "do you think"), but still bans a genuine verbatim-sentence
+    # loop (the pre-fix C1 pathology repeated whole clauses, well over 6 tokens). The soft
+    # repetition_penalty stays on top as a second line of defense against loops that stay
+    # just under the n-gram ban's radar.
     ap.add_argument("--repetition-penalty", type=float, default=1.15)
-    ap.add_argument("--no-repeat-ngram", type=int, default=0,
-                    help="0 disables the n-gram ban; a hard ban is too strict over a whole conversation")
+    ap.add_argument("--no-repeat-ngram", type=int, default=6,
+                    help="bans exact n-gram repeats; 0 disables (risks 3-gram-style breakage "
+                         "if set too low over a whole conversation)")
     ap.add_argument("--out-root", default=str(OUT_ROOT),
                     help="output root; point at a separate dir to avoid overwriting existing data")
     args = ap.parse_args()
