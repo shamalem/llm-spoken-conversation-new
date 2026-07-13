@@ -152,25 +152,42 @@ def main() -> None:
 
     turn_df = run_align(raw_dir, work_dir, args.pretrained_vectors)
 
+    # Sub-measure columns ALIGN's calculate_alignment() emits (Duran et al., 2019). The paper
+    # (and its released AlignAnalyseOSF.R) aggregates the tok2/tok3/lem2/lem3 sub-measures into
+    # one "syntax_stan" and one "lexical" column because the sub-measures correlated r > .6 --
+    # replicated here as a plain mean so analysis/original_paper_analysis.py can run the exact
+    # same mixed models the paper did, not just on conceptual (cosine_semanticL) alignment.
+    SYNTAX_COLS = ["syntax_stan_tok2", "syntax_stan_lem2", "syntax_stan_tok3", "syntax_stan_lem3"]
+    LEXICAL_COLS = ["lexical_tok2", "lexical_lem2", "lexical_tok3", "lexical_lem3"]
+
     out_rows = []
+    fieldnames = (["condition", "conv_id", "turn_index", "n_turns", "cosine_semanticL"]
+                  + SYNTAX_COLS + LEXICAL_COLS + ["syntax_stan", "lexical"])
     for _, row in turn_df.iterrows():
         fname = row["condition_info"]
         if fname not in meta:
             continue
         condition, conv_id, n_turns = meta[fname]
-        out_rows.append({
+        syntax_vals = [row.get(c) for c in SYNTAX_COLS if c in row and row.get(c) is not None]
+        lexical_vals = [row.get(c) for c in LEXICAL_COLS if c in row and row.get(c) is not None]
+        out_row = {
             "condition": condition,
             "conv_id": conv_id,
             "turn_index": int(row["time"]),
             "n_turns": n_turns,
             "cosine_semanticL": row.get("cosine_semanticL", ""),
-        })
+            "syntax_stan": (sum(syntax_vals) / len(syntax_vals)) if syntax_vals else "",
+            "lexical": (sum(lexical_vals) / len(lexical_vals)) if lexical_vals else "",
+        }
+        for c in SYNTAX_COLS + LEXICAL_COLS:
+            out_row[c] = row.get(c, "")
+        out_rows.append(out_row)
 
     out_path = pathlib.Path(args.out)
     out_path.parent.mkdir(parents=True, exist_ok=True)
     import csv
     with open(out_path, "w", newline="", encoding="utf-8") as f:
-        writer = csv.DictWriter(f, fieldnames=["condition", "conv_id", "turn_index", "n_turns", "cosine_semanticL"])
+        writer = csv.DictWriter(f, fieldnames=fieldnames)
         writer.writeheader()
         writer.writerows(out_rows)
     print(f"Wrote {len(out_rows)} turn-pair rows to {out_path}")

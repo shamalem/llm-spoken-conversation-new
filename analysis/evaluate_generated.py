@@ -4,7 +4,10 @@ Evaluate all generated conversations against the full metric set.
 Tier 1 (original paper, independently justified):
   M1  Turn length          – mean words/turn, full distribution
   M2  Coordination markers – oh / okay / uh-huh per 100 words
-  M3  Alignment trajectory – lexical Jaccard overlap earlier vs later halves
+  Alignment trajectory (conceptual/syntactic/lexical) is computed separately by the real
+  ALIGN package (Duran et al. 2019) -- see analysis/export_align.py + data/align/alignment_turns.csv,
+  read by analysis/stats.py. This module previously had its own M3, a lexical-Jaccard proxy;
+  removed as redundant now that real ALIGN results exist for the generated conditions.
 
 Tier 2 (new criteria, evaluation_criteria.pdf):
   M4  Turn-taking economy        – % turns < 5 words
@@ -144,52 +147,6 @@ def m2_marker_rates(turns):
     }
 
 
-def _lexical_overlap(turns_a: list[tuple], turns_b: list[tuple]) -> float:
-    """Mean pairwise Jaccard on content words between adjacent cross-speaker turns."""
-    pairs = []
-    all_turns = turns_a + turns_b
-    for i in range(len(all_turns) - 1):
-        sa, ta = all_turns[i]
-        sb, tb = all_turns[i + 1]
-        if sa != sb:
-            words_a = {w.lower() for w in ta.split() if w.lower() not in STOP_WORDS}
-            words_b = {w.lower() for w in tb.split() if w.lower() not in STOP_WORDS}
-            union = words_a | words_b
-            if union:
-                pairs.append(len(words_a & words_b) / len(union))
-    return statistics.mean(pairs) if pairs else 0.0
-
-
-def m3_alignment_trajectory(turns):
-    if len(turns) < 4:
-        return {"alignment_earlier": None, "alignment_later": None, "alignment_delta": None}
-    mid = len(turns) // 2
-    earlier = turns[:mid]
-    later = turns[mid:]
-    a_early = _lexical_overlap(earlier, [])
-    a_late = _lexical_overlap(later, [])
-    # recompute cleanly over each half
-    def half_overlap(half):
-        pairs = []
-        for i in range(len(half) - 1):
-            sa, ta = half[i]
-            sb, tb = half[i + 1]
-            if sa != sb:
-                wa = {w.lower() for w in ta.split() if w.lower() not in STOP_WORDS}
-                wb = {w.lower() for w in tb.split() if w.lower() not in STOP_WORDS}
-                u = wa | wb
-                if u:
-                    pairs.append(len(wa & wb) / len(u))
-        return statistics.mean(pairs) if pairs else 0.0
-    a_early = half_overlap(earlier)
-    a_late = half_overlap(later)
-    return {
-        "alignment_earlier": round(a_early, 4),
-        "alignment_later":   round(a_late, 4),
-        "alignment_delta":   round(a_late - a_early, 4),
-    }
-
-
 def m4_turn_taking_economy(turns):
     wpt = [len(txt.split()) for _, txt in turns]
     if not wpt:
@@ -323,7 +280,6 @@ def evaluate_conversation(conv: dict) -> dict:
     }
     metrics.update(m1_turn_length(turns))
     metrics.update(m2_marker_rates(turns))
-    metrics.update(m3_alignment_trajectory(turns))
     metrics.update(m4_turn_taking_economy(turns))
     metrics.update(m5_backchannel_standalone(turns))
     metrics.update(m6_oh_epistemic(turns))
@@ -344,7 +300,6 @@ NUMERIC_KEYS = [
     "mean_words_per_turn", "median_words_per_turn", "stdev_words_per_turn",
     "n_turns",
     "rate_oh", "rate_okay", "rate_uh_huh",
-    "alignment_earlier", "alignment_later", "alignment_delta",
     "pct_short_turns",
     "backchannel_standalone_ratio", "n_backchannel_turns",
     "oh_epistemic_ratio", "n_oh",
@@ -443,9 +398,6 @@ def main():
         print(f"  oh/100w                  : {stats.get('rate_oh_mean', '—')}")
         print(f"  okay/100w                : {stats.get('rate_okay_mean', '—')}")
         print(f"  uh-huh/100w              : {stats.get('rate_uh_huh_mean', '—')}")
-        print(f"  alignment earlier        : {stats.get('alignment_earlier_mean', '—')}")
-        print(f"  alignment later          : {stats.get('alignment_later_mean', '—')}")
-        print(f"  alignment delta          : {stats.get('alignment_delta_mean', '—')}")
         print(f"  backchannel standalone   : {stats.get('backchannel_standalone_ratio_mean', '—')}")
         print(f"  oh epistemic ratio       : {stats.get('oh_epistemic_ratio_mean', '—')}")
         print(f"  self-repair/100w         : {stats.get('self_repair_per_100_mean', '—')}")

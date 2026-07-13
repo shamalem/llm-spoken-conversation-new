@@ -215,9 +215,20 @@ def load_switchboard(n: int) -> list[Conversation]:
     except FileNotFoundError:
         metadata = {}
 
-    for fp in list(iter_conversation_files())[:n]:
+    # Match generation/*.py's target_conversations(): skip files with no metadata row
+    # *before* counting toward n, don't just take the literal first n files. Every
+    # generation script builds its 50-conversation set this way; if even one early file
+    # lacks metadata, taking a plain [:n] slice here silently samples a different, offset
+    # set of conversation_no's than what the LLM data was actually generated from -- which
+    # would starve the topic-matched CED comparison of any real overlap.
+    picked = 0
+    for fp in iter_conversation_files():
+        if picked >= n:
+            break
         conv_no = conversation_no_of(fp)
-        meta = metadata.get(conv_no, {})
+        if conv_no not in metadata:
+            continue
+        meta = metadata[conv_no]
         turns = parse_conversation(fp)
         if not turns:
             continue
@@ -233,6 +244,7 @@ def load_switchboard(n: int) -> list[Conversation]:
                 meta=meta,
             )
         )
+        picked += 1
     return conversations
 
 
