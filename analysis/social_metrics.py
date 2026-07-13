@@ -35,24 +35,80 @@ import pathlib
 import random
 import re
 import statistics
-import sys
 from collections import Counter, defaultdict
 from dataclasses import dataclass, field
 from typing import Iterable
 
 import numpy as np
 
-sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent.parent))
-
-from analysis.analyze import conversation_turns  # noqa: E402
-from analysis.swda import (  # noqa: E402
-    conversation_no_of,
-    iter_conversation_files,
-    load_metadata,
-    parse_conversation,
-)
-
 ROOT = pathlib.Path(__file__).resolve().parent.parent
+SWDA_ROOT = ROOT / "data" / "switchboard" / "swda"
+
+# --------------------------------------------------------------------------------------- #
+# Inlined from swda.py / analyze.py (those files were removed from the repo; this module   #
+# is meant to be self-contained). Kept verbatim -- see git history for the original files. #
+# --------------------------------------------------------------------------------------- #
+
+def _clean_text(raw: str) -> str:
+    """Remove SwDA transcription markup, keep the spoken words."""
+    t = raw
+    t = re.sub(r"<+[^>]*>+", " ", t)      # <beep>, <<long pause>>
+    t = re.sub(r"\{[A-Z]\s", " ", t)       # opening {D {F {C {E {A ...
+    t = t.replace("}", " ")
+    for ch in "[]+#":
+        t = t.replace(ch, " ")
+    t = re.sub(r"-?/", " ", t)             # slash-unit and -/ interruption
+    t = re.sub(r"\s+", " ", t).strip()
+    t = re.sub(r"\s+([,.?!])", r"\1", t)   # tidy space before punctuation
+    return t
+
+
+def load_metadata(root: pathlib.Path = SWDA_ROOT) -> dict[int, dict]:
+    """conversation_no -> metadata row (topic_description, prompt, demographics)."""
+    out: dict[int, dict] = {}
+    with open(root / "swda-metadata.csv", newline="", encoding="utf-8") as f:
+        for row in csv.DictReader(f):
+            out[int(row["conversation_no"])] = row
+    return out
+
+
+def parse_conversation(csv_path: pathlib.Path) -> list[tuple[str, str]]:
+    """Return [(caller, text), ...] with consecutive same-caller utterances merged."""
+    turns: list[tuple[str, str]] = []
+    with open(csv_path, newline="", encoding="utf-8") as f:
+        for row in csv.DictReader(f):
+            spk = row["caller"].strip()
+            txt = _clean_text(row["text"])
+            if not txt:
+                continue
+            if turns and turns[-1][0] == spk:
+                turns[-1] = (spk, turns[-1][1] + " " + txt)
+            else:
+                turns.append((spk, txt))
+    return turns
+
+
+def iter_conversation_files(root: pathlib.Path = SWDA_ROOT):
+    yield from sorted(root.rglob("sw_*.utt.csv"))
+
+
+def conversation_no_of(csv_path: pathlib.Path) -> int:
+    """sw_0001_4325.utt.csv -> 4325 (the SwDA conversation_no, the metadata join key)."""
+    return int(csv_path.stem.split("_")[2].split(".")[0])
+
+
+def conversation_turns(rec: dict) -> list[tuple[str, str]]:
+    """(speaker, text) turns for a generated record -- parses C1 raw_output if needed."""
+    if rec.get("turns"):
+        return [(t[0], t[1]) for t in rec["turns"]]
+    turns = []
+    for line in rec.get("raw_output", "").split("\n"):
+        line = line.strip()
+        if ":" in line:
+            spk, txt = line.split(":", 1)
+            if txt.strip():
+                turns.append((spk.strip(), txt.strip()))
+    return turns
 GEN_ROOT = ROOT / "data" / "generated"
 OUT_DIR = ROOT / "results" / "social_metrics"
 

@@ -45,6 +45,7 @@ from __future__ import annotations
 import argparse
 import csv
 import pathlib
+import re
 import sys
 
 import numpy as np
@@ -52,17 +53,83 @@ import pandas as pd
 import statsmodels.formula.api as smf
 from statsmodels.stats.outliers_influence import variance_inflation_factor
 
-sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent.parent))
-
-from analysis.analyze import conversation_turns                          # noqa: E402
-from analysis.metrics import marker_counts, words_per_turn as _wpt        # noqa: E402
-from analysis.swda import (                                              # noqa: E402
-    iter_conversation_files, parse_conversation, conversation_no_of,
-)
-
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 GEN_ROOT = ROOT / "data" / "generated"
 ALIGN_CSV_DEFAULT = ROOT / "data" / "align" / "alignment_turns.csv"
+SWDA_ROOT = ROOT / "data" / "switchboard" / "swda"
+
+# --------------------------------------------------------------------------------------- #
+# Inlined from swda.py / analyze.py / metrics.py (those files were removed from the repo;  #
+# this module is meant to be self-contained). Kept verbatim so the replication logic below #
+# still matches what was validated earlier -- see git history for the original modules.    #
+# --------------------------------------------------------------------------------------- #
+
+def _clean_text(raw: str) -> str:
+    """Remove SwDA transcription markup, keep the spoken words."""
+    t = raw
+    t = re.sub(r"<+[^>]*>+", " ", t)      # <beep>, <<long pause>>
+    t = re.sub(r"\{[A-Z]\s", " ", t)       # opening {D {F {C {E {A ...
+    t = t.replace("}", " ")
+    for ch in "[]+#":
+        t = t.replace(ch, " ")
+    t = re.sub(r"-?/", " ", t)             # slash-unit and -/ interruption
+    t = re.sub(r"\s+", " ", t).strip()
+    t = re.sub(r"\s+([,.?!])", r"\1", t)   # tidy space before punctuation
+    return t
+
+
+def iter_conversation_files(root: pathlib.Path = SWDA_ROOT):
+    yield from sorted(root.rglob("sw_*.utt.csv"))
+
+
+def conversation_no_of(csv_path: pathlib.Path) -> int:
+    """sw_0001_4325.utt.csv -> 4325 (the SwDA conversation_no, the metadata join key)."""
+    return int(csv_path.stem.split("_")[2].split(".")[0])
+
+
+def parse_conversation(csv_path: pathlib.Path) -> list[tuple[str, str]]:
+    """Return [(caller, text), ...] with consecutive same-caller utterances merged."""
+    turns: list[tuple[str, str]] = []
+    with open(csv_path, newline="", encoding="utf-8") as f:
+        for row in csv.DictReader(f):
+            spk = row["caller"].strip()
+            txt = _clean_text(row["text"])
+            if not txt:
+                continue
+            if turns and turns[-1][0] == spk:
+                turns[-1] = (spk, turns[-1][1] + " " + txt)
+            else:
+                turns.append((spk, txt))
+    return turns
+
+
+def conversation_turns(rec: dict) -> list[tuple[str, str]]:
+    """(speaker, text) turns for a generated record -- parses C1 raw_output if needed."""
+    if rec.get("turns"):
+        return [(t[0], t[1]) for t in rec["turns"]]
+    turns = []
+    for line in rec.get("raw_output", "").split("\n"):
+        line = line.strip()
+        if ":" in line:
+            spk, txt = line.split(":", 1)
+            if txt.strip():
+                turns.append((spk.strip(), txt.strip()))
+    return turns
+
+
+MARKER_PATTERNS = {
+    "oh": re.compile(r"\boh\b", re.I),
+    "okay": re.compile(r"\b(?:okay|ok)\b", re.I),
+    "uh-huh": re.compile(r"\buh-?\s?huh\b", re.I),
+}
+
+
+def marker_counts(text: str) -> dict[str, int]:
+    return {name: len(pat.findall(text)) for name, pat in MARKER_PATTERNS.items()}
+
+
+def _wpt(turns: list[tuple[str, str]]) -> list[int]:
+    return [len(txt.split()) for _, txt in turns]
 
 ARCHITECTURES = ["C1", "C2", "C3", "C4"]  # C3/C4 = A3/A4 in the presentation, same data
 
