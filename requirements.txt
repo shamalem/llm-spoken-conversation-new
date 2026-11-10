@@ -15,6 +15,7 @@ pandas
 numpy
 scipy
 matplotlib
+statsmodels    # analysis/distance_bootstrap_stats.py: architecture-vs-prompt ANOVA
 
 # Optional but recommended for analysis/social_metrics.py CAS/CED semantic embeddings.
 # CED defaults to sentence-transformers (falls back to local TF-IDF if not installed) since

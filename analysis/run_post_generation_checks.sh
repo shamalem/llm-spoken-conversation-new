@@ -19,7 +19,10 @@
 # NOT run by this script automatically, since it shouldn't share an environment with the
 # rest of this repo's dependencies. Run it yourself first, in that environment:
 #   python analysis/dialogue_acts.py
-# This script assumes that has already been done and results/dialogue_acts/ is fresh.
+# This script assumes that has already been done and results/dialogue_acts/ is fresh --
+# step 4 below also needs that same isolated environment, since it calls DialogTag's own
+# tag_both_sides() (reusing the prediction cache analysis/dialogue_acts.py just wrote, so
+# it won't re-tag from scratch).
 
 set -euo pipefail
 cd "$(dirname "$0")/.."
@@ -28,21 +31,27 @@ cd "$(dirname "$0")/.."
 : "${W2V_PATH:?Set W2V_PATH to your word2vec-google-news-300.gz}"
 
 echo "############################################################"
-echo "# 1/3  Statement/Opinion confound (confusion table + merge + recompute + decide)"
+echo "# 1/4  Statement/Opinion confound (confusion table + merge + recompute + decide)"
 echo "############################################################"
 python3 analysis/check_statement_opinion_merge.py --all
 
 echo
 echo "############################################################"
-echo "# 2/3  Backchannel standalone vs. turn-opener (unit-splitting confound)"
+echo "# 2/4  Backchannel standalone vs. turn-opener (unit-splitting confound)"
 echo "############################################################"
 python3 analysis/backchannel_standalone_vs_opener.py --sb-root "$SB_ROOT"
 
 echo
 echo "############################################################"
-echo "# 3/3  Conceptual-alignment length confound (baseline, length control, decide)"
+echo "# 3/4  Conceptual-alignment length confound (baseline, length control, decide)"
 echo "############################################################"
 python3 analysis/alignment_confound_check.py --sb-root "$SB_ROOT" --w2v-path "$W2V_PATH"
+
+echo
+echo "############################################################"
+echo "# 4/4  Per-conversation distance: bootstrap error bars + architecture-vs-prompt ANOVA"
+echo "############################################################"
+python3 analysis/distance_bootstrap_stats.py
 
 echo
 echo "All checks complete."
