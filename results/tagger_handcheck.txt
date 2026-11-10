@@ -1,0 +1,26 @@
+# Tagger hand-check (98 units scored; 1 blank answers)
+
+Tagger accuracy vs humans: 75/98 = 77% (95% CI 67%-84%)
+
+Human-human agreement on 20 shared units: 83% pairwise, Fleiss' kappa 0.67
+Tagger vs human majority on the shared units: 15/18
+
+Per human label (how often the tagger gave the same label):
+  Opinion                    30/37
+  WhQuestion/OpenQuestion    18/22
+  Statement                  14/15
+  Agreement                  7/9
+  Abandoned/Other            4/7
+  Answer                     0/5
+  Directive                  1/2
+  Backchannel                1/1
+
+Confusion (human -> tagger), disagreements only:
+  Opinion                    -> Statement                  7
+  Answer                     -> Statement                  5
+  WhQuestion/OpenQuestion    -> YesNoQuestion              4
+  Abandoned/Other            -> Statement                  3
+  Agreement                  -> Backchannel                1
+  Statement                  -> Opinion                    1
+  Agreement                  -> Opinion                    1
+  Directive                  -> Statement                  1

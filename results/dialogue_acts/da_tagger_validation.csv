@@ -1,0 +1,3 @@
+label_set,n_conversations,n_utterances,accuracy
+fine,1155,223606,0.7058620967
+coarse,1155,223606,0.7203205638

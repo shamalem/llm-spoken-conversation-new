@@ -1,0 +1,14 @@
+# Isolated runtime for DialogTag's legacy TensorFlow checkpoint.
+#
+# Do not merge these pins into the generation environment: DialogTag 1.1.3 was released
+# against TensorFlow 2.2 / Transformers 3.0, while this newer combination is verified on
+# Python 3.11 and keeps the old checkpoint working.  The main analysis can subsequently
+# reuse results/dialogue_acts/dialogtag_predictions.json without these model packages.
+DialogTag==1.1.3
+tensorflow==2.15.1
+transformers==4.35.2
+numpy==1.26.4
+
+# Needed only if figures are drawn inside the isolated environment.  It is also safe to
+# omit this here, tag with --no-figures, and draw figures from the text-free cache later.
+matplotlib==3.10.3
